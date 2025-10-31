@@ -1,3 +1,33 @@
+# Worldforge v3 Bridge Handoff
+_Last updated 2025-10-30_
+
+## Purpose
+This Bridge provides a lightweight handoff header between GPTs, defining their shared version, data sources, and control references within the Worldforge v3 ecosystem.
+
+## Canonical References
+- **Design Reference:** [`/docs/architecture/Worldforge_v3_Master_Summary.md`](https://github.com/hydremia/worldforge-data/tree/main/docs/architecture/)
+- **Operational Reference:** [`/docs/control/Worldforge_v3_Ecosystem_Control.md`](https://github.com/hydremia/worldforge-data/tree/main/docs/control/)
+- **API Specification:** [`/api/worldforge_openapi_v3.yaml`](https://github.com/hydremia/worldforge-data/tree/main/api/)
+- **Worker Endpoint:** `https://worldforge-api.hydremia.workers.dev`
+
+## Version
+- **Canon Version:** `v3.0.0`
+- **Bridge Version:** `v3.0.0-Bridge`
+- **Last OPS Sync:** _Pending first promotion under v3_
+
+## Shared Assets
+- KV Namespaces: `WF_KV_RUNTIME`, `WF_KV_SESSIONS`, `WF_KV_STAGING`, `WF_KV_MEDIA`
+- Repo: `hydremia/worldforge-data`
+- Maintainer GPTs: Hub, DM, OPS, Creator, Atelier
+
+## Function
+This Bridge acts as the standardized loader header for all GPTs in the Worldforge ecosystem, ensuring:
+- Version parity across all modules
+- Access to canonical architecture
+- Consistent API and KV schema usage
+- Smooth session handoffs between GPTs
+
+
 # Worldforge v3 Bridge / Handoff Document
 _Last updated 2025-10-29_
 
