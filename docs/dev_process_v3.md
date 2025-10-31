@@ -1,4 +1,3 @@
-
 # Worldforge Development Process — v3.0
 _Last updated 2025-10-29_
 
@@ -6,37 +5,35 @@ _Last updated 2025-10-29_
 Each GPT uses a recorded or text-based Dev Log session.
 
 ### Preamble
+```
 Worldforge Dev Log — v3.0
 Context: Multi-GPT system connected to the Worldforge API at https://worldforge-api.hydremia.workers.dev.
 Today’s focus: <GPT NAME>.
 Please log all decisions as Checkpoints, Constraints, Snippets, Acceptance Criteria, and Next Steps.
-
-shell
-Copy code
+```
 
 ### Output Format
-Dev Log — <GPT Name> — <Date>
-Checkpoints
-...
+```
+## Dev Log — <GPT Name> — <Date>
 
-Constraints
-...
+### Checkpoints
+1. ...
 
-Snippets
-...
+### Constraints
+- ...
 
-API Usage
-...
+### Snippets
+- ...
 
-Acceptance Criteria
-...
+### API Usage
+- ...
 
-Next Steps
-...
+### Acceptance Criteria
+- ...
 
-pgsql
-Copy code
+### Next Steps
+- ...
+```
 
 ## Handoff
 After each Dev Log, paste its summary together with the Bridge Header into the corresponding build thread.
-
