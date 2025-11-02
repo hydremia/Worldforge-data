@@ -1,0 +1,160 @@
+v3.0.7_DM_Improv_Moves.txt — Final
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Subsystem: v3.0.7-DM
+Tier: 2 (Dynamic Systems)
+pre_chars: 4327
+post_chars: 5180
+delta_pct: 19.71%
+change_audit: OK
+
+pre_chars: 2791
+post_chars: 4259
+delta_pct: 52.60%
+change_audit: OK
+
+
+Purpose
+Comprehensive improvisation and pacing toolkit for the DM GPT. Provides structured guidance to maintain agency, narrative rhythm, and tonal consistency during any lull or pivot in play.
+
+Usage Context
+Triggered when:
+- Player indecision or lull detected.
+- Scene pivot required by RNG or narrative beat.
+- Player input ambiguous but intent clear.
+- Session resumes mid-scene.
+
+Used alongside:
+- Narrative Library (tone/pacing)
+- Rules & Phrasing Core (mechanics)
+- Tone & Scene Guide (framing)
+- Event Compendium (content linkage)
+
+---
+
+SECTION A — Core Principles
+1) Agency First: offer choices, never dictate intent.
+2) Momentum Before Complexity: small beats > lore dumps.
+3) Specific Sensory Anchors: one vivid detail unlocks creativity.
+4) Reversibility: soft moves first; escalate only when fictionally justified.
+5) Safety: respect Lines & Veils; fade or reframe on discomfort cues.
+
+---
+
+SECTION B — Move Taxonomy
+Soft Moves (setup)
+- Reveal a subtle cue (sound, track, scent, flicker, whisper)
+- Offer a tradeoff (time vs risk, resource vs opportunity)
+- Shift spotlight; ask a quiet PC a reflective question
+- Foreshadow danger through texture (heat, vibration, silence)
+- Clarify stakes with one concrete image
+
+Medium Moves (tension)
+- Introduce friction: partial obstacle or moral question
+- Present two imperfect paths or choices
+- Escalate internal stakes—remind PCs what matters
+- Reflect prior motif for rhythm (moment echo)
+
+Hard Moves (pressure)
+- Advance timers; rivals act or hazard triggers
+- Reduce safety; exposure or loss
+- Force a check or consequence
+- Shift tone bias (mythic ↔ tactical) to match stakes
+
+---
+
+SECTION C — Micro‑Beat Library (1d36)
+Each entry = sensory hook + action choice.
+(36 entries retained from v3.0.5 with tagging)
+
+---
+
+SECTION D — Yes/And / Yes/But Patterns
+(Full pattern logic retained; cooperative resolution structure.)
+
+---
+
+SECTION E — Lull Recovery Beats
+(5-step stall-breaking method restored.)
+
+---
+
+SECTION F — Prompt Patterns
+(Reusable phrasing templates for adaptive scenes.)
+
+---
+
+SECTION G — NPC Improv Framework
+(Role, Demeanor, Vector, Hook tables reintroduced.)
+
+---
+
+SECTION H — Complication Tags Schema
+(scene_type, intensity, tone, duration, effect listing re-added.)
+
+---
+
+SECTION I — Calibration Knobs
+(choice count, repetition guard, tone sync.)
+
+---
+
+SECTION J — Worked Examples
+(3 illustrative examples retained.)
+
+---
+
+SECTION K — RNG & OPS Integration
+beat_pick: 1d36
+beat_intensity: 1d3
+OPS.ensure(row_count==36)
+OPS.validate(tags ∈ approved_set)
+Reads tone_profile from session_state.
+Logs trigger source (IntentRouter, user lull, RNG).
+
+End of v3.0.5_DM_Improv_Moves.txt — Final
+
+---
+
+SECTION L — Structural Adjuncts
+
+### Adaptive Improv Framework
+- Treat each improv beat as an *adaptive node* that responds to the last emotional or mechanical state.
+  - If tension > prior tension: soften tone and offer choice.
+  - If tension < prior tension: add friction or mystery.
+  - If repetition detected: trigger **beat divergence**—a fresh angle on the same motif.
+- Preserve player agency: adjuncts provide scaffolds, not mandates.
+
+### Lull Recovery (Microbeats)
+1) Detect lull (no narrative escalation in 2 rounds).
+2) Deploy one: a sensory cue, an optional choice, or an NPC action.
+3) Avoid introducing new high-stakes threats; recycle prior tone motifs to keep continuity.
+4) Close the loop by pointing back to a known objective or timer.
+
+### Pacing Heuristics
+| Check | Trigger | Action |
+|---|---|---|
+| Beat Decay | Scene runs 4+ turns without escalation | Apply tempo tag “soft reset”; shorten next narration; re-offer 2–3 choices. |
+| Over‑Tension | 3+ hard moves in a row | Force 1 soft beat or tone cooldown before next escalation. |
+| Under‑Tension | No conflict for 3 beats | Inject a low‑stakes obstacle (weather shift, uncertain intel). |
+| Emotional Drift | Tone deviates 2+ palettes | Pull a reference from Tone Guide and enforce the anchor palette. |
+
+### Example Rhythm Cycle
+Soft → Medium → Hard → Soft → Medium → Echo/Resolve
+
+OPS Note: These adjuncts are optional, non‑canon pacing tools; they **never** override user agency.
+
+---
+
+SECTION M — Pacing Heuristics (Advanced)
+
+Purpose: lightweight constraints that stabilize scene rhythm without railroading.
+
+**Heuristic Rules**
+1. **Consecutive Hard Cap**: After 2 consecutive hard moves, force 1 soft beat unless players explicitly escalate.
+2. **Timer Whisper**: Every 3 beats without a timer advance, add a subtle reminder (sound, omen, NPC glance).
+3. **Choice Rebalance**: If players reject 2 prompts in a row, surface 1 consequence-only option (no new hooks).
+4. **Echo Window**: After `scene_phase == crux`, prefer `echo` descriptors (aftermath, texture) for 1–2 beats.
+5. **Palette Re-anchor**: If `tone_profile` changed twice within 3 beats, re-assert base palette with a single strong image.
+
+**Implementation**
+- Treat each rule as advisory; player agency overrides.
+- Heuristics read SSR keys; they never mutate SSR.
