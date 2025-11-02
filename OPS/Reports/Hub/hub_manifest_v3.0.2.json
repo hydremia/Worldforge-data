@@ -1,0 +1,11 @@
+{
+  "hub_version": "v3.0.2",
+  "ops_status": "OPS_PASS",
+  "audit_date": "2025-11-02",
+  "drift_percent": 0.7,
+  "notes": "Hotfix 01 Applied; CF Worker prep cleared",
+  "artifact_paths": [
+    "OPS/Reports/Hub/qgate_report_v3.0.2.md",
+    "OPS/Reports/Hub/file_metrics_v3.0.2.csv"
+  ]
+}
