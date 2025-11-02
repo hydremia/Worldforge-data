@@ -1,0 +1,97 @@
+v3.0.0_DM_Houserules_Core.txt
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose
+Defines default table-level mechanical variances from D&D 5.5e core.
+These are applied automatically unless declined at campaign setup.
+Each can be toggled per campaign; confirmations stored in session_state.
+
+Usage
+- Activated automatically on first campaign initialization.
+- DM announces: “I use a few standard table rules; you can confirm or decline any.”
+- OPS logs confirmation choices per user/campaign.
+- Integrates with Rules & Phrasing Core for mechanical resolution logic.
+
+---
+
+SECTION A — Default Rule Activation Logic
+1) On new campaign start, list each rule by name and description.
+2) Ask: “Do you wish to keep, modify, or disable this rule?”
+3) Save results as:
+   - ✅ Confirmed (active)
+   - ⚙️ Modified (custom text)
+   - ❌ Declined (inactive)
+4) OPS persists results to `session_state → houserules_profile`.
+5) Recap selected rules at each session start.
+
+---
+
+SECTION B — Core Houserules (Defaults)
+
+🕐 Action Economy Exchange
+Rule: A character may use an Action to perform any Bonus Action,
+as long as they do not repeat something already used as a Bonus Action this round.
+Rationale: Expands tactical flexibility without breaking economy balance.
+
+🧴 Healing Potion Variance Healing
+Rule:
+- Consuming a healing potion as a Bonus Action → roll normally for HP recovered.
+- Consuming as an Action → automatically heal the potion’s maximum HP value.
+Rationale: Encourages tactical choice between time and reliability.
+Integration: Hooks into RNG Policy (roll vs. max mode).
+
+⚔️ Perkins Critical
+Rule:
+- When you score a Critical Hit, your bonus dice deal maximum damage instead of rolling.
+- Example: “One die max crit.” (1d8 weapon = 8 + modifiers).
+Rationale: Streamlines crit math and makes hits more cinematic.
+
+💀 Recovery from Being Downed
+Rule:
+- When reduced below 0 HP and healed back to consciousness, gain 1 level of Exhaustion.
+Rationale: Reflects near-death trauma and discourages repeated “yo-yo” healing loops.
+Integration: OPS tracks Exhaustion levels; DM narrates symptoms.
+
+🪂 Increased Falling Damage
+Rule:
+- If falling damage > Constitution score → knocked prone, must make CON save DC = half damage (min 10);
+  on fail, speed halved until end of next turn.
+- If falling damage > 2× Constitution score → immediately reduced to 0 HP.
+Rationale: Adds physical realism and risk without complicating math.
+
+🧩 Homebrew Inclusion Policy
+Rule:
+- Homebrew and third-party content allowed, subject to DM review for balance.
+- Any content listed under Homebrew Approved in campaign capsule is automatically valid.
+Rationale: Encourages creativity while maintaining world integrity.
+Integration: OPS logs approvals in capsule_meta → homebrew_registry.
+
+---
+
+SECTION C — Session Confirmation Dialogue Pattern
+DM: “I use a few default table rules—want me to go over them?”
+Player: “Sure.”
+DM: “Here’s the quick list.
+• Action Economy Exchange — trade your Action for any Bonus Action (once per round).
+• Healing Potions — Bonus = roll, Action = max.
+• Criticals — max damage on extra dice.
+• Recovery from 0 HP — gain 1 exhaustion.
+• Falling — high falls hurt more, sometimes knock you out.
+• Homebrew — open with approval.
+Would you like to keep these defaults or change any before we start?”
+
+---
+
+SECTION D — OPS + QGate Notes
+- Persistence: store results in session_state.houserules_profile.
+- Audit: OPS confirms each active rule at session export.
+- Validation:
+  - Ensure no conflicts with 5.5e SRD.
+  - Mark any modified text with revision ID.
+- Future Hooks:
+  - Variant Packs (Hardcore, Heroic, Cinematic) can override these defaults.
+  - Each pack inherits and can selectively replace these rules.
+
+---
+
+End of v3.0.0_DM_Houserules_Core.txt
