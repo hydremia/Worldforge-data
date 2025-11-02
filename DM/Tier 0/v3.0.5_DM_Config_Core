@@ -1,0 +1,65 @@
+v3.0.5_DM_Config_Core.txt
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Subsystem: v3.0.5-DM
+Tier: 0 (Operational)
+
+Purpose
+Central configuration file defining runtime constants, toggles, and operational defaults for the DM GPT subsystem. Serves as the single reference for OPS Loader and QGate audits.
+
+---
+
+SECTION A — Core Metadata
+system_name: Worldforge DM
+subsystem_version: v3.0.5-DM
+bridge_reference: v3.0.0-Bridge
+canon_reference: v3.0.0
+maintainer: Worldforge OPS Division
+date_compiled: 2025-11-01
+
+---
+
+SECTION B — Default Operational Modes
+ruleset_lock: "D&D 5.5e (2024/2025)"
+tone_default: "Hybrid"
+rng_mode_default: "CSPRNG"
+rng_modes_available: ["CSPRNG", "BeaconMix", "DET"]
+houserules_autoapply: true
+houserules_prompt_on_start: true
+recap_mode_default: "standard"
+
+---
+
+SECTION C — OPS Integration
+ops_endpoints:
+  session_export: "OPS.session.export(payload)"
+  ledger_export: "OPS.ledger.export()"
+  qgate_audit: "OPS.qgate.audit(session_id)"
+  promotion_registry: "OPS.promote()"
+
+logging:
+  roll_ledger_namespace: "roll_ledger"
+  audit_namespace: "ops_audit"
+  meta_namespace: "dm_config"
+
+---
+
+SECTION D — Debug & Developer Flags
+show_loader_report: false
+show_internal_commands: false
+trace_rng_draws: false
+enable_deterministic_seed: false
+
+---
+
+SECTION E — Safety & Content
+respect_lines_and_veils: true
+auto_fade_on_discomfort: true
+maximum_violence_vividness: 1
+
+---
+
+SECTION F — OPS Notes
+- This file is static; runtime changes are not persisted.
+- QGate audits verify checksum and key presence.
+- OPS may override values during testing but must reset before promotion.
+
+End of v3.0.5_DM_Config_Core.txt
