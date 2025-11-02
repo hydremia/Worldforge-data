@@ -1,0 +1,80 @@
+v3.0.7_DM_RNG_Policy.txt
+pre_chars: 2112
+post_chars: 2751
+delta_pct: 30.26%
+change_audit: OK
+
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose: Define the DM GPT’s random number generation strategy, fairness guarantees, and audit logging for Worldforge sessions.
+
+Default RNG Mode: CSPRNG
+- Source: Cloudflare Workers Web Crypto API (crypto.getRandomValues)
+- Entropy: OS-based hardware and environmental noise
+- Uniformity: Rejection sampling eliminates modulo bias
+
+Optional Mode: Beacon Mix
+- Combines Cloudflare CSPRNG output with public randomness beacon (e.g., drand)
+- Provides verifiable randomness commitment visible to players
+- Maintains uniform distribution and audit trace
+- Activated through conversational cue: “make rolls publicly verifiable”
+
+Deterministic Mode (DET)
+- Uses cryptographically secure DRBG (ChaCha20 or HMAC-DRBG)
+- Seed + draw_index stored in session state for exact replay
+- Intended for debugging, reproducibility, or story replays
+- Activated by conversational cue: “replay that sequence exactly”
+
+Roll Event Schema
+Fields: roll_id, ts, expr, dice[], total, mode, capsule_id, nonce, hash_commit
+Hash_commit = sha256(expr + nonce + ts + bytes_used_hash)
+Ensures each roll is unique, reproducible, and tamper-evident.
+
+Bias Mitigation (Rejection Sampling)
+1. Draw 32-bit random integer r from CSPRNG.
+2. For die size d, compute limit = 2^32 - (2^32 mod d).
+3. If r >= limit, discard and redraw.
+4. Result = (r % d) + 1.
+
+Roll Grammar Supported
+- Advantage/Disadvantage: 2d20kh1 / 2d20kl1
+- Keep/Drop: 4d6kh3 / 5d8dl2
+- Exploding Dice: d6!
+- Pools: 10d6>=5 (success count)
+- Inline Modifiers: +7, -1, etc.
+
+Roll Ledger
+All rolls written to KV namespace roll_ledger with roll_id key.
+Each roll entry includes RNG source mode, timestamp, and tags.
+
+Integrity Rules
+- No hidden fudging. All overrides logged as HB_OVERRIDE.
+- Nonce uniqueness enforced for every roll.
+- Roll Ledger exported to OPS after each session or upon command.
+- Voice parity maintained (every roll spoken = every roll logged).
+
+Example Player-Facing Output
+Attack (Longsword) — 2d20kh1 + 7 → [17, 8] → 17 + 7 = **24** (hit)
+
+End of v3.0.0_DM_RNG_Policy.txt
+
+---
+
+SECTION E — RNG Seed Ledger Spec
+
+Purpose: optional audit trail for deterministic playback and OPS provenance.
+
+**When to Log**
+- On session start (capture initial `seed`).
+- On each Event resolution (capture `rolls`: array of ints).
+- When Improv injects a hard move (mark `source: "improv"`).
+
+**Record Shape**
+```
+{ "session_id": string, "seed": int, "rolls": [int], "source": "improv"|"event", "timestamp": iso8601 }
+```
+
+**Integration Notes**
+- Logging is optional. If enabled, DM emits `OPS.notify_rng_seed` stub calls.
+- Do not block gameplay on logging failures.
+- Keep roll arrays compact; truncate to last 10 if necessary.
