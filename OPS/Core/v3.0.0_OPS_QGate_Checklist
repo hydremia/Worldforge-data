@@ -1,0 +1,27 @@
+v3.0.0 — OPS QGate Checklist
+============================
+
+Overview
+- Three-tier audit to determine readiness for promotion.
+
+Tier 1 — Structural & Size
+- Filenames follow prefix style (e.g., v3.0.0_<Name>.ext)
+- Required headers present (title, version, date)
+- Character counts within declared budgets (±5% change flagged)
+- File count within platform limits; load order valid
+- Checksums generated and recorded
+
+Tier 2 — Parity & Integrity
+- Cross-GPT references resolve (Hub/DM/Creator/Atelier)
+- Bridge/Ecosystem Control version alignment verified
+- Hashes match reported; no orphaned references
+- RNG & ledger protocols (if present) meet standards
+
+Tier 3 — Promotion Readiness
+- PR materials complete (reports, diffs, deltas, rationale)
+- Rollback plan prepared; prior PASS reference identified
+- Risk assessment documented; owner + approver noted
+
+Verdict
+- PASS only if all critical checks pass across Tiers 1–3.
+- Otherwise FAIL with explicit required actions.
