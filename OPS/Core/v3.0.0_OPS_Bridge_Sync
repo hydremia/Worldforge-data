@@ -1,0 +1,15 @@
+v3.0.0 — OPS Bridge & Ecosystem Sync
+====================================
+
+Goals
+- Keep Bridge, Ecosystem Control, and target GPTs aligned on versions, roles, and checkpoints.
+
+Sync Rules
+- OPS emits a Checkpoint entry when: (a) new baseline is initialized; (b) QGate PASS; (c) Promotion executed; (d) Rollback.
+- Bridge must list active versions for each GPT; OPS verifies before audits.
+- Any mismatch triggers Tier 2 FAIL until reconciled.
+
+Version Alignment
+- OPS baseline = v3.0.0.
+- DM/Hub/Creator/Atelier versions must be explicitly stated in Loader/QGate headers.
+- Promotion PRs must cite exact from→to versions for traceability.
