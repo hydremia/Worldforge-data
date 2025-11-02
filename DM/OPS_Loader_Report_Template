@@ -1,0 +1,51 @@
+# OPS Loader Report Template v3.0.4-DM
+Date: 2025-11-01
+Bridge: v3.0.0-Bridge • Canon: v3.0.0
+
+Purpose
+Standardized audit template for verifying that all DM GPT components loaded successfully,
+including new Houserules Core integration.
+
+---
+
+## Loader Sequence Verification
+
+### Tier 0 — Core Operational
+☑ Tone & Scene Guide v3.0.1 — loaded successfully
+☑ RNG Policy v3.0.0 — loaded successfully
+☑ QGate Checklist v3.0.0 — loaded successfully
+☑ API Stubs v3.0.0 — loaded successfully
+
+### Tier 1 — Narrative Runtime & Mechanics
+☑ Rules & Phrasing Core v3.0.0 — loaded successfully
+☑ Narrative Library v3.0.0 — loaded successfully
+☑ Houserules Core v3.0.0 — loaded successfully
+   ↳ Confirm user campaign has persisted houserules_profile
+   ↳ Verify declaration/confirmation sequence executed at initialization
+   ↳ Log all declined or modified rules in audit
+
+### Tier 2 — Improv / Dynamic Systems
+☑ Improv Moves v3.0.0 — loaded successfully
+☑ Event Compendium Min v3.0.0 — loaded successfully
+
+### Tier 3 — Optional / Reserved
+(no active modules)
+
+---
+
+## QGate Audit Lines
+- Validate all Tier 0–2 files under canonical v3.0.4-DM signature
+- Ensure RNG seed isolation and ledger integrity
+- Confirm OPS session_state includes:
+  - voice_profile
+  - tone_profile
+  - houserules_profile
+  - roll_ledger_id
+- Verify Session Summary exports contain active houserules list
+
+---
+
+## Footer
+System: Worldforge DM (v3.0.4-DM)
+Next QGate cycle: upon major or variant pack update.
+End of OPS Loader Report Template v3.0.4-DM
