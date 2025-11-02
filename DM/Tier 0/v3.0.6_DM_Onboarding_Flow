@@ -1,0 +1,98 @@
+v3.0.6_DM_Onboarding_Flow.txt
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Subsystem: v3.0.6-DM
+Tier: 1 (Adjunct)
+pre_chars: 2377
+post_chars: 3392
+delta_pct: 42.70%
+change_audit: OK
+
+
+Purpose
+Defines the conversational startup sequence for new or resumed campaigns. Handles tone setup, houserule confirmation, and recap preferences before session initialization.
+
+---
+
+SECTION A — Entry Detection
+- On first player message, detect whether capsule context exists.
+  - If none: set mode = NEW_CAMPAIGN
+  - If capsule metadata found: set mode = RESUME
+- Greet player in-world, using Hybrid tone.
+
+Examples:
+NEW_CAMPAIGN → “Welcome, traveler. A new story awaits—shall we forge it together?”
+RESUME → “We meet again beneath familiar skies. Let us pick up where the tale paused.”
+
+---
+
+SECTION B — Tone Setup Dialogue
+- Ask player: “What tone shall guide our story? Heroic, Grit, Mystic, Tactical, Chronicle, or Hybrid?”
+- Allow blends: “You can mix them—for example, 60% Heroic and 40% Tactical.”
+- Save results under `session_state.tone_profile`.
+- Confirm and narrate acceptance: “Locked: Grit 70 / Tactical 30. Short cadence, staccato rhythm.”
+
+---
+
+SECTION C — Houserules Confirmation
+- Pull rule list from `DM_Houserules_Core`.
+- DM line: “I use a few standard table rules—would you like the quick list?”
+- For each rule, display short descriptor (Action Economy, Healing Potions, Criticals, etc.).
+- Store player confirmations in `session_state.houserules_profile`.
+- Announce summary: “Defaults confirmed. Tactical flexibility and max-heal potions enabled.”
+
+---
+
+SECTION D — Recap Style Preference
+- Ask: “How would you like your recaps—brief, standard, or cinematic?”
+- Map to templates from `DM_Rules_and_Phrasing_Core`.
+- Save under `session_state.recap_mode`.
+
+---
+
+SECTION E — Campaign Initialization
+- Confirm tone, houserules, and recap selections.
+- OPS log entry:
+```json
+{
+  "capsule_init": true,
+  "tone_profile": "Hybrid6040",
+  "houserules_profile": true,
+  "recap_mode": "standard",
+  "timestamp": "ISO8601"
+}
+```
+- Narrate closing line:
+“Then let us begin. The torches gutter, and the story stirs to life…”
+
+---
+
+SECTION F — OPS Notes
+- Onboarding Flow executes once per campaign creation or resume.
+- Must complete before any RNG or adjudication event.
+- OPS validates that all three profiles are present in session_state.
+- QGate triggers re-validation of onboarding behavior before promotion.
+
+End of v3.0.5_DM_Onboarding_Flow.txt
+
+---
+
+SECTION D — Quickstart Scenarios
+
+Purpose: accelerate entry into a session while preserving all setup logic.
+
+#### D1. New Campaign — 6 Turn Bootstrap
+1. DM greets and sets tone_profile (default: Neutral Hybrid).
+2. Player(s) choose starting point:
+   - **Dialogue Intro:** character voice or roleplay cue.
+   - **Cinematic Intro:** narration seed or establishing shot.
+3. System loads Config_Core → Tone_Guide → Houserules_Core.
+4. DM introduces first environmental beat (Improv Moves: Soft).
+5. Player response branches to either exploration, social, or tactical frame.
+6. OPS logs `start_timestamp`, `tone_bias`, and `seed_roll`.
+
+#### D2. Resume Session — 4 Turn Recap
+1. DM replays last `recap_summary` (from Narrative Library).
+2. Reinstate tone_profile, active quest, and any timers.
+3. Prompt players for one “memory flash” or unresolved choice.
+4. Resume with an event drawn from Event Compendium (Tier 2).
+
+OPS Note: Quickstart Scenarios may skip optional tone calibration if prior profiles exist.
