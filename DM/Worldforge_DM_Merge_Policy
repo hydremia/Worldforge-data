@@ -1,0 +1,20 @@
+# Worldforge DM — Merge Policy (v3)
+Date: 2025-11-01
+
+Goal
+Maximize runtime narrative quality while keeping maintenance manageable.
+
+Rules of Thumb
+1) Merge when semantic overlap > 60% (e.g., tone + scene scaffolds; rules + phrasing).
+2) Keep technical files atomic: RNG Policy, QGate Checklist, API Stubs.
+3) Author modular in Git; compile to unified runtime file(s) for the GPT.
+4) Add section headers and (optional) per-section checksums for OPS audits.
+5) Keep total knowledge files ≈ 10–15 to preserve headroom for expansions.
+6) Never merge the Instruction Field with anything else; respect GPT size limits.
+
+Deployment Pattern
+- Git (source): modular files in /data/dm/tierX/
+- GPT (runtime): merged files for higher retrieval cohesion
+- OPS: Loader Report tracks both source and merged hashes
+
+End of Merge Policy
