@@ -1,0 +1,30 @@
+# Loader Report — OPS v3.0.0
+
+**Run ID:** OPS-LOADER-2025-11-02T05-06-07  
+**Timestamp:** 2025-11-02T05-06-07  
+**Mode:** test_mode:true  
+**Target GPT:** OPS  
+**Version:** v3.0.0  
+
+---
+## Loaded Files
+| File | Role | Size (chars) | Delta % | Checksum |
+|------|------|---------------|----------|-----------|
+| v3.0.0_OPS_RuntimeCore_Instructions.txt | core | 4527 | +0.0% | TBD |
+| v3.0.0_OPS_QGate_Checklist.txt | core | 1394 | +0.0% | TBD |
+| v3.0.0_OPS_Promotion_Schema.txt | core | 1215 | +0.0% | TBD |
+| v3.0.0_OPS_Bridge_Sync.txt | core | 973 | +0.0% | TBD |
+| OPS_File_Map_v3.0.0.md | report | 673 | +0.0% | TBD |
+| OPS_Build_Log_v3.0.0.md | report | 388 | +0.0% | TBD |
+
+---
+## Summary
+- All core and report files loaded successfully.
+- File naming, headers, and budgets verified.
+- No anomalies detected.
+
+**Status:** PASS (Initialization)  
+
+**Next Actions:**  
+1. Proceed with QGate audit on DM v3.0.7  
+2. Generate Promotion Summary v3.0.0 upon first PASS promotion.  
