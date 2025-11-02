@@ -1,0 +1,16 @@
+# OPS File Map — v3.0.0
+
+## Core (always present)
+- v3.0.0_OPS_RuntimeCore_Instructions.txt — ~6.5 KB target
+- v3.0.0_OPS_QGate_Checklist.txt — ~3.5 KB target
+- v3.0.0_OPS_Promotion_Schema.txt — ~3.5 KB target
+- v3.0.0_OPS_Bridge_Sync.txt — ~2.5 KB target
+
+## Reports
+- OPS_Build_Log_v3.0.0.md — rolling log (rotate >50 KB)
+- Loader_Report_<ISO8601>.md — one per action
+- QGate_Report_<GPT>_v3.0.0.md — one per audit target
+- Promotion_Summary_v3.0.0.md — per promotion
+
+## Scratch (ephemeral)
+- _tmp_diff_cache.json — transient diffs/checksums
