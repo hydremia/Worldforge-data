@@ -1,0 +1,111 @@
+v3.0.6_DM_Event_Compendium_Min.txt — Final
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Subsystem: v3.0.6-DM
+Tier: 2 (Dynamic Systems)
+pre_chars: 1544
+post_chars: 3789
+delta_pct: 145.40%
+change_audit: OK
+
+
+Purpose
+Expanded, canon‑safe compendium of narrative events, complications, and rewards. Provides dynamic friction, discovery, and opportunity without imposing canon details.
+
+Usage Context
+Invoked by:
+- Improv Moves beats calling external friction or discovery.
+- RNG triggers during exploration or downtime.
+- OPS randomization sequences to refresh pacing.
+
+Feeds: Narrative Library, Tone & Scene Guide, RNG Policy.
+Never contains proper names, regions, or fixed lore.
+
+---
+
+SECTION A — Framework
+(Event structure retained with Echo type.)
+
+---
+
+SECTION B — Encounter Frames
+(8 frames including Exploration and Chronicle.)
+
+---
+
+SECTION C1 — Micro‑Event Table (1d30)
+(30 entries retained and validated.)
+
+---
+
+SECTION C2 — Rewards & Risks (1d20)
+(20 entries retained and validated.)
+
+---
+
+SECTION D — Tone Modifiers
+Heroic → bright diction; valorous rhythm.
+Grit → terse phrasing; reduced flourish.
+Mystic → soft cadence; focus on sound/light.
+Chronicle → formal tone; reflective narration.
+Tactical → spatial clarity; direct language.
+
+---
+
+SECTION E — OPS & RNG Notes
+OPS.validate(tags ∈ approved_set)
+OPS.ensure(row_counts = {events:30, rewards:20})
+RNG source = Tier 0 Policy
+Event IDs stable
+
+---
+
+SECTION F — Integration Hooks
+(Connections to Improv Moves, Narrative Library.)
+
+---
+
+SECTION G — Worked Examples
+(3 examples reinstated for DM application.)
+
+End of v3.0.5_DM_Event_Compendium_Min.txt — Final
+
+---
+
+SECTION H — Example Chains (Tone‑Tagged)
+
+> Compact, canon‑safe walkthroughs that demonstrate **Improv → Event → Outcome** across different tones.
+> Use these to accelerate scene framing, never to override player agency.
+
+### H1. Exploration (Mystic)
+- **Improv Beat:** A low hum threads the wind; glyphs stutter along a stone seam.
+- **Event:** Hidden access (DC 12 Investigation) reveals a narrow crawlspace; dust unsettles into spiral patterns.
+- **Outcome:** Passage to a small vault with a puzzling astrolabe; choosing to meddle sets a slow timer (echo hazard).
+
+### H2. Exploration (Grit)
+- **Improv Beat:** Boots crunch on glass; something recently shattered.
+- **Event:** A precarious balcony yields (Dex save DC 13) — either retreat or crawl to the safer lintel.
+- **Outcome:** Partial success exposes a rooftop stash; gain supplies at the cost of time/noise.
+
+### H3. Chronicle (Heroic)
+- **Improv Beat:** A bard’s fragment names an unsung guardian of the pass.
+- **Event:** Oral history check (DC 12) recovers the right epithet; a memorial stone reacts to the true name.
+- **Outcome:** Favorable omen; next social check against locals gains advantage if the name is honored.
+
+### H4. Tactical (Neutral)
+- **Improv Beat:** Lantern sway reveals overlapping tracks.
+- **Event:** Split‑decision fork: pursue the lighter prints (speed) or the deeper tread (certainty).
+- **Outcome:** Pick one: a faster intercept with higher risk, or a slower approach with better intel.
+
+### H5. Social (Mystic)
+- **Improv Beat:** A child repeats a rhyme everyone else has forgotten.
+- **Event:** Riddle exchange; success earns a candid rumor, failure plants a false lead (clearly tag as “questionable”).
+- **Outcome:** Gain a soft clue either way; truth filters in later via echo sign.
+
+### H6. Hazard (Grit)
+- **Improv Beat:** Bitter smoke clings low to the ground.
+- **Event:** Visibility drops; choose to crawl (safe, slow) or dash (fast, risky) through collapsing beams.
+- **Outcome:** Reach the other side; either fatigue penalty (crawl) or minor damage + timer tick (dash).
+
+OPS Notes:
+- Keep names generic; no canon anchors.
+- Tag each example with a **tone** and **frame**.
+- If repetition detected, swap tone or frame to maintain rhythm.
