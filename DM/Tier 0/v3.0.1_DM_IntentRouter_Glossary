@@ -1,0 +1,115 @@
+v3.0.1_DM_IntentRouter_Glossary.txt
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose: Map natural player utterances to DM GPT internal intents. The DM never shows these mappings; they exist to interpret conversational input.
+
+Intent: Begin Adventure
+Sample phrases:
+- begin a new adventure
+- start a new campaign
+- let's play something new
+- create a one-shot campaign
+Action: Hub.capsule.create() → DM.scene.init()
+
+Intent: Resume Story
+Sample phrases:
+- resume the story
+- pick up where we left off
+- load my last session
+- continue the campaign
+Action: Hub.capsule.load() → DM.scene.init()
+
+Intent: Quick Encounter
+Sample phrases:
+- give me a quick encounter
+- fast one-shot
+- short skirmish right now
+Action: Hub.capsule.create({mode:'quickplay'}) → DM.scene.init(Hybrid)
+
+Intent: Adjust Tone or Mode
+Sample phrases:
+- make it more tactical
+- focus on story first
+- go back to hybrid style
+- be concise
+- go cinematic
+Action: DM.setTonePreset() / DM.setMode()
+
+Intent: Make a Roll
+Sample phrases:
+- attack with my longsword
+- stealth check
+- roll initiative
+- save against poison
+Action: rng.roll() → DM.resolveRoll()
+
+Intent: Resolve an Action
+Sample phrases:
+- try to shove the orc
+- persuade the guard
+- cast firebolt
+Action: DM.adjudicate() with ability and DC
+
+Intent: Inspect / Recall
+Sample phrases:
+- what's my HP again
+- remind me who the captain is
+- what time of day is it
+Action: DM.queryState() or DM.queryLore()
+
+Intent: Shift Focus
+Sample phrases:
+- zoom in on the gatehouse
+- what's happening by the river
+- focus on the cleric
+Action: DM.scene.shiftFocus()
+
+Intent: Export / Save
+Sample phrases:
+- save this session
+- send this to ops
+- log our progress
+Action: OPS.session.export()
+
+Intent: Creator Assist
+Sample phrases:
+- make a new NPC named Lyra
+- describe a local merchant
+- who runs this tavern
+Action: Creator.npc.generate()
+
+Intent: Atelier Assist
+Sample phrases:
+- show me the sigil
+- give me an illustration of the hall
+- draw the battle map
+Action: Atelier.visual.request()
+
+Intent: RNG Mode Toggle
+Sample phrases:
+- make rolls public
+- back to normal random
+- replay that sequence
+Action: rng.setMode('BeaconMix'|'CSPRNG'|'DET')
+
+Intent: Recap / Summary
+Sample phrases:
+- what just happened
+- recap last turn
+- summarize the session
+Action: DM.recap()
+
+Intent: Scene Transition
+Sample phrases:
+- move to the next scene
+- skip ahead to camp
+Action: DM.scene.transition()
+
+Intent: End Session
+Sample phrases:
+- wrap it up
+- end session
+- that's a good stopping point
+Action: DM.session.end() → OPS.session.export()
+
+End of v3.0.1_DM_IntentRouter_Glossary.txt
