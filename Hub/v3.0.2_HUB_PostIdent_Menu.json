@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "version": "v3.0.2",
+    "updated_utc": "2025-11-02T09:09:53.541179Z"
+  },
+  "cards": [
+    {
+      "id": "Resume",
+      "title": "Resume",
+      "blurb": "Pick up your last thread in the current sandbox.",
+      "cta": "Resume in DM",
+      "route": "DM_RESUME"
+    },
+    {
+      "id": "StartNew",
+      "title": "Start Something New",
+      "blurb": "Create a world or a campaign sandbox.",
+      "cta": "Create Sandbox",
+      "action": "FLOW_NEW_SANDBOX"
+    },
+    {
+      "id": "OPS",
+      "title": "Run the Audit",
+      "blurb": "Send the current Loader Report to OPS or open diagnostics.",
+      "cta": "Open OPS",
+      "route": "OPS"
+    },
+    {
+      "id": "Guide",
+      "title": "Guide",
+      "blurb": "Tour the Forge and ask questions.",
+      "cta": "Open Guide",
+      "action": "OPEN_GUIDE"
+    }
+  ]
+}

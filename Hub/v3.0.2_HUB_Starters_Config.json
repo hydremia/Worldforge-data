@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "name": "Worldforge HUB — Starters Config",
+    "version": "v3.0.2",
+    "updated_utc": "2025-11-02T09:09:53.539994Z"
+  },
+  "ui": {
+    "max_visible": 4,
+    "layout": "2x2",
+    "style": {
+      "diegetic": true,
+      "use_symbols": true
+    }
+  },
+  "icons": {
+    "Guide": "🜄",
+    "New": "✨",
+    "Returning": "⟲",
+    "Resume": "🜂",
+    "NewSandbox": "✧",
+    "OPS": "⚙"
+  },
+  "contexts": {
+    "top_level": {
+      "description": "Minimal entry: 3 starters only.",
+      "buttons": [
+        {
+          "id": "Guide",
+          "label": "Guide",
+          "icon": "Guide",
+          "action": "OPEN_GUIDE"
+        },
+        {
+          "id": "NewUser",
+          "label": "New User",
+          "icon": "New",
+          "action": "FLOW_NEW_USER"
+        },
+        {
+          "id": "ReturningUser",
+          "label": "Returning User",
+          "icon": "Returning",
+          "action": "FLOW_RETURNING_USER"
+        }
+      ]
+    },
+    "post_ident": {
+      "description": "After username identified; keep 2×2 with Resume + Start New + OPS + Guide.",
+      "buttons": [
+        {
+          "id": "Resume",
+          "label": "Resume",
+          "icon": "Resume",
+          "route": "DM_RESUME",
+          "promote_if_recent": true
+        },
+        {
+          "id": "StartNew",
+          "label": "Start Something New",
+          "icon": "NewSandbox",
+          "action": "FLOW_NEW_SANDBOX"
+        },
+        {
+          "id": "OPS",
+          "label": "Run the Audit",
+          "icon": "OPS",
+          "route": "OPS"
+        },
+        {
+          "id": "Guide",
+          "label": "Guide",
+          "icon": "Guide",
+          "action": "OPEN_GUIDE"
+        }
+      ],
+      "overflow": [
+        {
+          "id": "Creator_NewFaction",
+          "label": "Create a Faction",
+          "action": "CREATOR_NEW_FACTION"
+        },
+        {
+          "id": "Creator_NewLocation",
+          "label": "Create a Location",
+          "action": "CREATOR_NEW_LOCATION"
+        },
+        {
+          "id": "Atelier_StylePrimer",
+          "label": "Style Primer",
+          "action": "ATELIER_STYLE_PRIMER"
+        },
+        {
+          "id": "Atelier_CharPlate",
+          "label": "Character Plate",
+          "action": "ATELIER_CHARACTER_PLATE"
+        },
+        {
+          "id": "DM_ListCampaigns",
+          "label": "Load Campaign",
+          "action": "DM_LIST_CAMPAIGNS"
+        },
+        {
+          "id": "DM_QuickScene",
+          "label": "Quick Scene",
+          "action": "DM_QUICK_SCENE"
+        },
+        {
+          "id": "OPS_Report",
+          "label": "Show Loader Report",
+          "action": "SHOW_LOADER_REPORT"
+        },
+        {
+          "id": "OPS_Diagnostics",
+          "label": "Diagnostics",
+          "action": "RUN_DIAGNOSTICS"
+        }
+      ]
+    }
+  },
+  "flows": {
+    "FLOW_NEW_USER": [
+      "PROMPT:Choose a username; we’ll set your PIN next.",
+      "ACTION:ASK_USERNAME (required)",
+      "ACTION:ASK_PIN (4–8 digits)",
+      "ACTION:REGISTER {username, pin}",
+      "ACTION:CREATE_SANDBOX default kind=campaign OR world",
+      "ACTION:LOG_SESSION event=signup",
+      "ACTION:SUGGEST_GUIDE primary",
+      "ACTION:SET_CONTEXT post_ident"
+    ],
+    "FLOW_RETURNING_USER": [
+      "PROMPT:Welcome back. Enter your username and PIN.",
+      "ACTION:ASK_USERNAME (required)",
+      "ACTION:ASK_PIN (required)",
+      "ACTION:LOGIN {username, pin}",
+      "ACTION:IDENTIFY {username}",
+      "ACTION:LOG_SESSION event=signin",
+      "ACTION:SET_CONTEXT post_ident"
+    ],
+    "FLOW_NEW_SANDBOX": [
+      "PROMPT:Start something new — choose World or Campaign and a slug.",
+      "ACTION:ASK_SANDBOX_KIND",
+      "ACTION:ASK_SANDBOX_SLUG",
+      "ACTION:SANDBOX_CREATE {username, slug, kind}",
+      "ACTION:LOG_SESSION event=new_sandbox",
+      "ACTION:ROUTE DM_RESUME"
+    ],
+    "OPEN_GUIDE": [
+      "ACTION:LOAD_FILE v3.0.2_HUB_Guide_Mode.txt",
+      "ACTION:RETURN to previous context"
+    ]
+  }
+}
