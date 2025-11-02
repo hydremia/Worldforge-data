@@ -1,0 +1,46 @@
+# Worldforge Hub v3.0.1 — Directory Overview
+
+The **Worldforge Hub** is the central router and capsule manager for the Forge ecosystem.
+This directory uses a **flattened-root** structure. File roles (Knowledge vs Runtime) are
+declared in `hub_manifest.json` rather than subfolders.
+
+## Files (v3.0.1)
+
+- `v3.0.1_HUB_RuntimeCore_Instructions.txt` — Primary Hub instructions (Knowledge)
+- `v3.0.1_HUB_Starters_Config.json` — Top-level starters & flows (Knowledge)
+- `v3.0.1_HUB_PostIdent_Menu.json` — Post-Ident cards (Knowledge)
+- `v3.0.1_HUB_Loader_Report_Template.json` — OPS audit schema (Knowledge)
+- `v3.0.1_HUB_Guide_Mode.txt` — Guide Mode narrative (Knowledge)
+- `v3.0.1_HUB_Roadmap.md` — Hub roadmap, tiers & lattice (Knowledge)
+- `v3.0.1_HUB_Tone_Profiles.txt` — Tone & style profiles (Knowledge)
+- `v3.0.1_HUB_Routing_Helper.js` — Starter builder utility (Runtime)
+- `v3.0.1_HUB_Routing_Skeleton.js` — Patched routing shell (Runtime)
+
+See `hub_manifest.json` for formal roles, load behavior, and checksums (filled by OPS).
+
+## Tools
+
+- `tools/apply_hotfix_01.py` — Applies Hotfix 01 (backs up originals as `.bak`)
+- `tools/schema_validator.js` — Validates a Loader Report against the v3.0.1 template
+- `tools/starter_render_harness.mjs` — Injects `HUB_STARTERS_CONFIG` and logs visible/overflow starters
+- `tools/resume_promotion_helper.js` — Pure function to promote/demote the Resume card
+- `tools/v3.0.1_HUB_Routing_Helper.js.new` — Reference "new" helper for diffing
+- `tools/v3.0.1_HUB_Routing_Skeleton.js.new` — Reference "new" skeleton for diffing
+
+## Structure Rationale
+
+- **Flattened root** keeps Hub files easy to fetch from Workers and easy to audit by OPS.
+- **Roles are metadata**, not folders. This preserves the Knowledge vs Runtime concept without path juggling.
+- `hub_manifest.json` is the single source of truth for the Hub’s file table of contents.
+
+## Quickstart
+
+- Apply Hotfix 01: `python tools/apply_hotfix_01.py`
+- Sanity check JS: `node --check v3.0.1_HUB_Routing_Helper.js && node --check v3.0.1_HUB_Routing_Skeleton.js`
+- Validate Loader Report: `node tools/schema_validator.js v3.0.1_HUB_Loader_Report_Template.json sample_loader_report.json`
+- Test starters rendering: `node tools/starter_render_harness.mjs`
+
+## Governance & Lattice
+
+This Hub is governed by the **Forge Lattice** model: Hub (Tier 0) over OPS/DM/Creator/Atelier (Tier 1),
+with Tier 2 extensions under parent domains. See `v3.0.1_HUB_Roadmap.md` for full hierarchy and GPT charters.
