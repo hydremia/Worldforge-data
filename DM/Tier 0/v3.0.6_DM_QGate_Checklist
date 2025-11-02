@@ -1,0 +1,103 @@
+v3.0.6_DM_QGate_Checklist.txt
+pre_chars: 2540
+post_chars: 4597
+delta_pct: 80.98%
+change_audit: OK
+
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose: Define audit and validation criteria for the DM GPT to ensure system integrity, fairness, and canon compliance under the Worldforge v3 QGate process.
+
+Overview:
+This checklist governs runtime validation and OPS audits of DM behavior, session exports, RNG use, and tone consistency. The DM GPT must pass all criteria before session promotion to canon.
+
+Primary Categories:
+
+1. Ruleset Compliance
+- Confirm 5.5e ruleset active (2024/2025 standard).
+- Verify no homebrew mechanics used unless flagged with HB tag.
+- All rolls resolved per official core rules unless override logged.
+
+2. Canon Integrity
+- DM references capsule content only; no new canon creation.
+- Verify all lore, NPCs, and outcomes tie to valid capsule or Creator outputs.
+- Scene summaries remain scoped to active capsule.
+
+3. RNG Fairness
+- RNG source: Cloudflare CSPRNG (default) or Beacon Mix (optional).
+- Rejection sampling confirmed to prevent modulo bias.
+- All rolls logged with roll_id, nonce, and hash_commit.
+- Overrides annotated HB_OVERRIDE.
+- Deterministic mode off unless explicitly requested.
+
+4. Voice & Text Parity
+- Every narrated roll or result mirrored in text log.
+- Scene recaps include last known state and decisions.
+- No divergence between voice and written logs.
+
+5. OPS Export Validation
+- Roll Ledger exported at session end or on user request.
+- Session Summary includes: capsule_id, duration, key_events, tone_profile, qgate_pass flag.
+- OPS audit ID assigned on export confirmation.
+
+6. Cross-GPT Handoff Sanity
+- All cross-GPT calls tagged with context (Creator, Atelier, OPS, Hub).
+- No untagged API calls permitted.
+- Results summarized narratively, not technically, to players.
+
+7. Tone Profile Consistency
+- Active tone preset declared and stable during session.
+- Mid-session tone shifts logged if significant.
+- Voice and text output align stylistically.
+
+8. Conversational Routing Validation
+- Player intent parsed correctly with no command exposure.
+- Slash commands hidden unless explicitly requested.
+- All interactions remain in-world and natural.
+
+Audit Outcomes:
+- PASS: All criteria satisfied; session eligible for canon promotion.
+- WARN: Minor deviation, flagged for OPS review.
+- FAIL: Canon lockout until corrected and resubmitted.
+
+Session Export Requirements:
+- Attach Roll Ledger checksum and Session Summary JSON to OPS payload.
+- Include qgate_pass boolean and audit timestamp.
+
+End of v3.0.0_DM_QGate_Checklist.txt
+
+---
+
+Appendix B — QGate Test Scenarios (v3.0.6)
+
+Purpose: deterministic checks a human can run without code to validate loader behavior, thresholds, and headers.
+
+| # | Scenario | Input / Setup | Expected Result |
+|---|---------|----------------|-----------------|
+| 1 | Missing File | Remove one Tier 2 file from load set | QGATE:FAIL with `missing: <file>` |
+| 2 | Runtime Overlimit | Increase RuntimeCore to >8k chars | QGATE:FAIL with `threshold: runtime` |
+| 3 | Tier Overlimit | Inflate a Tier file to >20k chars | QGATE:FAIL with `threshold: tier` |
+| 4 | Wrong Load Order | Swap Config_Core after Tone_Guide | QGATE:FAIL with `order_mismatch` |
+| 5 | Hash Mismatch | Modify a file after hash ledger | QGATE:FAIL with `checksum_mismatch` |
+| 6 | Bad Header | Remove Bridge/Canon tags from a file | QGATE:FAIL with `header_missing` |
+| 7 | Dependency Range | Set `Requires: DM < 3.0.6` in a v3.0.6 file | QGATE:FAIL with `dep_range_violation` |
+| 8 | RNG Seed Absent | Enable seed logging in RNG_Policy; omit seed | QGATE:WARN with `rng_seed_absent` |
+| 9 | Tone Drift | Force 3+ palette shifts w/o re‑anchor | QGATE:WARN `tone_drift` |
+| 10 | Archive Pointers | Remove archive links from File Map | QGATE:WARN `archive_missing` |
+| 11 | Change Shrink >5% | Shrink a file by 6% w/o note | QGATE:FAIL `shrink_guard` |
+| 12 | Growth Sanity | Grow a file by >50% | QGATE:WARN `growth_spike` (manual review) |
+
+---
+
+Appendix C — Change Audit (G‑CC‑01)
+
+Rule: For any modified file, compute exact pre/post char counts and delta. If Δ% ≤ −5.0% and no “Intentional Shrink Justification” is provided, **QGATE:FAIL**.
+
+### Change Audit Block (Template)
+| File | Pre (chars) | Post (chars) | Δ | Δ% | Status | Note |
+|------|--------------|--------------|---|----|--------|------|
+| <file> | <n> | <n> | <±n> | <±n%> | OK / FLAG | <optional one‑liner> |
+
+Notes:
+- Add `pre_chars`, `post_chars`, `delta_pct`, and `shrink_justified: true|false` to the Loader Report header for each touched file.
+- Archive the final table in QGate Results and cite in Build Log.
