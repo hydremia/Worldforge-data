@@ -1,0 +1,89 @@
+v3.0.0_DM_Rules_and_Phrasing_Core.txt
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose
+Merged reference combining Rules 5.5e Core Extract, Status Blocks (minimal), and Recap Patterns for cohesive adjudication + narration.
+
+---
+
+SECTION 1 — Rules 5.5e Core (from v3.0.0_Rules_55e_CoreExtract.txt)
+Ability Checks
+- 1d20 + modifier vs DC. Advantage/Disadvantage: roll 2d20, take higher/lower.
+- Typical DCs: 5 (very easy), 10 (easy), 15 (moderate), 20 (hard), 25 (very hard), 30 (nearly impossible).
+- Passive = 10 + modifier + bonuses. Contests: higher total succeeds.
+
+Saving Throws
+- STR/DEX/CON/INT/WIS/CHA; success reduces/avoids effect.
+- Nat 1 auto-fail only for death saves; otherwise apply rules context.
+
+Combat Core
+- Initiative: d20 + DEX. Attack: d20 + prof + mod vs AC.
+- Crit: nat 20 = double dice. Cover: +2 AC (half), +5 AC (three-quarters).
+- Damage Types: B/P/S, Fire, Cold, Lightning, Thunder, Acid, Poison, Necrotic, Radiant, Force, Psychic.
+
+Actions
+- Attack, Cast, Dash, Disengage, Dodge, Help, Hide, Ready, Search, Use Object.
+- Bonus/Reaction per ability/spell traits.
+
+Damage & Healing
+- 0 HP: unconscious; death saves begin. 3 successes stabilize; 3 failures = death.
+- Healing restores HP; not above max.
+
+Conditions (short)
+Blinded (fail sight checks), Charmed (no attacks vs charmer), Deafened (fail hearing checks),
+Frightened (disadvantage while source visible), Grappled (speed 0), Incapacitated (no actions),
+Invisible (adv on attacks; attackers have disadvantage),
+Paralyzed (fail STR/DEX saves; melee crits auto), Petrified, Poisoned (disadv on attacks/checks),
+Prone (melee adv, ranged disadv), Restrained (speed 0; attackers adv, self disadv),
+Stunned (no actions; fail STR/DEX saves), Unconscious (incapacitated, prone).
+
+DCs & Contests
+- Social 12–18, Exploration 10–20, Combat 10–25.
+- Tie-breaker: higher relevant modifier; reroll if still tied.
+
+Roll Interpretation
+- Total ≥ DC → success else fail. Degrees: marginal (±2), solid (±5), extreme (±10).
+- Output both narrative and mechanical results.
+
+---
+
+SECTION 2 — Status Blocks (from v3.0.0_DM_StatusBlocks_Min.txt)
+HP States
+Full: unscathed • ¾: lightly wounded • ½: bloodied • ¼: severely wounded • 0: collapses
+
+Morale
+High: undaunted • Steady: watchful • Low: wavering • Broken: panicked
+
+Environment Intensity
+Trivial → Moderate → Severe → Extreme (use as mood scalars)
+
+Condition Snippets
+Blinded: stumbles; Charmed: softened expression; Frightened: trembles; Grappled: struggling;
+Paralyzed: frozen; Poisoned: pallid; Prone: sprawled; Restrained: bound; Stunned: dazed; Unconscious: slumps.
+
+Syntax Template
+“Narrative: [subject] is [descriptor] (mechanical effect if relevant).”
+
+---
+
+SECTION 3 — Recap Patterns (from v3.0.0_DM_Recap_Patterns.txt)
+Short (1–2)
+“Moments ago, steel clashed…” / “The dawn finds you at camp…”
+
+Standard (3–5)
+“The road behind you tells of struggle…” / “Yesterday’s chaos left its mark…”
+
+Extended (resume)
+“At the obsidian vault’s threshold…” / “You recall the council hall…”
+
+Transitions
+“As dust settles…” / “Night drapes over the field…” / “Your footsteps echo…”
+
+Cliffhangers
+“The lock clicks—but something shifts…” / “The ground trembles…” / “The torchlight flares—and dies.”
+
+Structure Template
+Recap → Tone Beat → Tactical Reminder → Player Prompt
+Example: “The battle subsides… Rogue 18, Fighter 34, Wizard 2 slots. The vault door looms. What do you do?”
+
+End of v3.0.0_DM_Rules_and_Phrasing_Core.txt
