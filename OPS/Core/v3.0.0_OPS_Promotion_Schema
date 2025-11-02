@@ -1,0 +1,24 @@
+v3.0.0 — OPS Promotion Schema
+=============================
+
+Directories (Git/KV)
+- /staging/<GPT>/<version>/     # candidate inputs
+- /canon/<GPT>/<version>/       # immutable, approved outputs
+- /logs/<GPT>/                  # reports and summaries
+- /failed_promotions/           # archived failure bundles
+
+Promotion Flow
+1) Place candidate assets in /staging/<GPT>/<version>/
+2) Run QGate T1→T3 and emit Loader + QGate reports
+3) If PASS: open Promotion PR to main (canon)
+4) On merge: move assets to /canon; append CHANGELOG; store Promotion Summary
+5) If FAIL: move to /failed_promotions/ with reason + pointers; do not touch canon
+
+Rollback
+- Revert to last PASS canon directory; record rollback_ref in summary
+- Never rewrite history; append new logs describing the action
+
+Version Bumps
+- patch: backward-compatible fixes/content changes
+- minor: new capabilities or non-breaking structural shifts
+- major: incompatible instruction or schema changes
