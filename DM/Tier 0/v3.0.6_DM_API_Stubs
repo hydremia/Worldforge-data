@@ -1,0 +1,109 @@
+v3.0.6_DM_API_Stubs.txt
+pre_chars: 2959
+post_chars: 4223
+delta_pct: 42.72%
+change_audit: OK
+
+Bridge: v3.0.0-Bridge • Canon: v3.0.0 • Role: Worldforge DM
+
+Purpose: Provide reference documentation for the API interaction layer between the DM GPT and other Worldforge GPTs and services.
+
+Overview:
+These stubs describe how the DM communicates with the Hub, OPS, Creator, and Atelier GPTs via standardized API-like calls. All interactions must be logged, tagged, and narratively represented to the user.
+
+General Guidelines:
+- Never expose raw API call syntax to players.
+- Always describe results narratively.
+- Include context tags (e.g., {source: Creator, reason: npc_request}).
+- OPS handles persistence and canon promotion; DM remains read-only on canon data.
+
+---
+Hub Interface
+Function: capsule.load(capsule_id)
+Description: Loads capsule metadata, last session state, and campaign context.
+Returns: {capsule_meta, last_session}
+Example: DM retrieves capsule to initialize session.
+
+Function: capsule.create()
+Description: Starts a new campaign capsule with baseline metadata.
+Returns: {capsule_id, created_ts}
+
+---
+OPS Interface
+Function: session.export(payload)
+Description: Sends roll ledger and session summary for auditing and persistence.
+Payload Example: {type:'session_summary', session_id, capsule_id, duration, tone_profile, key_events, qgate_pass:true}
+Returns: {status:'success', audit_id}
+
+Function: ledger.export()
+Description: Exports RNG logs for audit validation.
+Returns: {status:'success', ledger_size, checksum}
+
+Function: qgate.audit(session_id)
+Description: Performs dry-run audit check.
+Returns: {pass:true|false, warnings:[...]}
+
+---
+Creator Interface
+Function: npc.generate({brief, capsule_id, tags})
+Description: Generates an NPC with basic lore snippet and personality seed.
+Returns: {npc_block, lore_snippet}
+Narrative Example: “A wiry blacksmith named Coren wipes his hands on his apron and eyes you curiously.”
+
+Function: lore.expand({topic, depth})
+Description: Expands capsule lore nodes or exposition as requested.
+Returns: {paragraphs, citations}
+
+---
+Atelier Interface
+Function: visual.request({scene_id|brief, style, tone})
+Description: Requests art prompt or visual reference asset from the Atelier GPT.
+Returns: {asset_id, url, alt_text}
+Narrative Example: “A shimmer of light reveals a detailed rendering of the battlefield.”
+
+Function: sigil.create({theme, color_scheme})
+Description: Generates heraldic or glyphic imagery for campaign elements.
+Returns: {asset_id, url}
+
+---
+RNG Interface (internal)
+Function: rng.roll(expr, opts)
+Description: Performs dice roll using CSPRNG or deterministic mode.
+Returns: RollEvent JSON (see RNG Policy).
+
+Function: rng.setMode(mode)
+Description: Switches RNG mode between CSPRNG, BeaconMix, and DET.
+
+---
+Logging Requirements
+Each call produces a log entry:
+{api:'Creator', fn:'npc.generate', ts, capsule_id, tags:['narrative'], user_visible:false}
+OPS ingests these logs for version tracking and QGate validation.
+
+End of v3.0.0_DM_API_Stubs.txt
+
+---
+
+Appendix A — Hub / Creator / Atelier Interfaces (v3.0.6)
+
+Purpose: clarify cross‑GPT touchpoints while keeping the runtime lean. Shapes are illustrative and non‑binding.
+
+### HUB.notify_loader_state(state, file_map_ref, qgate_ref)
+- **Request:** `{ state: "loaded"|"error", file_map_ref: uri, qgate_ref: uri, timestamp: iso8601 }`
+- **Response:** `{ ack: true }`
+- **Notes:** Used once at session init; enables HUB UI to reflect DM readiness.
+
+### CREATOR.request_npc_seed(tags, motif) → npc_profile
+- **Request:** `{ tags: [string], motif: string, tone_bias?: string }`
+- **Response:** `{ name, concept, faction?, hooks: [2..3], quirks: [1..2] }`
+- **Notes:** Returns a *seed*, not a full stat block; DM elaborates during play.
+
+### ATELIER.request_spot_illustration(prompt, style_tag) → asset_ref
+- **Request:** `{ prompt: string, style_tag: "cutout"|"vignette"|"inked"|string }`
+- **Response:** `{ asset_ref: uri, alt: string }`
+- **Notes:** For floating cutout/vignette art to slot into logs or handouts.
+
+### OPS.notify_rng_seed(seed, source, session_id)
+- **Request:** `{ seed: int, source: "improv"|"event", session_id: string, timestamp: iso8601 }`
+- **Response:** `{ ack: true }`
+- **Notes:** Optional; supports RNG ledger if enabled in RNG_Policy.
