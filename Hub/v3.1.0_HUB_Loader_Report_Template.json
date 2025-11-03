@@ -1,9 +1,9 @@
 {
-  "bridge_version": "v3.0.2",
-  "canon_version": "v3.0.2",
+  "bridge_version": "v3.1.0",
+  "canon_version": "v3.1.0",
   "hub": {
     "name": "Worldforge HUB GPT",
-    "version": "v3.0.2",
+    "version": "v3.1.0",
     "timestamp_utc": "<ISO-8601>",
     "status": "INIT|PASS|WARN|FAIL"
   },

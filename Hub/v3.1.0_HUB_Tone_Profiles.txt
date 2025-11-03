@@ -1,7 +1,7 @@
-worldforge-data/HUB/v3.0.2/
+worldforge-data/HUB/v3.1.0/
   knowledge/
-    v3.0.2_HUB_Tone_Profiles.txt   ← copy-forward or symlink from v3.0.2
-_Bridge: v3.0.2 | Canon: v3.0.2 | Role: Calibration & OPS Tone Audit Reference_
+    v3.1.0_HUB_Tone_Profiles.txt   ← copy-forward or symlink from v3.1.0
+_Bridge: v3.1.0 | Canon: v3.1.0 | Role: Calibration & OPS Tone Audit Reference_
 
 ---
 
@@ -91,4 +91,4 @@ OPS audits should return `tone_status: FAIL` if more than 5% of responses breach
 
 ---
 
-_End of Tone Profiles (v3.0.2)_
+_End of Tone Profiles (v3.1.0)_

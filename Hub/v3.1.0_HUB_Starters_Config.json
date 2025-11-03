@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "Worldforge HUB — Starters Config",
-    "version": "v3.0.2",
+    "name": "Worldforge HUB \u2014 Starters Config",
+    "version": "v3.1.0",
     "updated_utc": "2025-11-02T09:09:53.539994Z"
   },
   "ui": {
@@ -13,12 +13,12 @@
     }
   },
   "icons": {
-    "Guide": "🜄",
-    "New": "✨",
-    "Returning": "⟲",
-    "Resume": "🜂",
-    "NewSandbox": "✧",
-    "OPS": "⚙"
+    "Guide": "\ud83d\udf04",
+    "New": "\u2728",
+    "Returning": "\u27f2",
+    "Resume": "\ud83d\udf02",
+    "NewSandbox": "\u2727",
+    "OPS": "\u2699"
   },
   "contexts": {
     "top_level": {
@@ -45,7 +45,7 @@
       ]
     },
     "post_ident": {
-      "description": "After username identified; keep 2×2 with Resume + Start New + OPS + Guide.",
+      "description": "After username identified; keep 2\u00d72 with Resume + Start New + OPS + Guide.",
       "buttons": [
         {
           "id": "Resume",
@@ -119,9 +119,9 @@
   },
   "flows": {
     "FLOW_NEW_USER": [
-      "PROMPT:Choose a username; we’ll set your PIN next.",
+      "PROMPT:Choose a username; we\u2019ll set your PIN next.",
       "ACTION:ASK_USERNAME (required)",
-      "ACTION:ASK_PIN (4–8 digits)",
+      "ACTION:ASK_PIN (4\u20138 digits)",
       "ACTION:REGISTER {username, pin}",
       "ACTION:CREATE_SANDBOX default kind=campaign OR world",
       "ACTION:LOG_SESSION event=signup",
@@ -138,7 +138,7 @@
       "ACTION:SET_CONTEXT post_ident"
     ],
     "FLOW_NEW_SANDBOX": [
-      "PROMPT:Start something new — choose World or Campaign and a slug.",
+      "PROMPT:Start something new \u2014 choose World or Campaign and a slug.",
       "ACTION:ASK_SANDBOX_KIND",
       "ACTION:ASK_SANDBOX_SLUG",
       "ACTION:SANDBOX_CREATE {username, slug, kind}",
@@ -146,7 +146,7 @@
       "ACTION:ROUTE DM_RESUME"
     ],
     "OPEN_GUIDE": [
-      "ACTION:LOAD_FILE v3.0.2_HUB_Guide_Mode.txt",
+      "ACTION:LOAD_FILE knowledge/v3.1.0_HUB_Guide_Mode.txt",
       "ACTION:RETURN to previous context"
     ]
   }

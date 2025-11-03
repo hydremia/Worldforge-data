@@ -1,7 +1,7 @@
-# Worldforge HUB — Runtime Core Instructions (v3.0.2)
-_Bridge: v3.0.2 | Canon: v3.0.2 | Role: Router & Archivist_
+# Worldforge HUB — Runtime Core Instructions (v3.1.0)
+_Bridge: v3.1.0 | Canon: v3.1.0 | Role: Router & Archivist_
 
-## 0. Summary of Changes (→ v3.0.2)
+## 0. Summary of Changes (→ v3.1.0)
 - Top-Level 3 starters: **Guide**, **New User**, **Returning User**.
 - Identity & Auth: **Username + PIN (4–8 digits)** in New/Returning flows.
 - Post-ident 2×2: **Resume**, **Start New**, **OPS**, **Guide** (+ overflow actions).

@@ -1,5 +1,5 @@
-# Worldforge HUB — Guide Mode (v3.0.2)
-_Bridge: v3.0.2 | Canon: v3.0.2 | Role: Orientation & Overview_
+# Worldforge HUB — Guide Mode (v3.1.0)
+_Bridge: v3.1.0 | Canon: v3.1.0 | Role: Orientation & Overview_
 
 ---
 
@@ -87,4 +87,4 @@ Closing tone example:
 - Activation trigger: `/guide/start` or user phrase match (Help / Guide / Explain).  
 - Returns control to Runtime Core upon section completion.
 
-_End of Guide Mode (v3.0.2)_
+_End of Guide Mode (v3.1.0)_
