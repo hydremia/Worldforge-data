@@ -1,0 +1,52 @@
+{
+  "threshold_percent_drop": 5.0,
+  "scan_exts": [
+    ".txt",
+    ".md",
+    ".json",
+    ".js",
+    ".ts",
+    ".mjs",
+    ".yaml",
+    ".yml",
+    ".toml",
+    ".css",
+    ".html"
+  ],
+  "gpts": [
+    "HUB",
+    "DM",
+    "OPS",
+    "Creator",
+    "Atelier",
+    "Lexicon",
+    "Cartographer",
+    "Arboretum"
+  ],
+  "paths": {
+    "HUB": [
+      "HUB"
+    ],
+    "DM": [
+      "DM"
+    ],
+    "OPS": [
+      "OPS"
+    ],
+    "Creator": [
+      "Creator"
+    ],
+    "Atelier": [
+      "Atelier"
+    ],
+    "Lexicon": [
+      "Lexicon"
+    ],
+    "Cartographer": [
+      "Cartographer"
+    ],
+    "Arboretum": [
+      "Arboretum"
+    ]
+  }
+}

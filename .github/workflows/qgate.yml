@@ -1,0 +1,17 @@
+name: QGate - Size Guard & Banned Terms
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+jobs:
+  qgate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run banned-terms check
+        run: node tools/check_banned_terms.mjs
+      - name: Run size guard (all GPTs)
+        run: node tools/size_guard.mjs --all

@@ -1,0 +1,336 @@
+{
+  "timestamp": "2025-11-03T18:56:02.089Z",
+  "threshold_percent_drop": 5,
+  "items": [
+    {
+      "gpt": "HUB",
+      "file": "HUB/dev_local_env.json",
+      "before": null,
+      "after": 114,
+      "delta": null,
+      "pct": null,
+      "hash": "730c6945c8a1a5f6fbc07cec711ed6c8c9389b8a8413b11595e73aa1068a1907",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/dev_local_harness.mjs",
+      "before": null,
+      "after": 2021,
+      "delta": null,
+      "pct": null,
+      "hash": "2ed6de7743a55e0ff7e9d46291571f0d0e1a023f3c19f809f0e5cbe936c149e5",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/resume_promotion_helper.js",
+      "before": null,
+      "after": 541,
+      "delta": null,
+      "pct": null,
+      "hash": "dbeb96ea10f6dae8d5dd7cbaf93615ec7e301cb9d745a85b42eb5846e7b7ce96",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/runtime/v3.0.2_HUB_Routing_Helper.js",
+      "before": null,
+      "after": 362,
+      "delta": null,
+      "pct": null,
+      "hash": "525b339fe131f5f7e836a4bb3a5b2231806fb9bea4f4f6a06e85830cf7da8e58",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/runtime/v3.1.0_HUB_Routing_Skeleton.js",
+      "before": null,
+      "after": 6817,
+      "delta": null,
+      "pct": null,
+      "hash": "fe0e25c19d157ddce4fea640533f64cc69284d2221c5102ff7d9573dc9ad1e1a",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/tools/resume_promotion_helper.js",
+      "before": null,
+      "after": 1060,
+      "delta": null,
+      "pct": null,
+      "hash": "d7e222529ec9f87835dfdfba00eb27fc06a48e976700a4e6115b504e3d711def",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/tools/schema_validator.js",
+      "before": null,
+      "after": 2764,
+      "delta": null,
+      "pct": null,
+      "hash": "bcc63cb3d4b8fed7a8d31a4db0a6bdcdb99cea0f7c64343d68897ec311ef7473",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/tools/starter_render_harness.mjs",
+      "before": null,
+      "after": 1135,
+      "delta": null,
+      "pct": null,
+      "hash": "de4e54c5747f30d1f9dba138d45ec1ff53820da896f02ea7fa91bf367874593b",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_Guide_Mode.txt",
+      "before": null,
+      "after": 3613,
+      "delta": null,
+      "pct": null,
+      "hash": "12bb78b10c7345ebeeee27c93395dee886a722335008a183a373ca1c057ca3a0",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_Loader_Report_Template.json",
+      "before": null,
+      "after": 1501,
+      "delta": null,
+      "pct": null,
+      "hash": "5191af57e6688025edb79c7336139598a1917be323b63c05b4b1929d0dc65da7",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_PostIdent_Menu.json",
+      "before": null,
+      "after": 878,
+      "delta": null,
+      "pct": null,
+      "hash": "b5e3fba0ffd7b14aec48820c761ee985b66df32086333f1ff5b754b74c4e845c",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_Roadmap.md",
+      "before": null,
+      "after": 661,
+      "delta": null,
+      "pct": null,
+      "hash": "5e26b148eb14bb59f6ee0d7f3ca9dd1491d0ece4c5910099689c41bc0073d6c5",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_RuntimeCore_Instructions.txt",
+      "before": null,
+      "after": 1604,
+      "delta": null,
+      "pct": null,
+      "hash": "6ebe4fdf6400c5232255363ad0d796c54dcc10ae891b3fa3c6ad800c1036f898",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_Starters_Config.json",
+      "before": null,
+      "after": 4136,
+      "delta": null,
+      "pct": null,
+      "hash": "1519188e34441aceabc064b6abff8c7632e8e1d328bb82fb4683ddb0227b25a7",
+      "flagged": false
+    },
+    {
+      "gpt": "HUB",
+      "file": "HUB/v3.0.2_HUB_Tone_Profiles.txt",
+      "before": null,
+      "after": 3251,
+      "delta": null,
+      "pct": null,
+      "hash": "437a3cbba59efa61fe9a74d391ef5023f3483fd4a670b734a1cbd299e9e39300",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/canon/OPS/v3.0.0/README.md",
+      "before": null,
+      "after": 314,
+      "delta": null,
+      "pct": null,
+      "hash": "dabf1e913d3530a555d65e850f4876a67c4a747b28dd807488cc8798dd26a751",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/CHANGELOG.md",
+      "before": null,
+      "after": 1779,
+      "delta": null,
+      "pct": null,
+      "hash": "a09cfe023de528b00c51c9b5f797c7d36e33542296a498f62f3c9f939bbeecbd",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/failed_promotions/README.md",
+      "before": null,
+      "after": 230,
+      "delta": null,
+      "pct": null,
+      "hash": "d64af398d8e2096577072ec8855ab09668d700cd1153d19bef11da5747b8cf53",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Guides/guardrails_quickstart.md",
+      "before": null,
+      "after": 1055,
+      "delta": null,
+      "pct": null,
+      "hash": "5961a6a05d08e8103b297417ac99afc1eba7d83ed5a7b9000887a75690009a40",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/logs/OPS/README.md",
+      "before": null,
+      "after": 190,
+      "delta": null,
+      "pct": null,
+      "hash": "8646423077fc1131c72e2576557d514e6858d703ac9b6243c54953fd8fb6e479",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/Arboretum_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/Atelier_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/Cartographer_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/Creator_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/DM_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/HUB_manifest.json",
+      "before": null,
+      "after": 2147,
+      "delta": null,
+      "pct": null,
+      "hash": "1f853a0a0a48ca253929c4886db1cb8fa76fdf666de0a62fbe16626291e52a32",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/Lexicon_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Manifests/OPS_manifest.json",
+      "before": null,
+      "after": 2,
+      "delta": null,
+      "pct": null,
+      "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/README.md",
+      "before": null,
+      "after": 2574,
+      "delta": null,
+      "pct": null,
+      "hash": "7e1625b9ffdb6d30973723d9c7cac57a809964946cdcf5a4180f8a7724371d2e",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Reports/Hub/hub_manifest_v3.0.2.json",
+      "before": null,
+      "after": 296,
+      "delta": null,
+      "pct": null,
+      "hash": "dce3b6123d3be307a8ba4719695b93fdf3c367b7588bb4a360f4782c736aca63",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Reports/Hub/qgate_report_v3.0.2.md",
+      "before": null,
+      "after": 239,
+      "delta": null,
+      "pct": null,
+      "hash": "fe7b69b1a8845c6fc96b2a6e71e58ef02d939e537414413a159be1ca3859c8a8",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/Rules/guardrails.json",
+      "before": null,
+      "after": 644,
+      "delta": null,
+      "pct": null,
+      "hash": "e763620fea234bd4cf85e8a718a4f09913609e8e5cca3cfbce2c0e888140e63f",
+      "flagged": false
+    },
+    {
+      "gpt": "OPS",
+      "file": "OPS/staging/OPS/v3.0.0/README.md",
+      "before": null,
+      "after": 278,
+      "delta": null,
+      "pct": null,
+      "hash": "2537aa949b0399de4a243a26bc45a7c5e0ab74787439e5a5bdd024e71ab5c466",
+      "flagged": false
+    }
+  ]
+}
