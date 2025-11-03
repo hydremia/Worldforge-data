@@ -1,0 +1,5 @@
+{
+  "workerBase": "http://127.0.0.1:8787",
+  "capsuleToken": "<paste-from-auth/issue>",
+  "username": "PlayerOne"
+}
