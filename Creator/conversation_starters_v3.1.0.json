@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Explore the Pathways of Creation",
+    "subtitle": "See all modes and tools in one place.",
+    "route": "full_pathways_menu"
+  },
+  {
+    "title": "Dive Straight Into a Creative Project",
+    "subtitle": "Skip guidance; tell me what you want to create.",
+    "route": "intelligent_routing"
+  },
+  {
+    "title": "Learn How the Creator Works",
+    "subtitle": "Read the Creator Guide (roles, OPS, tone).",
+    "route": "creator_guide"
+  },
+  {
+    "title": "Continue or Resume My Work",
+    "subtitle": "Resume drafts or sessions from linked capsules.",
+    "route": "capsule_resume"
+  }
+]
