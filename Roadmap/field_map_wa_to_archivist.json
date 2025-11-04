@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "article.title": "name",
+    "article.slug": "slug",
+    "article.content_markdown": "body_md",
+    "article.summary": "summary",
+    "article.type": "type",
+    "article.tags[]": "tags[]",
+    "article.parent": "relations.parent",
+    "article.images[]": "meta.images[]",
+    "article.custom_fields.*": "meta.custom_fields.*",
+    "timeline.events[].title": "event.name",
+    "timeline.events[].date": "event.dr_year",
+    "timeline.events[].participants[]": "event.participants[]",
+    "timeline.events[].location": "event.location"
+  },
+  "notes": "Adjust this map to match your WA export structure; unknown fields will be placed under meta.*"
+}

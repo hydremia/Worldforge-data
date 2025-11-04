@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Archivist Entry (Common Envelope) v1",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "slug",
+    "name",
+    "body_md",
+    "lineage",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "character",
+        "location",
+        "faction",
+        "item",
+        "event",
+        "article"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "body_md": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relations": {
+      "type": "object"
+    },
+    "lineage": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array"
+        },
+        "edits": {
+          "type": "array"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sources",
+        "version"
+      ]
+    },
+    "status": {
+      "enum": [
+        "canon",
+        "noncanon",
+        "alt-A",
+        "staging"
+      ]
+    },
+    "visibility": {
+      "enum": [
+        "public",
+        "private",
+        "capsule-only"
+      ]
+    },
+    "last_updated": {
+      "type": "string"
+    }
+  }
+}
