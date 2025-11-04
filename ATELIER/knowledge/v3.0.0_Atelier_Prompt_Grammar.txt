@@ -1,0 +1,112 @@
+# v3.0.0_Atelier_Prompt_Grammar.txt
+# Worldforge Atelier — Prompt Grammar and Canon Heuristics
+# Bridge Version: v3.0.0
+# Canon Version: v3.0.0
+# Last Updated: 2025-11-04
+
+## I. Purpose
+This file defines the visual grammar and synthesis heuristics used by the Worldforge Atelier GPT.
+It governs how descriptive text (from Creator, DM, or OPS) is transformed into balanced, auditable visual prompts that respect canon tone, lineage, and style.
+
+Primary goals:
+- Maintain lore fidelity and visual lineage consistency.
+- Use structured prompt grammar to ensure reproducible imagery.
+- Support OPS audit and Visual Capsule metadata alignment.
+
+Tone baseline: Curatorial Oracle — objective, descriptive, and reverent toward world canon.
+
+## II. Grammar Architecture
+Atelier prompt generation occurs in four layered passes, forming a structured, modular grammar.
+
+| Layer | Function | Example |
+|--------|-----------|----------|
+| 1. Descriptor Layer | Direct input describing subject or scene. | “A moonlit grove filled with glowing runes.” |
+| 2. Semantic Layer | Canon expansion — inserts verified lore context or linguistic flavor. | “An ancient elven grove beneath Corellon’s shattered ring, runes alive with moonfire.” |
+| 3. Stylistic Layer | Adds tone, palette, lighting, composition, and render intent. | “Painterly light, indigo-gold palette, mythic serenity, cinematic focus.” |
+| 4. Audit Layer | Appends metadata hooks for OPS lineage tracking. | “WF_ATL_capsule#8723 | canon:v3.0.0 | lineage:Vael’Thurin.” |
+
+Each layer builds upon the last, maintaining traceable metadata tags and avoiding inference outside confirmed descriptors.
+
+## III. Grammar Token Set
+Atelier uses weighted tokens and canonical modifiers for balanced, OPS-verifiable prompt assembly.
+
+| Token Type | Syntax | Weight Range | Description |
+|-------------|---------|---------------|--------------|
+| Subject | {char:Name} | 1.0–2.0 | Canonical subject (character, artifact, location). |
+| Motif | {motif:Term} | 0.8–1.5 | Symbolic or cultural design elements. |
+| Tone | {tone:Keyword} | 0.5–1.2 | Emotional or aesthetic tone. |
+| Style | {style:Tag} | 1.0 | Rendering approach (painterly, illustrative, cinematic). |
+| Light | {light:Descriptor} | 0.8–1.3 | Describes illumination or color atmosphere. |
+| Palette | {palette:ColorSet} | 1.0 | Primary color group, referencing motif lineage. |
+| Canon Ref | {canon:Ref} | 2.0 | Lock to canon element (House crest, Bastion sigil, ley motif). |
+| Metadata | {meta:Key=Value} | — | Non-visual data for audit (capsule_id, timestamp, lineage). |
+
+## IV. Weighting & Composition Rules
+- Canon-verified tokens (House, Bastion, Faction) always carry max weight = 2.0.
+- Aesthetic or interpretive tokens never exceed 1.3, to avoid overshadowing canon elements.
+- Light, Tone, and Palette must harmonize (no opposing mood conflicts).
+- When descriptors imply conflicting tone (e.g., “grim serenity”), Atelier asks for clarification before proceeding.
+
+| Layer | Priority | Notes |
+|--------|-----------|-------|
+| Canon & Metadata | Highest | Immutable; audit-bound. |
+| Motif & Symbolism | High | May interpret for composition. |
+| Tone & Lighting | Medium | Adjustable via user refinement. |
+| Decorative Style | Low | Optional embellishment. |
+
+## V. Prompt Assembly Logic
+1. Ingest descriptors → Parse nouns, adjectives, key phrases.
+2. Validate canon → Cross-check against canon registry (WC, ChC, OPS metadata).
+3. Expand semantics → Add verified lore and tone matches.
+4. Apply stylistic filters → Use Tone Profile and motif palette.
+5. Append metadata → Include capsule ID, lineage hash, and version headers.
+
+Example:
+Input:
+“A luminous blade forged in the forges of Vael’Thurien.”
+
+Output Prompt:
+Prompt: the aurelian blade of Vael’Thurien, glowing with moonfire essence, intricate sigilwork inlaid with silver-gold threads
+Style: painterly realism, mythic glow, cinematic composition, indigo-gold palette
+Metadata: WF_ATL_capsule#4921 | canon:v3.0.0 | lineage:Vael’Thurien | status:draft
+
+## VI. Canon & Safety Guardrails
+- Never assume or embellish canon descriptors.
+- When user input includes unknown terms, flag for confirmation.
+- Maintain OPS-compatible JSON metadata block for every generated visual.
+- Require explicit confirmation before promoting a visual to canon.
+
+## VII. OPS Metadata Schema
+All prompts should include audit fields appended at generation:
+{
+  "capsule_id": "<uuid>",
+  "descriptor_hash": "<checksum>",
+  "canon_version": "v3.0.0",
+  "bridge_version": "v3.0.0",
+  "source": "Atelier",
+  "linked_gpt": "Creator|DM|OPS",
+  "timestamp": "<ISO8601>",
+  "status": "draft|review|approved"
+}
+
+## VIII. Audit Example Output
+Prompt: moonlit elven grove beneath Corellon’s shattered ring, runes glowing in moonfire light
+Style: painterly realism, soft indigo hues, mythic serenity, cinematic composition
+Metadata: WF_ATL_capsule#7891 | canon:v3.0.0 | lineage:Mythal Talanthae | status:draft
+
+## IX. OPS Metadata
+{
+  "file": "v3.0.0_Atelier_Prompt_Grammar.txt",
+  "bridge_version": "v3.0.0",
+  "canon_version": "v3.0.0",
+  "role": "prompt_grammar",
+  "linked_files": [
+    "v3.0.0_Atelier_Tone_Profiles.txt",
+    "v3.0.0_Atelier_QGate_Checklist.txt"
+  ],
+  "qgate_required": true,
+  "status": "draft"
+}
+
+## X. End of File
+# ✅ Ready for Tone Profile integration

@@ -1,0 +1,93 @@
+# v3.0.0_Atelier_QGate_Checklist.txt
+# Worldforge Atelier — QGate Preflight & Lineage Validation
+# Bridge Version: v3.0.0
+# Canon Version: v3.0.0
+# Last Updated: 2025-11-04
+
+## I. Purpose
+Defines the preflight audit used before any visual is promoted to canon or submitted to OPS for review.
+Ensures schema validity, lineage integrity, tonal compliance, and CI guardrails are satisfied.
+
+## II. Preflight Checklist (Operator View)
+- [ ] Headers present: Bridge v3.0.0, Canon v3.0.0
+- [ ] Capsule metadata present: capsule_id, descriptor_hash, timestamp, status
+- [ ] Descriptor lineage: source capsule/slug and checksum verified
+- [ ] Prompt Grammar conformity: Descriptor → Semantic → Stylistic → Audit layers
+- [ ] Tone profile: Curatorial Oracle (or blended profile) disclosed
+- [ ] OPS JSON schema: valid keys/required fields present
+- [ ] Sensitive inference: none (no unconfirmed lore, no hidden extrapolation)
+- [ ] Batch readiness: partial failures isolated; retry map prepared
+- [ ] Size guard: instruction-field budgets respected
+- [ ] Endpoint smoke-test (local): /capsule, /batch, /render, /audit/qgate
+- [ ] Audit artifact generated: Visual_Audit.json
+
+## III. Required Fields (Schema)
+{
+  "capsule_id": "<uuid>",
+  "descriptor_hash": "<checksum>",
+  "canon_version": "v3.0.0",
+  "bridge_version": "v3.0.0",
+  "tone_profile": "oracle|archivist|interpreter|artisan|custom",
+  "blend_weights": {"oracle":0.5, "archivist":0.2, "interpreter":0.2, "artisan":0.1},
+  "source": "Atelier",
+  "linked_gpt": "Creator|DM|OPS",
+  "timestamp": "<ISO8601>",
+  "status": "draft|review|approved"
+}
+
+## IV. Lineage Integrity
+- Confirm origin descriptor (slug or source JSON) and compute checksum.
+- Validate descriptor→prompt parity (no missing or silently added claims).
+- Record revision history (refine branches) with parent-child capsule links.
+- Require user confirmation for any inferred descriptors before render.
+
+## V. Tone Compliance
+- Evaluate against Tone Profiles: Fidelity ≥4, Restraint ≥4, Clarity ≥4, Harmony ≥3, Transparency =5.
+- Persist current tone_profile and optional blend_weights in metadata.
+- Flag excessive flourish or vague description for revision.
+
+## VI. Batch Handling & Partial Success
+- Log each item with render_id and nonce.
+- On failure: capture error, retry bounds, and per-item lineage unaffected.
+- Produce batch report summarizing successes, failures, and retry advice.
+
+## VII. CI & Endpoint Validation
+- Run node tools/size_guard.mjs --all and publish manifest.
+- Local smoke tests:
+  - GET /capsule (load/create-ok)
+  - POST /batch (queue-ok; partial-ok)
+  - POST /render (render-ok)
+  - POST /audit/qgate (schema-ok)
+
+## VIII. Pass/Fail Criteria
+PASS when:
+- All required fields are present and valid
+- Lineage graph is complete; no missing parent links
+- Tone thresholds met
+- Size guard passes; endpoints pass smoke-test
+- Visual_Audit.json produced and parsable by OPS
+
+FAIL when any required field missing/invalid, lineage broken, tone thresholds unmet, or CI checks fail.
+Action: Return to Refine or Define Style with targeted prompts.
+
+## IX. Submission to OPS
+- Attach Visual_Audit.json to OPS intake at /audit/visuals
+- Include batch report (if any) and size manifest
+- Update Build Log with audit result and promotion status
+
+## X. OPS Metadata
+{
+  "file": "v3.0.0_Atelier_QGate_Checklist.txt",
+  "bridge_version": "v3.0.0",
+  "canon_version": "v3.0.0",
+  "role": "qgate_checklist",
+  "linked_files": [
+    "v3.0.0_Atelier_Prompt_Grammar.txt",
+    "v3.0.0_Atelier_Tone_Profiles.txt"
+  ],
+  "qgate_required": true,
+  "status": "draft"
+}
+
+## XI. End of File
+# ✅ Ready to generate Visual_Audit.json

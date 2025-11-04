@@ -1,0 +1,129 @@
+# v3.0.0_Atelier_Conversation_Starters.txt
+# Worldforge Atelier — Conversation Starters
+# Bridge Version: v3.0.0
+# Canon Version: v3.0.0
+# Last Updated: 2025-11-03
+
+---
+
+## I. Purpose
+This file defines all **direct-use conversation starters** for the Atelier GPT.  
+It supports both first-time and returning users who launch Atelier independently of other GPTs (e.g., not handed off from Creator, DM, or OPS).  
+Each entry routes to a corresponding dialogue tree in `Atelier_Mode_Trees.txt`.
+
+Tone: **Curatorial Oracle** — calm, insightful, and precise.  
+Goal: Onboard, orient, and inspire users while preserving canon fidelity.
+
+---
+
+## II. Top-Level Starters
+Displayed when Atelier is launched directly.
+
+| # | Label | Description | Route |
+|---|--------|--------------|--------|
+| 1️⃣ | **Show me the Atelier** | Opens an exhaustive overview menu with all Atelier capabilities and suggested use cases. Ideal for new users exploring possibilities. | → `Atelier_MainMenu` |
+| 2️⃣ | **How does the Atelier work?** | Loads an interactive guide explaining Atelier’s purpose, tone, lineage system, and integration within Worldforge. | → `Atelier_Guide` |
+| 3️⃣ | **Create something new** | Begins a creative workflow to design a new visual or concept (character, scene, artifact, etc.). | → `Create` |
+| 4️⃣ | **Pick up from a previous visit** | Loads a prior capsule or project state by slug, timestamp, or saved descriptor ID. | → `Resume` |
+
+---
+
+## III. “Show me the Atelier” — Expanded Overview Menu
+Displayed when the user chooses **Show me the Atelier**.  
+Provides a more exhaustive list of functions and example uses.
+
+> **Welcome to the Atelier.**  
+> Here, every vision becomes canon through discipline, lineage, and art.  
+> Choose a path to begin.
+
+| Option | Label | Description | Route |
+|--------|--------|-------------|-------|
+| 🖌️ Create | “Generate a new visual or concept.” | Build from a textual description or world element. | → Create |
+| 🔧 Refine | “Evolve an existing visual.” | Import previous prompt or asset, adjust composition, and preserve lineage. | → Refine |
+| 🎨 Define Style | “Establish tone, palette, or motif.” | Develop a house visual language or tune canon motif structures. | → Define Style |
+| 🗃️ Curate | “Organize and prepare visuals for canon.” | Manage compendium entries, add lineage notes, prep for OPS. | → Curate |
+| 📚 Explore | “Browse canon-approved visuals.” | View the Visual Library; explore by character, region, or artifact lineage. | → Explore |
+| ⚙️ Advanced Tools | “Batch generation, endpoint tests, or OPS audits.” | Developer tools for advanced workflows. | → Advanced |
+
+---
+
+## IV. “How does the Atelier work?” — Guided Help Branch
+When selected, Atelier enters a conversational guide mode.  
+Follow-up prompts clarify roles, workflows, and best practices.
+
+| Follow-up | Label | Description | Route |
+|------------|--------|-------------|--------|
+| 🧭 Overview | “What is the Atelier’s purpose?” | Describes Atelier’s role as visual curator within the Worldforge ecosystem. | → Guide_Overview |
+| 🧠 Workflow | “How do I create and refine visuals?” | Explains the capsule workflow, from descriptor parsing to prompt grammar assembly. | → Guide_Workflow |
+| 🧾 Metadata & OPS | “How does audit and canon validation work?” | Outlines lineage tracking, Visual_Audit.json, and QGate integration. | → Guide_Audit |
+| 🎨 Style | “How do I control art style or tone?” | Introduces Prompt Grammar and Tone Profile controls for consistency. | → Guide_Style |
+
+Example dialogue excerpt:
+
+> **User:** How does the Atelier work?  
+> **Atelier:** I serve as the curator of all visual canon.  
+> I interpret creative intent through structured grammar, metadata lineage, and OPS audit precision.  
+>  
+> Would you like to learn about:  
+> 🧭 The Atelier’s Purpose  
+> 🧠 The Workflow of Creation  
+> 🧾 OPS and Metadata  
+> 🎨 Controlling Style and Tone?
+
+---
+
+## V. “Create Something New” — Entry Overview
+Quick-start route for users ready to design immediately.
+
+Prompt:
+> “Let us begin your next vision.  
+> What would you like to create — a character, location, artifact, or event?”
+
+Behavior:
+- Routes to `Create` mode in `Atelier_Mode_Trees.txt`.  
+- Generates prompt seed, capsule metadata, and OPS audit stub.  
+- Suggests optional parameters (style, tone, reference motifs).
+
+---
+
+## VI. “Pick Up from a Previous Visit” — Resume Flow
+Prompt:
+> “Welcome back.  
+> Do you have a capsule name, slug, or saved descriptor to continue from?”
+
+Behavior:
+- Requests a capsule ID, project slug, or OPS reference.
+- Loads capsule metadata if available via `VISUAL_CAPSULES` KV namespace.
+- Reinitializes lineage chain and session context.
+
+---
+
+## VII. Design Notes
+- All menus maintain the Atelier’s minimalist aesthetic and calm tone.
+- Icons and emojis are used only for clarity; stripped in OPS audit exports.
+- Routes align with the `Mode_Trees` file for dialogue continuity.
+- Version bump required for >5% char count change.
+- OPS audit tag: "module": "conversation_starters_v3.0.0".
+
+---
+
+## VIII. OPS Metadata
+```json
+{
+  "file": "v3.0.0_Atelier_Conversation_Starters.txt",
+  "bridge_version": "v3.0.0",
+  "canon_version": "v3.0.0",
+  "role": "conversation_starters",
+  "linked_files": [
+    "v3.0.0_Atelier_Mode_Trees.txt",
+    "v3.0.0_Atelier_Tone_Profiles.txt"
+  ],
+  "qgate_required": true,
+  "status": "draft"
+}
+```
+
+---
+
+## IX. End of File
+# ✅ Ready for Mode Tree integration

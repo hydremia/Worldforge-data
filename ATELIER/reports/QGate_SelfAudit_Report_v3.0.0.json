@@ -1,0 +1,23 @@
+{
+  "artifact": "QGate_SelfAudit_Report_v3.0.0.json",
+  "timestamp": "2025-11-04T15:09:26Z",
+  "summary": "PASS",
+  "checks": {
+    "has_artifact": true,
+    "has_capsule_id": true,
+    "has_descriptor_hash": true,
+    "has_versions": true,
+    "has_tone": true,
+    "has_prompt_example": true,
+    "has_audit_block": true,
+    "tone_thresholds": true,
+    "size_guard_pass": true,
+    "endpoints_ready": true
+  },
+  "visual_audit_ref": {
+    "audit_id": "df0f4829-85b2-44ee-92af-5c896e2251e6",
+    "capsule_id": "ccb4711a-ad28-4740-8e70-ace8a18bfa08",
+    "descriptor_hash": "fbd144375349cabea8dbf2ccd892cc48577f532e4785a06605a37d05eaefc1ba",
+    "timestamp": "2025-11-04T14:53:37Z"
+  }
+}

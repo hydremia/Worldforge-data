@@ -1,0 +1,106 @@
+{
+  "artifact": "Visual_Audit.json",
+  "audit_id": "df0f4829-85b2-44ee-92af-5c896e2251e6",
+  "capsule_id": "ccb4711a-ad28-4740-8e70-ace8a18bfa08",
+  "descriptor_hash": "fbd144375349cabea8dbf2ccd892cc48577f532e4785a06605a37d05eaefc1ba",
+  "descriptor_preview": "moonlit elven grove beneath Corellon’s shattered ring, runes glowing with moonfire",
+  "canon_version": "v3.0.0",
+  "bridge_version": "v3.0.0",
+  "tone_profile": "custom",
+  "blend_weights": {
+    "oracle": 0.5,
+    "archivist": 0.2,
+    "interpreter": 0.2,
+    "artisan": 0.1
+  },
+  "source": "Atelier",
+  "linked_gpt": [
+    "Creator"
+  ],
+  "timestamp": "2025-11-04T14:53:37Z",
+  "status": "draft",
+  "knowledge_summary": {
+    "files": [
+      {
+        "file": "v3.0.0_Atelier_RuntimeCore_Instructions.txt",
+        "chars": null,
+        "sha256": null,
+        "warning": "missing"
+      },
+      {
+        "file": "v3.0.0_Atelier_Conversation_Starters.txt",
+        "chars": null,
+        "sha256": null,
+        "warning": "missing"
+      },
+      {
+        "file": "v3.0.0_Atelier_Mode_Trees.txt",
+        "chars": 6227,
+        "sha256": "da4d9d914c68341dad55ae1c8d08b6d4a8cfde8aa47b992f1deb6485deddc70e"
+      },
+      {
+        "file": "v3.0.0_Atelier_Prompt_Grammar.txt",
+        "chars": 5309,
+        "sha256": "6eeb66c6bf2bbcd6722d84999b9c1f721af9e9b377266e8bc28ad9f2650570b5"
+      },
+      {
+        "file": "v3.0.0_Atelier_Tone_Profiles.txt",
+        "chars": 5353,
+        "sha256": "e7cd1eca3470ca5fa831e4534940e71ce45d96445a451c0b7903cfe510e9536e"
+      },
+      {
+        "file": "v3.0.0_Atelier_QGate_Checklist.txt",
+        "chars": 3646,
+        "sha256": "45841c2bb60e07856e1a9ad4d6cc8ac70e32b2adddd93a400119fc087938a812"
+      }
+    ],
+    "instruction_chars_total": 20535,
+    "limits": {
+      "files_max": 20,
+      "chars_max": 40000
+    }
+  },
+  "prompt_example": {
+    "prompt": "moonlit elven grove beneath Corellon’s shattered ring, runes glowing with moonfire",
+    "style": "painterly realism, cinematic composition, indigo-gold palette",
+    "metadata": "WF_ATL_capsule#ccb4711a"
+  },
+  "audit": {
+    "schema_validation": {
+      "pass": true,
+      "details": []
+    },
+    "tone_scores": {
+      "fidelity": 5,
+      "restraint": 4,
+      "clarity": 5,
+      "harmony": 4,
+      "transparency": 5
+    },
+    "lineage": {
+      "origin_slug": "demo_vaelthurin",
+      "parent_capsule": null,
+      "revision_note": "initial draft"
+    },
+    "size_guard": {
+      "instruction_chars_total": 20535,
+      "limit_chars": 40000,
+      "pass": true
+    },
+    "endpoints": {
+      "/capsule": {
+        "status": "READY"
+      },
+      "/batch": {
+        "status": "READY"
+      },
+      "/render": {
+        "status": "READY"
+      },
+      "/audit/qgate": {
+        "status": "READY"
+      }
+    },
+    "errors": []
+  }
+}
