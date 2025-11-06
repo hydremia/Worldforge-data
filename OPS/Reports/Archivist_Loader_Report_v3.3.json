@@ -1,7 +1,7 @@
 {
   "module": "Archivist",
-  "version": "v3.3",
-  "timestamp": "2025-11-06T00:00:26.560718Z",
-  "schema_checks": "PENDING",
-  "qgate": "PENDING"
+  "version": "v3.3.1",
+  "timestamp": "2025-11-06T02:25:20.454Z",
+  "schema_checks": "PASS",
+  "qgate": "READY"
 }

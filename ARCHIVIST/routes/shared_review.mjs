@@ -1,20 +1,37 @@
-// Shared analyzer used by /review and /ingest?dry_run
-export async function makeReviewPacket(source_uri, adapter){
+// ARCHIVIST/routes/shared_review.mjs
+import { parseWA } from './adapters/wa_adapter.mjs';
+
+export async function makeReviewPacket(source_uri, adapter, body = {}){
   const now = new Date().toISOString();
+  let proposals = [];
+  let totals = { total: 0, isNew: 0, matched: 0 };
+
+  if ((adapter === 'wa' || adapter === 'worldanvil') && body.wa_json) {
+    try {
+      const parsed = typeof body.wa_json === 'string' ? JSON.parse(body.wa_json) : body.wa_json;
+      const out = parseWA(parsed);
+      proposals = out.proposals;
+      totals = { total: out.totals.total, isNew: out.totals.isNew, matched: out.totals.matched };
+    } catch (e) {
+      // fall back to empty analyzer if JSON invalid
+    }
+  }
+
   return {
     review_id: cryptoRandomId(),
     source_uri,
     source_adapter: adapter,
-    scan_summary: { entities_total: 0, entities_new: 0, entities_matched: 0 },
-    proposals: [],
+    scan_summary: { entities_total: totals.total, entities_new: totals.isNew, entities_matched: totals.matched },
+    proposals,
     gaps: [],
     duplicates: [],
     conflicts: [],
-    recommendations: ["No-op: analyzer stub"],
-    est_effort: { ops_review_minutes: 0, merge_complexity: "low" },
+    recommendations: proposals.length ? ["Review proposals and promote selected"] : ["No-op: analyzer stub"],
+    est_effort: { ops_review_minutes: Math.max(1, Math.ceil((proposals.length || 1)/25)), merge_complexity: proposals.length>50 ? "med" : "low" },
     generated_at: now
   };
 }
+
 function cryptoRandomId(){
   const arr = new Uint8Array(12);
   crypto.getRandomValues(arr);

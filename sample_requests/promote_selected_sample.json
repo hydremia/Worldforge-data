@@ -1,0 +1,9 @@
+{
+  "review_id": "sample-review-id",
+  "slugs": [
+    "vaelthirathil",
+    "moon-spire"
+  ],
+  "target_tier": 2,
+  "notes": "promote two WA proposals into STAGING for audit"
+}

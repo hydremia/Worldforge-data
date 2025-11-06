@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Vael’Thirathil",
+      "slug": "vaelthirathil",
+      "type": "article"
+    },
+    {
+      "id": 2,
+      "title": "Bastion of the Forgotten Veil",
+      "slug": "bastion-forgotten-veil",
+      "type": "article"
+    }
+  ],
+  "locations": [
+    {
+      "id": 11,
+      "title": "Moon‑Spire",
+      "slug": "moon-spire",
+      "type": "location"
+    }
+  ],
+  "factions": [
+    {
+      "id": 21,
+      "title": "House Gimbrahl",
+      "slug": "house-gimbrahl",
+      "type": "faction"
+    }
+  ],
+  "characters": [
+    {
+      "id": 31,
+      "name": "Qui’Jaren Gimbrahl",
+      "slug": "quijaren-gimbrahl",
+      "type": "character"
+    }
+  ]
+}
