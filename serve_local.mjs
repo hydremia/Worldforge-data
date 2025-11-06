@@ -6,6 +6,8 @@ import * as Promote from './ARCHIVIST/routes/promote.mjs';
 import * as ReviewPromote from './ARCHIVIST/routes/review_promote_selected.mjs';
 import * as ExportRoute from './ARCHIVIST/routes/export.mjs';
 import * as Rollback from './ARCHIVIST/routes/rollback.mjs';
+import * as DebugHashCompare from './ARCHIVIST/routes/debug_hash_compare.mjs';
+if (url.pathname === '/archivist/debug/hash_compare' && method === 'GET') return DebugHashCompare.onRequestGet(rctx);
 
 const PORT = 8787;
 

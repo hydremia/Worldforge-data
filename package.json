@@ -3,11 +3,11 @@
   "version": "3.3.1",
   "type": "module",
   "scripts": {
-  "dev": "node serve_local.mjs",
-  "qgate": "node ARCHIVIST/ops/qgate_checks.mjs",
-  "review:sample": "powershell -Command \"Invoke-WebRequest -Uri 'http://127.0.0.1:8787/archivist/review' -Method POST -ContentType 'application/json; charset=utf-8' -Body (Get-Content -Raw .\\sample_requests\\review_sample.json -Encoding UTF8) | Select-Object -ExpandProperty Content\"",
-  "promote:sample": "powershell -Command \"Invoke-WebRequest -Uri 'http://127.0.0.1:8787/archivist/review/promote_selected' -Method POST -ContentType 'application/json; charset=utf-8' -Body (Get-Content -Raw .\\sample_requests\\promote_selected_sample.json -Encoding UTF8) | Select-Object -ExpandProperty Content\"",
-  "preqgate": "node tools/pre_qgate_runner.mjs"
-}
-
+    "dev": "node serve_local.mjs",
+    "qgate": "node ARCHIVIST/ops/qgate_checks.mjs",
+    "review:sample": "powershell -Command \"Invoke-WebRequest -Uri 'http://127.0.0.1:8787/archivist/review' -Method POST -ContentType 'application/json; charset=utf-8' -Body (Get-Content -Raw .\\sample_requests\\review_sample.json -Encoding UTF8) | Select-Object -ExpandProperty Content\"",
+    "promote:sample": "powershell -Command \"Invoke-WebRequest -Uri 'http://127.0.0.1:8787/archivist/review/promote_selected' -Method POST -ContentType 'application/json; charset=utf-8' -Body (Get-Content -Raw .\\sample_requests\\promote_selected_sample.json -Encoding UTF8) | Select-Object -ExpandProperty Content\"",
+    "promote:canon": "powershell -Command \"$body = '{ \\\"slugs\\\": [\\\"vaelthirathil\\\",\\\"moon-spire\\\"] }'; Invoke-WebRequest -Uri 'http://127.0.0.1:8787/archivist/promote' -Method POST -Headers @{ Authorization = 'Bearer dev' } -ContentType 'application/json' -Body $body | Select-Object -ExpandProperty Content\"",
+    "preqgate": "node tools/pre_qgate_runner.mjs"
+  }
 }

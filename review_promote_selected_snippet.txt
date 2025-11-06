@@ -1,0 +1,4 @@
+// ARCHIVIST/routes/review_promote_selected.mjs (snippet)
+// Ensure _warnings always exists so staging object shape is stable
+// ... inside the loop, after 'entry' is created:
+(entry._warnings ||= []);
