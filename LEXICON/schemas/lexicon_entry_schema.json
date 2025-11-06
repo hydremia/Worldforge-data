@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge/lexicon_entry_schema.json",
+  "title": "Lexicon Entry",
+  "type": "object",
+  "required": [
+    "culture",
+    "species",
+    "type",
+    "name"
+  ],
+  "properties": {
+    "culture": {
+      "type": "string"
+    },
+    "species": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "family",
+        "place",
+        "artifact",
+        "other"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

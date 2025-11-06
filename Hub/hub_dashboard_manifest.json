@@ -1,0 +1,28 @@
+{
+  "bridge_version": "v3.2.0",
+  "canon_version": "v3.2.0",
+  "dashboard": {
+    "timestamp_utc": "2025-11-05T15:39:05.654Z",
+    "feed_source": "OPS",
+    "gpt_status": {
+      "Creator": {
+        "version": "UNKNOWN",
+        "health": "UNKNOWN"
+      },
+      "Atelier": {
+        "version": "UNKNOWN",
+        "health": "UNKNOWN"
+      },
+      "OPS": {
+        "version": "UNKNOWN",
+        "health": "UNKNOWN"
+      },
+      "Archivist": {
+        "version": "v3.2.0",
+        "health": "PASS"
+      }
+    },
+    "capsule_activity": [],
+    "notes": "Feed updated: 2025-11-05T15:39:05.654Z"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge/archivist_review_packet.json",
+  "title": "Archivist Review Packet",
+  "type": "object",
+  "required": [
+    "source_uri",
+    "source_adapter",
+    "scan_summary",
+    "proposals",
+    "generated_at"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string"
+    },
+    "source_uri": {
+      "type": "string"
+    },
+    "source_adapter": {
+      "type": "string",
+      "enum": [
+        "wa",
+        "frwiki",
+        "json",
+        "md",
+        "other"
+      ]
+    },
+    "scan_summary": {
+      "type": "object",
+      "required": [
+        "entities_total",
+        "entities_new",
+        "entities_matched"
+      ],
+      "properties": {
+        "entities_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "entities_new": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "entities_matched": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "entity_type",
+          "tier_suggested",
+          "confidence",
+          "status",
+          "promotion_readiness"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string",
+            "enum": [
+              "region",
+              "location",
+              "landmark",
+              "faction",
+              "character",
+              "item",
+              "event",
+              "article",
+              "other"
+            ]
+          },
+          "tier_suggested": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "new",
+              "update",
+              "duplicate",
+              "conflict"
+            ]
+          },
+          "conflicts_with": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "delta_summary": {
+            "type": "string"
+          },
+          "promotion_readiness": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "duplicates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "est_effort": {
+      "type": "object",
+      "properties": {
+        "ops_review_minutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "merge_complexity": {
+          "type": "string",
+          "enum": [
+            "low",
+            "med",
+            "high"
+          ]
+        }
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

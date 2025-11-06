@@ -1,0 +1,17 @@
+{
+  "name": "worldforge-hub",
+  "version": "3.2.0",
+  "description": "Worldforge HUB runtime and dashboard",
+  "type": "module",
+  "scripts": {
+    "start": "node hub_dashboard_v3_2.js",
+    "start:dev": "NODE_ENV=development node hub_dashboard_v3_2.js",
+    "validate": "node tools/validate_manifest.js",
+    "qgate": "node tools/run_qgate_cycle.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

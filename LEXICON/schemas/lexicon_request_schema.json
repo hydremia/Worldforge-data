@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge/lexicon_request_schema.json",
+  "title": "Lexicon Request",
+  "type": "object",
+  "required": [
+    "filters"
+  ],
+  "properties": {
+    "filters": {
+      "type": "object",
+      "properties": {
+        "culture": {
+          "type": "string"
+        },
+        "species": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "q": {
+          "type": "string"
+        }
+      }
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "default": 10
+    }
+  }
+}

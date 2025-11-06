@@ -1,0 +1,64 @@
+{
+  "$schema": "https://worldforge.hydremia.workers.dev/schemas/creator_worker_schema.json",
+  "wf_version": "v3.0.1",
+  "ecosystem_version": "v3.2",
+  "description": "Defines the data structure and validation rules for Creator Worker outputs within Worldforge Ecosystem v3.2.",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Core header and linkage metadata for Creator Worker exports.",
+      "properties": {
+        "wf_version": { "type": "string", "pattern": "^v3\\.\\d+\\.\\d+$" },
+        "wf_stage": { "type": "string", "enum": ["draft", "staged", "ready"] },
+        "wf_origin": { "type": "string", "const": "CreatorGPT" },
+        "wf_linked_capsule": { "type": "string", "description": "Token or campaign linkage ID" },
+        "tone_profile": { "type": "string", "enum": ["Narrative", "Archivist", "Hybrid"] },
+        "active_mode": { "type": "string", "enum": ["M1", "M2", "M3", "M4", "M5"] },
+        "author": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["wf_version", "wf_stage", "wf_origin", "tone_profile", "active_mode"]
+    },
+    "content": {
+      "type": "string",
+      "description": "Markdown body following mode-specific schema from the Creator Modes Index (M1–M5)."
+    },
+    "ops_tag": {
+      "type": "string",
+      "description": "Determines OPS routing target for ingestion.",
+      "enum": [
+        "lore_entry",
+        "character_profile",
+        "faction_entry",
+        "campaign_outline",
+        "world_entry"
+      ]
+    },
+    "audit": {
+      "type": "object",
+      "description": "Local pre-QGate validation record before OPS submission.",
+      "properties": {
+        "char_count": { "type": "integer", "minimum": 0 },
+        "char_diff": { "type": "number" },
+        "structure_status": { "type": "string", "enum": ["PASS", "FAIL"] },
+        "schema_status": { "type": "string", "enum": ["PASS", "FAIL"] },
+        "tone_status": { "type": "string", "enum": ["PASS", "FAIL"] },
+        "export_ready": { "type": "string", "enum": ["PASS", "FAIL"] },
+        "notes": { "type": "string" }
+      },
+      "required": ["structure_status", "schema_status", "tone_status", "export_ready"]
+    },
+    "visuals_link": {
+      "type": "object",
+      "description": "Optional Atelier linkage for visual prompt lineage.",
+      "properties": {
+        "visual_id": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": []
+    }
+  },
+  "required": ["metadata", "content", "ops_tag"],
+  "additionalProperties": false
+}

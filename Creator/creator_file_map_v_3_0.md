@@ -29,6 +29,8 @@ The **Creator File Map** provides a manifest of all knowledge files, their funct
 | `v3.0.0_Creator_Onboarding.txt` | User welcome, tone setup, and mode menu | ≤ 4 KB | ~3.9 KB | ✅ Complete |
 | `v3.0.0_Creator_Tone_Profiles.txt` | Voice calibration and OPS tone audit schema | ≤ 2 KB | ~1.8 KB | ✅ Complete |
 | `v3.0.0_Creator_QGate_Checklist.txt` | Local pre-audit validation and OPS handoff | ≤ 2 KB | ~1.9 KB | ✅ Complete |
+| `creator_worker_schema.json` | Creator Worker v3.0.1 schema definition | ≤ 4 KB | ~3.6 KB | ✅ Complete |
+
 
 ---
 

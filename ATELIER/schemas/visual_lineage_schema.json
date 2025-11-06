@@ -1,0 +1,77 @@
+{
+  "title": "Worldforge Atelier — Visual Lineage Schema",
+  "description": "Defines canonical metadata structure and lineage validation rules for visual prompts produced by Atelier Worker v3.0.1.",
+  "version": "v3.0.1",
+  "ecosystem_version": "v3.2",
+  "type": "object",
+  "required": [
+    "capsule_id",
+    "descriptor_source",
+    "descriptor_hash",
+    "canon_version",
+    "bridge_version",
+    "timestamp",
+    "status",
+    "tone_profile",
+    "source",
+    "linked_gpt"
+  ],
+  "properties": {
+    "capsule_id": {"type": "string", "pattern": "^[A-Fa-f0-9\\-]{8,}$"},
+    "parent_capsule": {"type": ["string", "null"]},
+    "descriptor_source": {"type": "string"},
+    "descriptor_hash": {"type": "string", "pattern": "^[A-Fa-f0-9]{32,64}$"},
+    "canon_version": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "bridge_version": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "status": {"type": "string", "enum": ["draft", "review", "approved"]},
+    "tone_profile": {"type": "string", "enum": ["oracle", "archivist", "interpreter", "artisan", "custom"]},
+    "blend_weights": {
+      "type": "object",
+      "properties": {
+        "oracle": {"type": "number", "minimum": 0, "maximum": 1},
+        "archivist": {"type": "number", "minimum": 0, "maximum": 1},
+        "interpreter": {"type": "number", "minimum": 0, "maximum": 1},
+        "artisan": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": false
+    },
+    "source": {"type": "string", "enum": ["Atelier"]},
+    "linked_gpt": {"type": "string", "enum": ["Creator", "DM", "OPS"]},
+    "lineage_graph": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capsule_id": {"type": "string"},
+          "descriptor_hash": {"type": "string"},
+          "status": {"type": "string"},
+          "timestamp": {"type": "string", "format": "date-time"}
+        },
+        "required": ["capsule_id", "descriptor_hash", "timestamp"]
+      }
+    },
+    "revision_notes": {"type": "string"},
+    "audit_fields": {
+      "type": "object",
+      "properties": {
+        "fidelity": {"type": "number", "minimum": 0, "maximum": 5},
+        "restraint": {"type": "number", "minimum": 0, "maximum": 5},
+        "clarity": {"type": "number", "minimum": 0, "maximum": 5},
+        "harmony": {"type": "number", "minimum": 0, "maximum": 5},
+        "transparency": {"type": "number", "minimum": 0, "maximum": 5}
+      },
+      "required": ["fidelity", "restraint", "clarity", "transparency"]
+    },
+    "checksum": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"}
+  },
+  "additionalProperties": false,
+  "ops_metadata": {
+    "role": "visual_lineage_schema",
+    "bridge_version": "v3.0.1",
+    "canon_version": "v3.0.0",
+    "ecosystem_target": "v3.2",
+    "qgate_required": true,
+    "status": "draft"
+  }
+}

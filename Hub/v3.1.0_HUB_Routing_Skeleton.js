@@ -165,7 +165,7 @@ export function safeMode(lastReport) {
  * Example orchestration: full init → loader → branch.
  * This is a sample and should be adapted to your app framework.
  */
-export async function hubInitFlow({ username, capsuleToken, services, resumeAvailable, targets }) {
+export async function hubInitFlow_UI(report) { username, capsuleToken, services, resumeAvailable, targets } {
   const report = await buildLoaderReport({
     username,
     capsuleToken,

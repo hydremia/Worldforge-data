@@ -1,4 +1,7 @@
 {
+  "CREATOR_URL": "http://localhost:8081",
+  "ATELIER_URL": "http://localhost:8082",
+  "OPS_URL": "http://localhost:8083",
   "workerBase": "http://127.0.0.1:8787",
   "capsuleToken": "wf_F6KwYU02UthW3SvHpb",
   "username": "PlayerOne"

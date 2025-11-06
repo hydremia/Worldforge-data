@@ -1,0 +1,21 @@
+{
+  "capsule_id": "WF_ATL_0001",
+  "descriptor_source": "creator_slug:test_sample",
+  "descriptor_hash": "abcdef1234567890abcdef1234567890",
+  "canon_version": "v3.0.0",
+  "bridge_version": "v3.0.1",
+  "timestamp": "2025-11-05T05:00:00Z",
+  "status": "draft",
+  "tone_profile": "oracle",
+  "blend_weights": { "oracle": 1.0 },
+  "source": "Atelier",
+  "linked_gpt": "Creator",
+  "lineage_graph": [],
+  "audit_fields": {
+    "fidelity": 5,
+    "restraint": 5,
+    "clarity": 5,
+    "transparency": 5
+  },
+  "checksum": "aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899"
+}

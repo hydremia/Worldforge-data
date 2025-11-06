@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge/archivist_entry_schema.json",
+  "title": "Archivist Entry",
+  "type": "object",
+  "required": [
+    "slug",
+    "entity_type",
+    "tier",
+    "verification_status",
+    "lineage",
+    "canon_hash_v1"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "region",
+        "location",
+        "landmark",
+        "faction",
+        "character",
+        "item",
+        "event",
+        "article",
+        "other"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3
+      ]
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "internal",
+        "external",
+        "generated"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "rejected"
+      ]
+    },
+    "pending_promotion": {
+      "type": "boolean",
+      "default": false
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "canon_hash_v1": {
+      "type": "string"
+    },
+    "archived_version": {
+      "type": "boolean",
+      "default": false
+    },
+    "deprecated_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deprecation_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retained_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "entry_id",
+        "origin",
+        "edits",
+        "last_hash"
+      ],
+      "properties": {
+        "entry_id": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "object",
+          "required": [
+            "source",
+            "tier",
+            "author",
+            "timestamp",
+            "signature"
+          ],
+          "properties": {
+            "source": {
+              "type": "string",
+              "enum": [
+                "Creator",
+                "DM",
+                "Atelier",
+                "OPS",
+                "Hub",
+                "External"
+              ]
+            },
+            "tier": {
+              "type": "integer",
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "author": {
+              "type": "string"
+            },
+            "timestamp": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "signature": {
+              "type": "string"
+            }
+          }
+        },
+        "edits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "editor",
+              "timestamp",
+              "change_summary",
+              "edit_signature",
+              "confidence"
+            ],
+            "properties": {
+              "editor": {
+                "type": "string"
+              },
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "change_summary": {
+                "type": "string"
+              },
+              "edit_signature": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high"
+                ]
+              }
+            }
+          }
+        },
+        "merged_from": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verified_by": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "last_hash": {
+          "type": "string"
+        }
+      }
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}

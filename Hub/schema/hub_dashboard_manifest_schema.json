@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge.dev/schema/hub_dashboard_manifest_schema.json",
+  "title": "Worldforge HUB Dashboard Manifest Schema (v3.2.0)",
+  "type": "object",
+  "required": ["bridge_version", "canon_version", "dashboard"],
+  "properties": {
+    "bridge_version": { "type": "string", "pattern": "^v3\\.2\\.0$" },
+    "canon_version": { "type": "string", "pattern": "^v3\\.2\\.0$" },
+    "dashboard": {
+      "type": "object",
+      "required": ["timestamp_utc", "feed_source", "gpt_status"],
+      "properties": {
+        "timestamp_utc": { "type": "string", "format": "date-time" },
+        "feed_source": { "type": "string", "enum": ["OPS"] },
+        "gpt_status": {
+          "type": "object",
+          "required": ["Creator", "Atelier", "OPS", "Archivist"],
+          "properties": {
+            "Creator": { "$ref": "#/$defs/serviceStatus" },
+            "Atelier": { "$ref": "#/$defs/serviceStatus" },
+            "OPS": { "$ref": "#/$defs/serviceStatus" },
+            "Archivist": { "$ref": "#/$defs/serviceStatus" }
+          }
+        },
+        "capsule_activity": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/capsuleEvent" }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "serviceStatus": {
+      "type": "object",
+      "required": ["version", "health"],
+      "properties": {
+        "version": { "type": "string" },
+        "health": { "type": "string", "enum": ["PASS", "WARN", "FAIL", "UNKNOWN"] }
+      }
+    },
+    "capsuleEvent": {
+      "type": "object",
+      "required": ["capsule_id", "event", "timestamp"],
+      "properties": {
+        "capsule_id": { "type": "string", "format": "uuid" },
+        "event": { "type": "string", "enum": ["PROMOTE", "UPDATE", "MERGE"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
