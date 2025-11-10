@@ -1,0 +1,11 @@
+{
+  "lint": [
+    "validate JSON schemas compile",
+    "ensure required fields exist"
+  ],
+  "contracts": [
+    "prompt keys present",
+    "endpoints present",
+    "manifest paths resolvable"
+  ]
+}

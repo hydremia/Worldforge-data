@@ -1,0 +1,53 @@
+{
+  "artifact": "Worldforge Archivist GPT — Custom Layer Build",
+  "version": "v3.4",
+  "control_log": {
+    "from": 18,
+    "to": 19
+  },
+  "timestamp": "20251106T150921",
+  "files": [
+    {
+      "path": "/mnt/data/ARCHIVIST_v3_4/ARCHIVIST/core/Archivist_Runtime_Core_v3.4.md",
+      "bytes": 3591,
+      "sha256": "48f6b2b066b8140416d7ec22cfb4ce9653968d59e9ed157cb1d98a8d8d43f280"
+    },
+    {
+      "path": "/mnt/data/ARCHIVIST_v3_4/ARCHIVIST/config/Archivist_Config_v3.4.json",
+      "bytes": 1083,
+      "sha256": "1ffb715ec80b6dffadf92ac7acf66fe146226593124d95cb50ba6edaba9eea9d"
+    },
+    {
+      "path": "/mnt/data/ARCHIVIST_v3_4/ARCHIVIST/prompts/Archivist_Prompt_Library_v3.4.json",
+      "bytes": 1641,
+      "sha256": "47015b32b098a3bc4bccfe269a955edbb8e0b858d64af6c2466f5dd50ded7f44"
+    },
+    {
+      "path": "/mnt/data/ARCHIVIST_v3_4/ARCHIVIST/docs/Archivist_Interface_Spec_v3.4.md",
+      "bytes": 1865,
+      "sha256": "55c3e98443476056786a6df6929c2fa2eb37c1e021020008b702217e39ad0653"
+    }
+  ],
+  "metrics": {
+    "core_char_count": 3531,
+    "core_chars_max": 8000,
+    "core_within_limit": true,
+    "total_bytes": 8180
+  },
+  "qgate_preflight": {
+    "schemas_referenced": [
+      "archivist_record_schema.json",
+      "canon_delta_schema.json",
+      "review_submission_schema.json"
+    ],
+    "manifests_checked": [
+      "OPS_Promotion_Manifest_v3.4.json"
+    ],
+    "endpoints_verified": [
+      "/archivist/review",
+      "/archivist/promote",
+      "/ops/audit/qgate"
+    ],
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "nomina_request_schema (v3.3.1)",
+  "type": "object",
+  "properties": {
+    "culture": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Optional. If omitted or [\"*\"], matches any culture."
+    },
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name_type": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "family",
+        "house"
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "any",
+        "f",
+        "m",
+        "n"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "cooldown": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "seconds (per capsule, per name)"
+    },
+    "seed": {
+      "type": "string",
+      "description": "commit id for RNG"
+    },
+    "capsule_id": {
+      "type": "string",
+      "description": "used for cooldown scoping"
+    }
+  },
+  "required": [
+    "species",
+    "name_type",
+    "gender",
+    "count"
+  ]
+}

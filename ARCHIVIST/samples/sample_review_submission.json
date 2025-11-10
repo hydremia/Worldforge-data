@@ -1,0 +1,25 @@
+{
+  "submission_id": "SUB-20251106T152039",
+  "submitted_by": "Nomina Expansion Agent v3.3",
+  "source_uri": "wa://nomina-staging",
+  "items": [
+    {
+      "slug": "valadriir",
+      "entity_type": "house",
+      "status": "staging",
+      "nomina": {
+        "species": "elf",
+        "type": "house",
+        "rarity": "rare"
+      },
+      "content": {
+        "house_name": "Valadriir",
+        "region": "Evereska",
+        "notes": "Imported from Nomina Expansion v3.3 set; phonotactics validated."
+      },
+      "sources": [
+        "/nomina/elf/house/valadriir.json"
+      ]
+    }
+  ]
+}

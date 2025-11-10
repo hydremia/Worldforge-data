@@ -1,0 +1,2 @@
+{"name": "Bramdur", "slug": "bramdur", "culture": ["mirabar"], "species": ["dwarf"], "name_type": "personal", "gender": "m", "rarity": 0.45, "weight": 1.0, "meaning": "", "tags": ["faerun", "dwarf"], "source": {"origin": "Authored", "ref": "seed:v3.3"}, "status": "staging", "conflicts": []}
+{"name": "Torga", "slug": "torga", "culture": ["mirabar"], "species": ["dwarf"], "name_type": "personal", "gender": "f", "rarity": 0.5, "weight": 1.0, "meaning": "", "tags": ["faerun", "dwarf"], "source": {"origin": "Authored", "ref": "seed:v3.3"}, "status": "staging", "conflicts": []}

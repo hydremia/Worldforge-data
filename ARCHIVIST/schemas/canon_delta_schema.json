@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "canon_delta_schema.json",
+  "title": "Canon Delta",
+  "type": "object",
+  "required": [
+    "entity_id",
+    "changes",
+    "confidence",
+    "action"
+  ],
+  "properties": {
+    "entity_id": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "from": {},
+          "to": {},
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "merge",
+        "add",
+        "reject",
+        "escalate"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

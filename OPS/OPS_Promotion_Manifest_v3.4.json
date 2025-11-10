@@ -1,0 +1,34 @@
+{
+  "manifest_version": "v3.4",
+  "component": "Archivist",
+  "expected": [
+    {
+      "path": "/ARCHIVIST/core/Archivist_Runtime_Core_v3.4.md",
+      "type": "text"
+    },
+    {
+      "path": "/ARCHIVIST/config/Archivist_Config_v3.4.json",
+      "type": "json"
+    },
+    {
+      "path": "/ARCHIVIST/prompts/Archivist_Prompt_Library_v3.4.json",
+      "type": "json"
+    },
+    {
+      "path": "/ARCHIVIST/docs/Archivist_Interface_Spec_v3.4.md",
+      "type": "text"
+    },
+    {
+      "path": "/ARCHIVIST/schemas/archivist_record_schema.json",
+      "type": "json"
+    },
+    {
+      "path": "/ARCHIVIST/schemas/canon_delta_schema.json",
+      "type": "json"
+    },
+    {
+      "path": "/ARCHIVIST/schemas/review_submission_schema.json",
+      "type": "json"
+    }
+  ]
+}

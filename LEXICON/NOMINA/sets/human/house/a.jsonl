@@ -1,0 +1,1 @@
+{"name": "Gimbrahl", "slug": "gimbrahl", "culture": ["evereska"], "species": ["human"], "name_type": "house", "gender": "any", "rarity": 0.25, "weight": 1.0, "meaning": "", "tags": ["faerun", "house"], "source": {"origin": "Authored", "ref": "seed:v3.3"}, "status": "staging", "conflicts": []}

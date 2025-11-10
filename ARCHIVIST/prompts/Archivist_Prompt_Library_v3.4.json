@@ -1,0 +1,33 @@
+{
+  "version": "v3.4",
+  "prompts": {
+    "review_intake": {
+      "description": "Validate staged submission and emit Review Summary JSON.",
+      "template": "MODE=OPS_JSON; ACTION=REVIEW_INTAKE; VALIDATE=review_submission_schema.json; OUTPUT=/archivist/reports/Review_Summary_${timestamp}.json"
+    },
+    "delta_synthesis": {
+      "description": "Compare staged vs canon, compute confidence and action.",
+      "template": "MODE=OPS_JSON; ACTION=DELTA_SYNTHESIS; SCHEMA=canon_delta_schema.json; FIELDS=confidence,action,reasons[]"
+    },
+    "canon_promotion": {
+      "description": "Promote entity to canon after OPS approval and QGate PASS.",
+      "template": "MODE=OPS_JSON; ACTION=PROMOTE; REQUIRE=promotion_ticket,ops_token; OUTPUT_PATH=/canon/${entity_path}"
+    },
+    "query_answer": {
+      "description": "Human-facing answer with canon/staging comparison and delta notes.",
+      "template": "MODE=HUMAN; STYLE=scholarly; INCLUDE=canon_refs[],staging_refs[],deltas[],confidence"
+    },
+    "conflict_resolution": {
+      "description": "Handle conflicting sources with rationale and escalation route.",
+      "template": "MODE=OPS_JSON; ACTION=RESOLVE_CONFLICT; ESCALATE_IF=confidence<0.6 OR lineage_missing"
+    },
+    "handoff_creator": {
+      "description": "Package validated references for Creator GPT.",
+      "template": "MODE=OPS_JSON; ACTION=HANDOFF_CREATOR; FIELDS=entity_ids[],validated_refs[],warnings[]"
+    },
+    "handoff_atelier": {
+      "description": "Package lineage for Atelier Worker.",
+      "template": "MODE=OPS_JSON; ACTION=HANDOFF_ATELIER; FIELDS=visual_ids[],entity_map{},lineage[]"
+    }
+  }
+}

@@ -1,20 +1,31 @@
-name = "worldforge-hub-worker"
-main = "workers/hub_worker.ts"
-compatibility_date = "2024-11-02"
 
-# ======================================================
-#  Archivist Worker (Worldforge v3.3)
-# ======================================================
-[env.archivist]
-name = "worldforge-archivist"
-main = "worker.mjs"
-compatibility_date = "2025-01-01"
+name = "worldforge-archivist-v3-3"
+main = "workers/archivist/index.mjs"
+compatibility_date = "2024-06-10"
 
-kv_namespaces = [
-  { binding = "WF_KV_STAGING", id = "b9032b1c1d644faebc4e991a58b0d429" },
-  { binding = "WF_KV_CANON",   id = "c5cf15c1a5854bf4bb459d70a7d2fcbd" },
-  { binding = "WF_KV_ARCHIVE", id = "2f9c87bd3e7e44d7b3504e3f4b7ca116" }
-]
+[vars]
+ENV = "stg"
 
-[env.archivist.vars]
-OPS_TOKEN = "dev"
+[[kv_namespaces]]
+binding = "WF_KV_STAGING"
+id = "KV_STAGING_ID"
+
+[[kv_namespaces]]
+binding = "WF_KV_CANON"
+id = "KV_CANON_ID"
+
+[[kv_namespaces]]
+binding = "WF_KV_ARCHIVE"
+id = "KV_ARCHIVE_ID"
+
+[[kv_namespaces]]
+binding = "WF_NOMINA_SETS"
+id = "KV_NOMINA_SETS_ID"
+
+[[kv_namespaces]]
+binding = "WF_NOMINA_STATS"
+id = "KV_NOMINA_STATS_ID"
+
+[[kv_namespaces]]
+binding = "WF_RNG_ROLLS"
+id = "KV_RNG_ROLLS_ID"

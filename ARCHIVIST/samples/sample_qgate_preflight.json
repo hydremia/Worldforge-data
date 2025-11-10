@@ -1,0 +1,14 @@
+{
+  "component": "Archivist",
+  "version": "v3.4",
+  "checks": {
+    "schemas_resolvable": true,
+    "core_length_ok": true,
+    "endpoints_configured": true
+  },
+  "artifacts": {
+    "core_chars": 3591,
+    "files_count_expected": 7
+  },
+  "status": "PASS"
+}

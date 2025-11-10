@@ -1,0 +1,85 @@
+{
+  "version": "v3.3",
+  "lifecycle": [
+    {
+      "stage": "ingest",
+      "inputs": [
+        "WA export",
+        "curated JSONL",
+        "runtime events"
+      ],
+      "outputs": [
+        "raw_packets"
+      ]
+    },
+    {
+      "stage": "normalize",
+      "inputs": [
+        "raw_packets"
+      ],
+      "outputs": [
+        "normalized_entries"
+      ]
+    },
+    {
+      "stage": "diff",
+      "inputs": [
+        "normalized_entries",
+        "WF_KV_CANON"
+      ],
+      "outputs": [
+        "deltas"
+      ]
+    },
+    {
+      "stage": "review",
+      "inputs": [
+        "deltas"
+      ],
+      "outputs": [
+        "review_packets"
+      ]
+    },
+    {
+      "stage": "promote",
+      "inputs": [
+        "approved_packets"
+      ],
+      "outputs": [
+        "canon_entries"
+      ],
+      "guards": [
+        "OPS_TOKEN",
+        "manifest_preview"
+      ]
+    },
+    {
+      "stage": "archive",
+      "inputs": [
+        "canon_entries"
+      ],
+      "outputs": [
+        "WF_KV_ARCHIVE"
+      ]
+    },
+    {
+      "stage": "revise",
+      "inputs": [
+        "disputed_entries"
+      ],
+      "outputs": [
+        "revisions"
+      ]
+    },
+    {
+      "stage": "reindex",
+      "inputs": [
+        "canon_entries"
+      ],
+      "outputs": [
+        "search_index",
+        "hub_feeds"
+      ]
+    }
+  ]
+}

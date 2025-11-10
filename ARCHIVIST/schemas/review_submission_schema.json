@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review_submission_schema.json",
+  "title": "Archivist Review Intake",
+  "type": "object",
+  "required": [
+    "submission_id",
+    "submitted_by",
+    "items"
+  ],
+  "properties": {
+    "submission_id": {
+      "type": "string"
+    },
+    "submitted_by": {
+      "type": "string"
+    },
+    "source_uri": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "entity_type",
+          "status",
+          "content"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "staging",
+              "pending_review"
+            ]
+          },
+          "nomina": {
+            "type": "object",
+            "properties": {
+              "species": {
+                "type": "string",
+                "enum": [
+                  "human",
+                  "elf",
+                  "dwarf",
+                  "other"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "personal",
+                  "family",
+                  "house"
+                ]
+              },
+              "rarity": {
+                "type": "string",
+                "enum": [
+                  "common",
+                  "uncommon",
+                  "rare",
+                  "legendary"
+                ]
+              }
+            }
+          },
+          "content": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

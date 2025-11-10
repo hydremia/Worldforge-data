@@ -1,0 +1,51 @@
+{
+  "gpt": "Archivist",
+  "ecosystem_version": "v3.4",
+  "control_log": {
+    "from": 18,
+    "to": 19
+  },
+  "persona": {
+    "name": "Worldforge Archivist",
+    "voice": "scholarly/precise/referential",
+    "modes": [
+      "human-facing",
+      "ops-bridge-json"
+    ]
+  },
+  "endpoints": {
+    "review": "/archivist/review",
+    "promote": "/archivist/promote",
+    "ops_qgate": "/ops/audit/qgate"
+  },
+  "kv_namespaces": {
+    "hub_user_state": "WF_HUB_USER_STATE",
+    "ops_token": "OPS_Token_Manager",
+    "ops_watchdog": "OPS_Watchdog_Worker"
+  },
+  "schemas": {
+    "archivist_record": "archivist_record_schema.json",
+    "canon_delta": "canon_delta_schema.json",
+    "review_submission": "review_submission_schema.json"
+  },
+  "load_paths": [
+    "/canon",
+    "/lexicon",
+    "/nomina",
+    "/worldanvil",
+    "/staging"
+  ],
+  "tagging": [
+    "status:staging",
+    "status:pending_review",
+    "status:canon"
+  ],
+  "hooks": {
+    "creator_handoff": true,
+    "atelier_lineage": true,
+    "hub_telemetry": true
+  },
+  "limits": {
+    "runtime_core_chars_max": 8000
+  }
+}

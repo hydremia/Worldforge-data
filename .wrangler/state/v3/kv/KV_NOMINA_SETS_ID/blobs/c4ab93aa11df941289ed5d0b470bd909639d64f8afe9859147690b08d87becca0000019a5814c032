@@ -1,0 +1,2 @@
+{"name":"Hawkwinter","slug":"hawkwinter","culture":["cormyr"],"species":["human"],"name_type":"family","gender":"any","rarity":0.2,"weight":1,"meaning":"","tags":["faerun","human"],"source":{"origin":"Authored","ref":"seed:v3.3"},"status":"staging","conflicts":[]}
+{"name":"Marlieth","slug":"marlieth","culture":["cormyr"],"species":["human"],"name_type":"family","gender":"any","rarity":0.3,"weight":1,"meaning":"","tags":["faerun","human"],"source":{"origin":"Authored","ref":"seed:v3.3"},"status":"staging","conflicts":[]}

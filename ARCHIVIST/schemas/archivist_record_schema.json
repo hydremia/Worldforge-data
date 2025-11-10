@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "archivist_record_schema.json",
+  "title": "Archivist Canon Record",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "entity_type",
+    "status",
+    "version",
+    "lineage",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9._:-]+$"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "staging",
+        "pending_review",
+        "canon"
+      ]
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "version": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nomina": {
+      "description": "Nomina linkage (if applicable)",
+      "type": "object",
+      "properties": {
+        "species": {
+          "type": "string",
+          "enum": [
+            "human",
+            "elf",
+            "dwarf",
+            "other"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "personal",
+            "family",
+            "house"
+          ]
+        },
+        "rarity": {
+          "type": "string",
+          "enum": [
+            "common",
+            "uncommon",
+            "rare",
+            "legendary"
+          ]
+        },
+        "phonotactics": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": []
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "created_at",
+        "sources"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "modified_at": {
+          "type": "string"
+        },
+        "promotion_ticket": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "uri"
+            ],
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

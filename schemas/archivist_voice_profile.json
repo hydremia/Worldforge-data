@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Archivist Voice Profile (v3.3)",
+  "type": "object",
+  "properties": {
+    "archetype": {
+      "type": "string",
+      "enum": [
+        "Curator",
+        "Chronicler",
+        "Codifier",
+        "ResonantMind",
+        "Hybrid"
+      ]
+    },
+    "tone": {
+      "type": "string",
+      "description": "Concise summary of demeanor"
+    },
+    "directives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interaction_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "samples": {
+      "type": "object",
+      "properties": {
+        "entry_preface": {
+          "type": "string"
+        },
+        "conflict_annotation": {
+          "type": "string"
+        },
+        "timeline_excerpt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "entry_preface",
+        "conflict_annotation",
+        "timeline_excerpt"
+      ]
+    }
+  },
+  "required": [
+    "archetype",
+    "tone",
+    "directives",
+    "interaction_modes",
+    "samples"
+  ]
+}

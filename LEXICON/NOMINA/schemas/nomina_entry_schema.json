@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "nomina_entry_schema (v3.3)",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Base"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "lexicon.nomina"
+        },
+        "culture": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "species": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "name_type": {
+          "type": "string",
+          "enum": [
+            "personal",
+            "family",
+            "house"
+          ]
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "any",
+            "f",
+            "m",
+            "n"
+          ]
+        },
+        "rarity": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "meaning": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "canon",
+            "staging",
+            "alt"
+          ]
+        },
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "culture",
+        "species",
+        "name_type",
+        "gender",
+        "rarity",
+        "weight",
+        "status"
+      ]
+    }
+  ],
+  "$defs": {
+    "Base": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "archivist_entry_schema (v3.3)",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "entity sub-type, e.g., character, location, lexicon.nomina"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "staging",
+            "canon",
+            "alt",
+            "deprecated"
+          ]
+        },
+        "generation_type": {
+          "type": "string",
+          "enum": [
+            "imported",
+            "authored",
+            "merged",
+            "revised"
+          ]
+        },
+        "lineage": {
+          "type": "object",
+          "properties": {
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "Archivist",
+                      "WA",
+                      "Authored",
+                      "Creator",
+                      "DM",
+                      "Atelier",
+                      "Hub",
+                      "OPS"
+                    ]
+                  },
+                  "ref": {
+                    "type": "string"
+                  },
+                  "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                },
+                "required": [
+                  "origin",
+                  "ref"
+                ]
+              }
+            },
+            "edits": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "by": {
+                    "type": "string"
+                  },
+                  "change": {
+                    "type": "string"
+                  },
+                  "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                },
+                "required": [
+                  "by",
+                  "change"
+                ]
+              }
+            }
+          },
+          "required": [
+            "sources"
+          ]
+        },
+        "canon_hash_v1": {
+          "type": "string",
+          "description": "Deterministic hash of the canonicalized entry"
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "type",
+        "slug",
+        "name",
+        "status",
+        "generation_type",
+        "lineage"
+      ]
+    }
+  }
+}

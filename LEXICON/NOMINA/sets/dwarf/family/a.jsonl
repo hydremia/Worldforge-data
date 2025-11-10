@@ -1,0 +1,1 @@
+{"name": "Stoneveil", "slug": "stoneveil", "culture": ["mirabar"], "species": ["dwarf"], "name_type": "family", "gender": "any", "rarity": 0.3, "weight": 1.0, "meaning": "", "tags": ["faerun", "dwarf"], "source": {"origin": "Authored", "ref": "seed:v3.3"}, "status": "staging", "conflicts": []}
