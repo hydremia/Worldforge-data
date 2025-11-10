@@ -1,0 +1,3 @@
+{"name": "Surgosakor", "species": "orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "tribe"}, "rare": true, "tags": ["mythic", "cultural_origin:tribe", "entropy_refined"]}
+{"name": "Shorgargraodr", "species": "orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "tribe", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:tribe", "entropy_refined"]}
+{"name": "Shakrgraor", "species": "orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "tribe", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:tribe", "entropy_refined"]}

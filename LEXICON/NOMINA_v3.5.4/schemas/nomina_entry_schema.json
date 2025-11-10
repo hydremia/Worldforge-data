@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://worldforge.dev/schemas/nomina_entry_schema.json",
+  "type": "object",
+  "required": [
+    "name",
+    "rarity",
+    "type",
+    "species"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 24
+    },
+    "species": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "personal",
+        "family",
+        "house"
+      ]
+    },
+    "rarity": {
+      "enum": [
+        "common",
+        "uncommon",
+        "rare"
+      ]
+    },
+    "phon": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

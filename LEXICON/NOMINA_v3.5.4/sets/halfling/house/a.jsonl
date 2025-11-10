@@ -1,0 +1,7 @@
+{"name": "Aamo", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Amomi", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ail", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Amul", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ema", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ama"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Auha", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Au"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Alelu", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

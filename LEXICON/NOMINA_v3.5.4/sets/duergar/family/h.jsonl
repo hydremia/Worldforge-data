@@ -1,0 +1,35 @@
+{"name": "Hikto", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hegtokrak", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hugkraeg", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hukrete", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hogarthagr", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hugargragarduigar", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hukkraok", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hekthaugr", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hagkraoggrak", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higrdigar", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hugrthek", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hekduadue", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higarthaugragr", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hogkraikru", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Huduik", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Higartagr", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hadokreg", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Huggraug", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hagargragr", "species": "duergar", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higrkrethugar", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegrhakthag", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hogardegrgrugar", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoggrauktogar", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higthak", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hugarrokgrag", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegkraigr", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoktha", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Higrak", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hikdigarkraok", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higarduugar", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hugrkaokkraugar", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hogrokduog", "species": "duergar", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegthakthaug", "species": "duergar", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hakkraeg", "species": "duergar", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Hukkreg", "v3.5.4_mutated": true}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Higthaogarduak", "species": "duergar", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}

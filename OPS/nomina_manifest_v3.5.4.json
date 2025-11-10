@@ -1,0 +1,19 @@
+{
+  "dataset": "Worldforge Nomina",
+  "version": "v3.5.4",
+  "path": "LEXICON/NOMINA_v3.5.4",
+  "counts": {
+    "jsonl_files": 654,
+    "total_names": 110072,
+    "species": 31
+  },
+  "hash": "82f37ade213425e15ee41ac1916bf3923b770de9bf9826b23b1ef63a92bde993",
+  "metrics": {
+    "pronounceability": 0.9039358783343001,
+    "uniqueness": 0.9949487608111055,
+    "pdi": 0.6659827620293941,
+    "entry_delta": 0,
+    "mutation_count": 27659
+  },
+  "generated_at": 1762734839
+}

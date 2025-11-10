@@ -1,0 +1,87 @@
+{"name": "Titiyuozyuati", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tanauti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tatisauti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzssaossuz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tozsauz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tissyauossoss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutisaati", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzyuiss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tinausssao", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatinaaz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tussnau", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Titinaass", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tassoznaiss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Toyuunauz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutisauz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Taznao", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tassi", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tutisaitt", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Tutisaiss"}, "rare": true, "tags": ["uniqueness_normalized", "mythic", "entropy_refined"]}
+{"name": "Tizuss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tussnaissyaiss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tassyauiz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzssaoti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tissssaussyaui", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tosssaoti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tizyuasssaz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatituyuoss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Totossyaz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutissutisau", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzsu", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tissnauss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutina", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tissyauaz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tassnauss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatinaa", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tozssaozyuoti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tasstaoti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tussnai", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tutiyuuz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tisssauss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tosszaoss", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuyanaoti", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tasaaz", "species": "yuan-ti", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tutiyuoti", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutuss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tanoz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tayuisssaiss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuyuati", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tisuz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tonaitiyuo", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutissuti", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tissyauati", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tizyuoz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tasauss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tatissutinaiz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Totiyuuti", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatisaossnaz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tutisu", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tusaass", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tazyuutizoti", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Titiyuotisaoss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzsutiyuoz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatissu", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tozssaiz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tozyua", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tutisaititati", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tosssazi", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tizyuazssauz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzyati", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tatiyiz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tutisaanaiss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tossosssauz", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatinutisuss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Titiyiznauss", "species": "yuan-ti", "type": "personal", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tossssaitina", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Toznaoss", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Toznaati", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Toyui", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tisssaiti", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tatissozyuass", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tussyauss", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tuzsaz", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Tizyuuz", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Toztuti", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Tanaoznuti", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Titiyaz", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Totissiz", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Totinau", "species": "yuan-ti", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

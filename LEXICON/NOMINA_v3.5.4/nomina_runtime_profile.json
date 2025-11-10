@@ -1,0 +1,160 @@
+{
+  "version": "v3.5.2",
+  "species": {
+    "elf_high": {
+      "rulepack": "elf.json",
+      "subculture": true,
+      "entry_count": 3674
+    },
+    "genasi-air": {
+      "rulepack": "genasi-air.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "elf_drow": {
+      "rulepack": "elf.json",
+      "subculture": true,
+      "entry_count": 3674
+    },
+    "bugbear": {
+      "rulepack": "bugbear.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "tiefling": {
+      "rulepack": "tiefling.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "kobold": {
+      "rulepack": "kobold.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "human_northern": {
+      "rulepack": "human.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "firbolg": {
+      "rulepack": "firbolg.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "hobgoblin": {
+      "rulepack": "hobgoblin.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "elf_wood": {
+      "rulepack": "elf.json",
+      "subculture": true,
+      "entry_count": 3674
+    },
+    "orc_tribe": {
+      "rulepack": "orc.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "genasi-earth": {
+      "rulepack": "genasi-earth.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "halfling": {
+      "rulepack": "halfling.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "duergar": {
+      "rulepack": "duergar.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "genasi-fire": {
+      "rulepack": "genasi-fire.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "half-orc": {
+      "rulepack": "half-orc.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "aasimar": {
+      "rulepack": "aasimar.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "goblin": {
+      "rulepack": "goblin.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "dwarf_mountain": {
+      "rulepack": "dwarf.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "loxodon": {
+      "rulepack": "loxodon.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "orc_clan": {
+      "rulepack": "orc.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "tortle": {
+      "rulepack": "tortle.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "dragonborn": {
+      "rulepack": "dragonborn.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "tabaxi": {
+      "rulepack": "tabaxi.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "drow": {
+      "rulepack": "drow.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "dwarf_hill": {
+      "rulepack": "dwarf.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "human_southern": {
+      "rulepack": "human.json",
+      "subculture": true,
+      "entry_count": 3675
+    },
+    "genasi-water": {
+      "rulepack": "genasi-water.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "gnome": {
+      "rulepack": "gnome.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "yuan-ti": {
+      "rulepack": "yuan-ti.json",
+      "subculture": false,
+      "entry_count": 3500
+    },
+    "goliath": {
+      "rulepack": "goliath.json",
+      "subculture": false,
+      "entry_count": 3500
+    }
+  }
+}

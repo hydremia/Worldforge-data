@@ -1,0 +1,11 @@
+{
+  "generation_timestamp": 1762733871.996774,
+  "metrics": {
+    "pronounceability": 0.9039358783343001,
+    "uniqueness": 0.9949487608111055,
+    "pdi": 0.6659827620293941
+  },
+  "total_names": 110072,
+  "total_species": 31,
+  "version": "v3.5.4"
+}

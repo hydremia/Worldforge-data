@@ -1,0 +1,101 @@
+{
+  "integrity": {
+    "species_total": 31,
+    "total_names": 110072,
+    "species_file_counts": [
+      [
+        "orc_clan",
+        41
+      ],
+      [
+        "orc_tribe",
+        40
+      ],
+      [
+        "halfling",
+        36
+      ],
+      [
+        "human_northern",
+        33
+      ],
+      [
+        "human_southern",
+        33
+      ],
+      [
+        "dwarf_hill",
+        30
+      ],
+      [
+        "dwarf_mountain",
+        30
+      ],
+      [
+        "half-orc",
+        30
+      ],
+      [
+        "dragonborn",
+        27
+      ],
+      [
+        "elf_drow",
+        27
+      ]
+    ],
+    "species_line_counts": [
+      [
+        "dwarf_hill",
+        3675
+      ],
+      [
+        "dwarf_mountain",
+        3675
+      ],
+      [
+        "human_northern",
+        3675
+      ],
+      [
+        "human_southern",
+        3675
+      ],
+      [
+        "orc_clan",
+        3675
+      ],
+      [
+        "orc_tribe",
+        3675
+      ],
+      [
+        "elf_drow",
+        3674
+      ],
+      [
+        "elf_high",
+        3674
+      ],
+      [
+        "elf_wood",
+        3674
+      ],
+      [
+        "aasimar",
+        3500
+      ]
+    ],
+    "type_distribution": {
+      "family": 31315,
+      "house": 15659,
+      "personal": 63098
+    },
+    "dataset_hash": "82f37ade213425e15ee41ac1916bf392"
+  },
+  "pronounceability_stats": {
+    "mean": 0.9039358783341812,
+    "median": 0.98,
+    "stdev": 0.18093118974938735
+  }
+}

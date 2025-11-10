@@ -1,0 +1,55 @@
+{"name": "Ruokbalaokbolook", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruokkoboakbole", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reogbaleokbalu", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruogbolookboluak", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rakoboluog", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reakkobeok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roloogko", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rebalaogbolaak", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rokobaak", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rebolook", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruakkobaokbala", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruakbole", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raakkoboleog", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reakbaloakbook", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rubaleak", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raogkobe", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruakbolukobaok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ralaak", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ruogdala", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruoglaog", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roakbaluok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raluakbaleok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Riamdaleokbako", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Raakbaleokbale", "modified_from2": "Reakbaleokbale", "modified_pass_1": "Realcaleokbale", "modified_pass_2": "Rialcaleokbale", "modified_pass_3": "Riamdaleokbale"}, "rare": true, "tags": ["mythic", "uniqueness_normalized", "entropy_refined"]}
+{"name": "Robalook", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reokbaluok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruogbalaakboloog", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruokbolaok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reokbolaok", "species": "kobold", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reogboluokbalaog", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raokbaleog", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roogruokkobuak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raakbaloogboloak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raakboluok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rookbaluakkobuok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rubalabolaak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruakbolook", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reakkoboakbaluok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reraok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ruograkoboak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Ruakduokbalook", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rookbaleak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reogboluak", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roakboluok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rekobuakboloog", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rokobaakkobuok", "species": "kobold", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roogke", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Raokbalo", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raakrabalaok", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reogbaleogboloak", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Roogbolabaluak", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rakobook", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raokdu", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Reokkobuogbalaog", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Reokboloog", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Raokkobookkobo", "species": "kobold", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}

@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "pronounceability": 0.9039358783343001,
+    "uniqueness": 0.9949487608111055,
+    "pdi": 0.6659827620293941,
+    "entry_delta": 0,
+    "mutation_count": 27659
+  },
+  "deterministic_seed": 42
+}

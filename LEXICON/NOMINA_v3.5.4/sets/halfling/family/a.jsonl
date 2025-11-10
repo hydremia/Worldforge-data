@@ -1,0 +1,26 @@
+{"name": "Aemi", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ammima", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aamlo", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ammei", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Uuha", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Au", "modified_from2": "Eu", "modified_pass_1": "Iu", "modified_pass_2": "Ou", "modified_pass_3": "Uu"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Aaom", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aue", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aula", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aliam", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Alou", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aema", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aimmo", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ale", "species": "halfling", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Alle", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aha", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ame"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Eomx", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Aom", "modified_from2": "Aomx"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Amuli", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aaha", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Aa"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Aeha", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Aeme"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Alha", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Almu"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Eoha", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ao", "modified_from2": "Eo", "modified_pass_1": "Io", "modified_pass_2": "Oo", "modified_pass_3": "Uo", "modified_pass_4": "Ao", "modified_pass_5": "Eo"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Aemmi", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Alulu", "species": "halfling", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Allela", "species": "halfling", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Aluu", "species": "halfling", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Amami", "species": "halfling", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

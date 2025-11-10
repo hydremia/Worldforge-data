@@ -1,0 +1,17 @@
+{"name": "Oui", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Iui"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Iilu", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Iel", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Iih", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ii"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Imum", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Imio", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ilio", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Imue", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ulay", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ila", "modified_from2": "Ola", "modified_pass_1": "Olay"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Omul", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Imul"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Imama", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Imem", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ilelo", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ioha", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Io"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Imimh", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Imim"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Ueab", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ie", "modified_from2": "Oe", "modified_pass_1": "Ue", "modified_pass_2": "Uea"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Illu", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
