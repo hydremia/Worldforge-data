@@ -3,7 +3,7 @@
  *
  * Builds an index.json for either:
  *   - the current "live" dataset   → /Nomina/live/index.json
- *   - a versioned release dataset  → /Nomina/releases/v3.5.5/index.json
+ *   - a versioned release dataset  → /Nomina/releases/vX.Y.Z/index.json
  *
  * Usage:
  *   node tools/build_nomina_index.mjs live
@@ -31,19 +31,41 @@ function sha256File(p) {
 }
 
 /**
- * facet → logical ID mapping
- * personal → core (given names)
- * family   → family (surnames)
- * house    → house  (lineage)
+ * facet → logical ID mapping with species–culture support.
+ *
+ * Folder conventions supported:
+ *   <species>                  → e.g., "aasimar"
+ *   <species>_<culture>        → e.g., "elf_drow", "human_northern", "dwarf_mountain"
+ *   <species>-<culture>        → e.g., "genasi-fire", "genasi-water"
+ *
+ * Facet mapping:
+ *   personal → core     (given names)
+ *   family   → family   (surnames)
+ *   house    → house    (lineage)
+ *   other facets appear as suffixes (e.g., "<culture>_<facet>")
  */
 function logicalId(species, facet) {
-  if (facet === "personal") return `spec:${species}/core`;
-  if (facet === "family")   return `spec:${species}/family`;
-  if (facet === "house")    return `spec:${species}/house`;
-  return `spec:${species}/${facet}`;
+  // Normalize separators to underscore for parsing
+  const norm = species.toLowerCase().replace(/-/g, "_");
+
+  if (norm.includes("_")) {
+    const [root, culture] = norm.split("_", 2); // only first token is culture; deeper nesting rare
+    const cultureId = culture.replace(/_/g, "-"); // present cultures with hyphen if needed
+    if (facet === "personal") return `spec:${root}/${cultureId}`;
+    if (facet === "family")   return `spec:${root}/${cultureId}_family`;
+    if (facet === "house")    return `spec:${root}/${cultureId}_house`;
+    return `spec:${root}/${cultureId}_${facet}`;
+  }
+
+  // Simple species (no culture)
+  const base = norm;
+  if (facet === "personal") return `spec:${base}/core`;
+  if (facet === "family")   return `spec:${base}/family`;
+  if (facet === "house")    return `spec:${base}/house`;
+  return `spec:${base}/${facet}`;
 }
 
-/** Recursively walk the shards directory */
+/** Recursively walk the shards directory and collect entries */
 const entries = [];
 (function walk(dir) {
   for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -53,18 +75,18 @@ const entries = [];
 
     // Expect: shards/<species>/<facet>/<letter>.jsonl
     const relFromBase = path.relative(BASE, abs).replace(/\\/g, "/");
-    const parts = relFromBase.split("/"); // ["shards","elf","personal","a.jsonl"]
+    const parts = relFromBase.split("/"); // ["shards","elf_drow","personal","a.jsonl"]
     if (parts.length !== 4 || parts[0] !== "shards") continue;
 
-    const species = parts[1].toLowerCase();
-    const facet   = parts[2].toLowerCase();
+    const species = parts[1];                 // keep original (may contain - or _)
+    const facet   = parts[2].toLowerCase();   // personal|family|house|...
     const stat    = fs.statSync(abs);
 
-    const relRepo = path.posix.join("Nomina", TARGET, relFromBase);
+    const relRepo = path.posix.join("Nomina", TARGET, relFromBase); // repo-rooted path
     entries.push({
       id: logicalId(species, facet),
-      path: relRepo,
-      url: "/" + relRepo,
+      path: relRepo,                     // "Nomina/live/shards/elf_drow/personal/a.jsonl"
+      url: "/" + relRepo,                // "/Nomina/live/shards/elf_drow/personal/a.jsonl"
       size: stat.size,
       sha256: sha256File(abs)
     });
