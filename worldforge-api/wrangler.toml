@@ -1,0 +1,53 @@
+# =============================
+# Worldforge API Worker Config (Updated with Live KV IDs)
+# Modernized for TypeScript + GPT-5 Integration
+# =============================
+
+name = "worldforge-api"
+main = "src/worldforge-api.ts"
+compatibility_date = "2024-11-10"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENV = "stg"
+CANON_PREFIX = "v3.0.0"
+OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
+REPO_OWNER = "worldforge"
+REPO_NAME = "ops-core"
+REPO_BRANCH = "main"
+OPS_TOKEN = "YOUR_OPS_TOKEN_PLACEHOLDER"
+
+# -----------------------------
+# Key-Value Namespace Bindings (shared)
+# -----------------------------
+[[kv_namespaces]]
+binding = "WF_KV_RUNTIME"
+id = "070fcea784f547e490c241b8e1d9f95c"
+
+[[kv_namespaces]]
+binding = "WF_KV_SESSIONS"
+id = "65c7ba4ebf0b4f0ebea91887e3adf056"
+
+[[kv_namespaces]]
+binding = "WF_KV_STAGING"
+id = "7420752a814d4406a0481e646ffca5e8"
+
+[[kv_namespaces]]
+binding = "WF_KV_MEDIA"
+id = "c095e5d8de53466fa3205d6808f4af99"
+
+# -----------------------------
+# Secrets to set via Wrangler CLI (not stored in file)
+# -----------------------------
+# wrangler secret put OPENAI_API_KEY
+# wrangler secret put OPS_TOKEN
+
+# -----------------------------
+# Deployment Example
+# -----------------------------
+# Run locally for testing:
+#   wrangler dev
+# Deploy to staging:
+#   wrangler publish --env stg
+# Deploy to production:
+#   wrangler publish --env prod

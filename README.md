@@ -1,24 +1,82 @@
+# Worldforge OPS — Archivist + API Workers (v3.5.5)
 
-# WF Archivist + Nomina Bundle (v3.3)
+**Generated:** 2025-11-10
 
-**Generated:** 2025-11-06T06:31:33.867517Z
+This repository contains the **Worldforge operational core** and **Cloudflare Workers** for managing OPS, Archivist, and Nomina data pipelines.
 
-This bundle seeds the Archivist + Nomina design/build for Tier-3 → v3.3.
+---
 
-## Contents
-- `schemas/` — core schemas (voice, entry, review, pipeline)
-- `workers/archivist/index.mjs` — Archivist Worker skeleton
-- `LEXICON/NOMINA/*` — Nomina schemas & Worker skeleton
-- `tools/` — validation and RNG smoke scripts
-- `agents/prompts/` — Agent Mode prompt pack
+## 📦 Contents
 
-## Setup
-1. `npm i ajv ajv-formats undici`
-2. Configure `wrangler.toml` KV bindings (staging first).
-3. `npm run validate` — validate all JSON files.
-4. `npm run rng:smoke` — simulate RNG & cooldown.
-5. Deploy workers with `wrangler dev` / `wrangler publish`.
+| Path                          | Purpose                                                                            |
+| ----------------------------- | ---------------------------------------------------------------------------------- |
+| `/worldforge-api/`            | Main API Worker — handles runtime capsules, visuals, staging, and audit endpoints. |
+| `/worldforge-archivist/`      | Archivist Worker — handles review, staging, and canon promotion workflows.         |
+| `/ops-core/`                  | Core OPS logic, schemas, and QGate/PROMOTE definitions.                            |
+| `/docs/ops/`                  | Operational documentation, promotion schemas, and bridge sync specs.               |
+| `/docs/lexicon/`              | Lexicon and Nomina seed data with changelogs.                                      |
+| `/docs/api/QuickStart_Hub.md` | Hub API test guide for capsule, session, and visual endpoints.                     |
+| `/QuickStart.md`              | Developer setup and deployment guide for local + Cloudflare workflows.             |
+| `/tools/`                     | Developer utilities and validation scripts.                                        |
 
-## Notes
-- Promotion requires manifest preview and `OPS_TOKEN`.
-- Deterministic `canon_hash_v1` to be implemented in Worker (placeholder provided).
+---
+
+## 🚀 Quick Setup
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Authenticate with Cloudflare**
+
+   ```bash
+   wrangler login
+   ```
+
+3. **Set required secrets**
+
+   ```bash
+   wrangler secret put OPS_TOKEN
+   wrangler secret put OPENAI_API_KEY
+   ```
+
+4. **Deploy Workers**
+
+   ```bash
+   npm run deploy:api
+   npm run deploy:archivist
+   ```
+
+5. **Verify health**
+
+   ```bash
+   curl https://worldforge-api.hydremia.workers.dev/health
+   curl https://worldforge-archivist.hydremia.workers.dev/debug/routes
+   ```
+
+---
+
+## 🧩 Notes
+
+* `OPS_TOKEN` secures all promotion and audit actions.
+* Workers use **TypeScript (ESM)** for reproducible, deterministic promotion flow.
+* `canon_hash_v1` hashes are generated using stable JSON serialization and SHA-256.
+* Wrangler manages KV bindings for runtime and canon stores.
+
+---
+
+## 📚 Documentation
+
+| Category                              | Location                     |
+| ------------------------------------- | ---------------------------- |
+| OPS QGate, Promotion, and Bridge Sync | `docs/ops/`                  |
+| Nomina Seeds and Lexicon Data         | `docs/lexicon/`              |
+| Privacy Policy                        | `docs/PRIVACY_POLICY.md`     |
+| Hub Capsule API Reference             | `docs/api/QuickStart_Hub.md` |
+
+---
+
+**Maintained by:** Hydremia / Worldforge OPS
+**License:** MIT

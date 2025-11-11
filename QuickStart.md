@@ -1,25 +1,86 @@
-# Hub Worker Quick Start (Neutral Examples)
+# Quick Start — Worldforge Workers (v3.5.5)
 
-## Dev
+This guide walks through local testing and deployment for both the **API** and **Archivist** Workers.
+
+---
+
+## 🧱 Requirements
+
+* Node.js 18+
+* Wrangler 4.46+
+* A Cloudflare account with KV namespaces configured
+
+---
+
+## 🛠️ Install
+
 ```bash
-npm i -D wrangler typescript
-npx wrangler dev
+npm install
 ```
 
-## Smoke
+---
+
+## 🔧 Development Mode
+
+Run either worker locally:
+
 ```bash
-curl -s http://127.0.0.1:8787/version | jq
-curl -s http://127.0.0.1:8787/health?status=WARN | jq
+npm run dev:api
+npm run dev:archivist
 ```
 
-## Issue a token (no personal names)
+You’ll see logs in your terminal and can test endpoints like:
+
 ```bash
-curl -sX POST http://127.0.0.1:8787/auth/issue   -H 'content-type: application/json'   -d '{"session_id":"abc","username":"PlayerOne"}' | jq
+curl http://127.0.0.1:8787/version
+curl http://127.0.0.1:8787/health
 ```
 
-## Save + Load capsule (neutral username)
+---
+
+## 🚀 Deploy to Cloudflare
+
 ```bash
-TOKEN=$(curl -sX POST http://127.0.0.1:8787/auth/issue -H 'content-type: application/json' -d '{"session_id":"abc","username":"PlayerOne"}' | jq -r .capsule_token)
-curl -sX POST http://127.0.0.1:8787/capsule/save -H 'content-type: application/json' -d '{"capsule_token":"'$TOKEN'","username":"PlayerOne","state":{"resume_available":true,"last_route":"DM"}}' | jq
-curl -sX POST http://127.0.0.1:8787/capsule/load -H 'content-type: application/json' -d '{"capsule_token":"'$TOKEN'"}' | jq
+npm run deploy:api
+npm run deploy:archivist
 ```
+
+After deployment, verify endpoints:
+
+```bash
+curl https://worldforge-api.hydremia.workers.dev/version
+curl https://worldforge-archivist.hydremia.workers.dev/debug/routes
+```
+
+---
+
+## 🔐 Set Secrets
+
+```bash
+wrangler secret put OPS_TOKEN
+wrangler secret put OPENAI_API_KEY
+```
+
+---
+
+## 🧩 Promotion Example
+
+```bash
+curl -X POST \
+  -H "Authorization: Bearer $OPS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"slugs":["example-entry"]}' \
+  https://worldforge-archivist.hydremia.workers.dev/archivist/promote
+```
+
+---
+
+## 🤬 Notes
+
+* All routes are authenticated using `OPS_TOKEN`.
+* Canon promotion auto-writes to `WF_KV_CANON` and archives older versions.
+* A checkpoint is written to `WF_KV_RUNTIME` after each successful promotion.
+
+---
+
+**Last updated:** 2025-11-10

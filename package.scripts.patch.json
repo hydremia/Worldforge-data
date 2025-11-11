@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "preqgate": "node tools/pre_qgate_runner.mjs"
-  }
-}
