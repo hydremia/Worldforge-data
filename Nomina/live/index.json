@@ -1,19 +1,4586 @@
 {
   "module": "Nomina",
-  "version": "v3.5.5",
+  "version": "live",
   "sha256_bundle": "",
   "files": [
     {
-      "id": "spec:elf/core",
-      "path": "Nomina/v3.5.5/shards/elf_core.jsonl",
-      "url": "/Nomina/v3.5.5/shards/elf_core.jsonl",
-      "size": 0,
-      "sha256": ""
+      "id": "spec:aasimar/core",
+      "path": "Nomina/live/shards/aasimar/personal/m.jsonl",
+      "url": "/Nomina/live/shards/aasimar/personal/m.jsonl",
+      "size": 288545,
+      "sha256": "d90e623dcea4b5ff2c12328f7ed29afa7788f6fd330fbe94d30a61257b6003c7"
+    },
+    {
+      "id": "spec:aasimar/core",
+      "path": "Nomina/live/shards/aasimar/personal/r.jsonl",
+      "url": "/Nomina/live/shards/aasimar/personal/r.jsonl",
+      "size": 62273,
+      "sha256": "464b2b1670b31987baf344e98d41bb8067baf1ed094d013df28830b8ae39b33c"
+    },
+    {
+      "id": "spec:aasimar/core",
+      "path": "Nomina/live/shards/aasimar/personal/s.jsonl",
+      "url": "/Nomina/live/shards/aasimar/personal/s.jsonl",
+      "size": 313971,
+      "sha256": "6f4770957c26fe13b47b03464e2c577e4f665211a2cfd5f63767f494212e7b64"
+    },
+    {
+      "id": "spec:aasimar/family",
+      "path": "Nomina/live/shards/aasimar/family/m.jsonl",
+      "url": "/Nomina/live/shards/aasimar/family/m.jsonl",
+      "size": 153159,
+      "sha256": "19a2a15acd6cfc9c002c51dc844e5f7c72b6a13eed3a82166c845fb02c0a19bc"
+    },
+    {
+      "id": "spec:aasimar/family",
+      "path": "Nomina/live/shards/aasimar/family/r.jsonl",
+      "url": "/Nomina/live/shards/aasimar/family/r.jsonl",
+      "size": 25667,
+      "sha256": "bfa18218f001d83fc2c9c66ac76d37e895bb6b007c6e72b2ab8e0eb4f7857d3d"
+    },
+    {
+      "id": "spec:aasimar/family",
+      "path": "Nomina/live/shards/aasimar/family/s.jsonl",
+      "url": "/Nomina/live/shards/aasimar/family/s.jsonl",
+      "size": 157923,
+      "sha256": "8162d00be1b9852b1f11d80ac3d317aeed009d7e61c06ce153f3115e1a6450fc"
+    },
+    {
+      "id": "spec:aasimar/house",
+      "path": "Nomina/live/shards/aasimar/house/m.jsonl",
+      "url": "/Nomina/live/shards/aasimar/house/m.jsonl",
+      "size": 84330,
+      "sha256": "9af3aea85a80ebd3760846dd06fa4eaa975c6eb9612249b66ed2285b186b8faa"
+    },
+    {
+      "id": "spec:aasimar/house",
+      "path": "Nomina/live/shards/aasimar/house/r.jsonl",
+      "url": "/Nomina/live/shards/aasimar/house/r.jsonl",
+      "size": 14038,
+      "sha256": "93471df34b2815fcf1e75cc401c988e3820389431b0ba7c1b95a38ad7f128463"
+    },
+    {
+      "id": "spec:aasimar/house",
+      "path": "Nomina/live/shards/aasimar/house/s.jsonl",
+      "url": "/Nomina/live/shards/aasimar/house/s.jsonl",
+      "size": 71508,
+      "sha256": "61d2b8244daf86b61c48774689f658cfe17ca0932811e497fe62d1f39c5d5ced"
+    },
+    {
+      "id": "spec:bugbear/core",
+      "path": "Nomina/live/shards/bugbear/personal/b.jsonl",
+      "url": "/Nomina/live/shards/bugbear/personal/b.jsonl",
+      "size": 244897,
+      "sha256": "b97b1b40cf6deca70cd2d0c6c6dca361394fd444880b4e1ff222748b07a6c265"
+    },
+    {
+      "id": "spec:bugbear/core",
+      "path": "Nomina/live/shards/bugbear/personal/g.jsonl",
+      "url": "/Nomina/live/shards/bugbear/personal/g.jsonl",
+      "size": 139449,
+      "sha256": "925f05bcab3ce3adbcd7c38d40214727113f77877d75b2110070c0b19f28919e"
+    },
+    {
+      "id": "spec:bugbear/core",
+      "path": "Nomina/live/shards/bugbear/personal/n.jsonl",
+      "url": "/Nomina/live/shards/bugbear/personal/n.jsonl",
+      "size": 22514,
+      "sha256": "9be7ba3bcf0f339951c74cc1661958171947f5ac3384be0cada97eaf2ae393da"
+    },
+    {
+      "id": "spec:bugbear/core",
+      "path": "Nomina/live/shards/bugbear/personal/r.jsonl",
+      "url": "/Nomina/live/shards/bugbear/personal/r.jsonl",
+      "size": 26858,
+      "sha256": "15beb499df02be53d3bfcbd0760e68b81c9b61bf67dabbe4a34452030bb08068"
+    },
+    {
+      "id": "spec:bugbear/family",
+      "path": "Nomina/live/shards/bugbear/family/b.jsonl",
+      "url": "/Nomina/live/shards/bugbear/family/b.jsonl",
+      "size": 130982,
+      "sha256": "2ee591161ab83e24a633bfabd56c1dbf765083585142b2e1f3bb8d5fe0754577"
+    },
+    {
+      "id": "spec:bugbear/family",
+      "path": "Nomina/live/shards/bugbear/family/g.jsonl",
+      "url": "/Nomina/live/shards/bugbear/family/g.jsonl",
+      "size": 61567,
+      "sha256": "99a0a8488a0f8ed63cfdce36071d17cef4a01050ab71fbc7422838f4006f414e"
+    },
+    {
+      "id": "spec:bugbear/family",
+      "path": "Nomina/live/shards/bugbear/family/n.jsonl",
+      "url": "/Nomina/live/shards/bugbear/family/n.jsonl",
+      "size": 12549,
+      "sha256": "ef1d9149869781409d51f1fa2aee0b5c00522c88a74885f6ee96c4656e11c40b"
+    },
+    {
+      "id": "spec:bugbear/family",
+      "path": "Nomina/live/shards/bugbear/family/r.jsonl",
+      "url": "/Nomina/live/shards/bugbear/family/r.jsonl",
+      "size": 13859,
+      "sha256": "909a88ae02a15da90b1639b907418cb0f5f7984ebdf95f4bb91822b101c6c07b"
+    },
+    {
+      "id": "spec:bugbear/house",
+      "path": "Nomina/live/shards/bugbear/house/b.jsonl",
+      "url": "/Nomina/live/shards/bugbear/house/b.jsonl",
+      "size": 65528,
+      "sha256": "16ec620021dd8677fa697711f29709f0a978729d2b6d40a18ef6da427f7d9324"
+    },
+    {
+      "id": "spec:bugbear/house",
+      "path": "Nomina/live/shards/bugbear/house/g.jsonl",
+      "url": "/Nomina/live/shards/bugbear/house/g.jsonl",
+      "size": 29742,
+      "sha256": "0075c3a74e029d03c1d0b1a3c569caa1020ee9e4d6364dac6cb4b0837f40a601"
+    },
+    {
+      "id": "spec:bugbear/house",
+      "path": "Nomina/live/shards/bugbear/house/n.jsonl",
+      "url": "/Nomina/live/shards/bugbear/house/n.jsonl",
+      "size": 6920,
+      "sha256": "93e580d255231021c760d2735ee6dd6d8ac8406473fe292e5e46a3001b0678c1"
+    },
+    {
+      "id": "spec:bugbear/house",
+      "path": "Nomina/live/shards/bugbear/house/r.jsonl",
+      "url": "/Nomina/live/shards/bugbear/house/r.jsonl",
+      "size": 7228,
+      "sha256": "65028ce524ad66e62122762f4db4933b49474165e0e979387427faaf7d3378ba"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/b.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/b.jsonl",
+      "size": 10040,
+      "sha256": "e20f228e899daec55122af363f93768ae9dba3c77b2c9e20ad1551a684040ba4"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/c.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/c.jsonl",
+      "size": 77918,
+      "sha256": "798f92c82c396bea263985d94d2dc93ed689178c262841e923f129280eb8dbd5"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/d.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/d.jsonl",
+      "size": 75663,
+      "sha256": "a20d1f6f135f02daf8356cd3408e691145409b8c84f6e101964352d261db9f63"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/g.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/g.jsonl",
+      "size": 86731,
+      "sha256": "a9307be27414892730ea8d060c61cd852510b622dbaf15ae6c4a1e60b24f2984"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/k.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/k.jsonl",
+      "size": 79791,
+      "sha256": "4cc58e220ff1efb7516d4beadd1702cfdd43194cdc740018541c2c2871c13230"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/l.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/l.jsonl",
+      "size": 6519,
+      "sha256": "7fdc979132507bda79b0d47f8ab5591c8972ce094a37ef502bd2d35066693ab3"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/n.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/n.jsonl",
+      "size": 7482,
+      "sha256": "7d7de6c3d3d04db31c84971f8a8cb5f841a2a6762c94069896c6eea676aa2c68"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/r.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/r.jsonl",
+      "size": 17328,
+      "sha256": "c329009ad6d0003fc2b3b12efde572823fc750d88775b9eb85d8587daa2a1a04"
+    },
+    {
+      "id": "spec:dragonborn/core",
+      "path": "Nomina/live/shards/dragonborn/personal/s.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/personal/s.jsonl",
+      "size": 86980,
+      "sha256": "4698a7d73564f2e8745bbbe9651c3c55e305c4a381d483e5b36e2fa9018586ca"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/b.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/b.jsonl",
+      "size": 3507,
+      "sha256": "a61103c77fb81108284709f127318303afed9fb54ea6200be95ea140e1aba646"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/c.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/c.jsonl",
+      "size": 34674,
+      "sha256": "439da1ae1f704d90dd2431b21b6265781b70ee2ba2bb61327c236b624dd2095c"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/d.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/d.jsonl",
+      "size": 43753,
+      "sha256": "317d87b0b9b9bfd7f5e198440d2a1e73d8087253ca3779575f5fea54f6fc9a21"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/g.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/g.jsonl",
+      "size": 40675,
+      "sha256": "c01a1e659411aa8f7bcea2279e138c80e22b2dd63bc257f596f8856bbcc09199"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/k.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/k.jsonl",
+      "size": 47120,
+      "sha256": "78c9bb5e9911305750931f226ca58547aded0a926f1e3831f68fc0e42556b06c"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/l.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/l.jsonl",
+      "size": 3057,
+      "sha256": "6a77b1039af67c744d7c961542529ed96d97cf04051152a2a0c87e0044743a3f"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/n.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/n.jsonl",
+      "size": 4204,
+      "sha256": "b8cda84ee4154de2d8ebd34574ab1e498158a9541563105b6b0035ccc5e0bd6d"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/r.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/r.jsonl",
+      "size": 9643,
+      "sha256": "c90ee67c0a8164e72d29ddb9b2325c1cd53a0f0ac6580a0151aa7143f2a8f620"
+    },
+    {
+      "id": "spec:dragonborn/family",
+      "path": "Nomina/live/shards/dragonborn/family/s.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/family/s.jsonl",
+      "size": 37746,
+      "sha256": "ebed13fa0d170665c91b61affe43ddf1a6251d330f49dc5f813543a5a5a7ae8b"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/b.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/b.jsonl",
+      "size": 2639,
+      "sha256": "6c28f634dba3745b4cc36c62fec0b3b3d2571c39f9a311ef9069cd0d25b661a0"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/c.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/c.jsonl",
+      "size": 16354,
+      "sha256": "02d6b75ab3fa499f493cd47271fb3a37789d57d1b65dc606a86cb0ad912bc87f"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/d.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/d.jsonl",
+      "size": 22903,
+      "sha256": "bc853445e67f2f3fdca471b96f17d9102b6c426ac4effdac554e85b42b88c7be"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/g.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/g.jsonl",
+      "size": 21344,
+      "sha256": "6fce20c1cf1f9a492133b4f97541b6cb57f54371d57d11b3445559a658bc0be2"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/k.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/k.jsonl",
+      "size": 22769,
+      "sha256": "26ac116a3f621c9e0fd62027042b5a6bfc9d152ddd1c2468e9ba2c5f8bd58fff"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/l.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/l.jsonl",
+      "size": 1758,
+      "sha256": "54df2831d8db421d5417df48339aba01388385e4d0733eb13a4db0925867e874"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/n.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/n.jsonl",
+      "size": 1124,
+      "sha256": "6bbf18cd6193e053cd768527131e4ac0e6fb0230f4673b0d168cd7175757cb28"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/r.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/r.jsonl",
+      "size": 3023,
+      "sha256": "f2cb88d7f829e8c69d2a0ba0bfbf7a28ac3dd2574990220f5dd287693691510a"
+    },
+    {
+      "id": "spec:dragonborn/house",
+      "path": "Nomina/live/shards/dragonborn/house/s.jsonl",
+      "url": "/Nomina/live/shards/dragonborn/house/s.jsonl",
+      "size": 20142,
+      "sha256": "8c2f9e06bfb00956b6f609d795ed1002eab75411636caa1c12983055bdd9435d"
+    },
+    {
+      "id": "spec:drow/core",
+      "path": "Nomina/live/shards/drow/personal/d.jsonl",
+      "url": "/Nomina/live/shards/drow/personal/d.jsonl",
+      "size": 133573,
+      "sha256": "f48a2a54fa87890ae4b8058346c3b0aacdccd7361f502df17a4067531ebe5d70"
+    },
+    {
+      "id": "spec:drow/core",
+      "path": "Nomina/live/shards/drow/personal/r.jsonl",
+      "url": "/Nomina/live/shards/drow/personal/r.jsonl",
+      "size": 25844,
+      "sha256": "e25c83e1da9f141171933b7932f09fa8125d00a669e6d530d38a0455815de946"
+    },
+    {
+      "id": "spec:drow/core",
+      "path": "Nomina/live/shards/drow/personal/w.jsonl",
+      "url": "/Nomina/live/shards/drow/personal/w.jsonl",
+      "size": 126381,
+      "sha256": "65868f4c84c7e99d20e79e30e8dcfdbb74276ccff16b87e9dc9cf156b9eb9d80"
+    },
+    {
+      "id": "spec:drow/core",
+      "path": "Nomina/live/shards/drow/personal/z.jsonl",
+      "url": "/Nomina/live/shards/drow/personal/z.jsonl",
+      "size": 130838,
+      "sha256": "bde635a143e50380f0267a366351789cbfed6839b30e7cdc1cbd64f45d899101"
+    },
+    {
+      "id": "spec:drow/family",
+      "path": "Nomina/live/shards/drow/family/d.jsonl",
+      "url": "/Nomina/live/shards/drow/family/d.jsonl",
+      "size": 65641,
+      "sha256": "d8aed94beb7fe1b9f2a4ee471b74708f97b5594674f00c8a0aef143b6042b7c3"
+    },
+    {
+      "id": "spec:drow/family",
+      "path": "Nomina/live/shards/drow/family/r.jsonl",
+      "url": "/Nomina/live/shards/drow/family/r.jsonl",
+      "size": 11136,
+      "sha256": "0a2acd124ac05051cf3b5cdae9cb93978ad03cff1d26a0a5356277027d1a5bd6"
+    },
+    {
+      "id": "spec:drow/family",
+      "path": "Nomina/live/shards/drow/family/w.jsonl",
+      "url": "/Nomina/live/shards/drow/family/w.jsonl",
+      "size": 66715,
+      "sha256": "ecd8a723d570de74022033a37acb5fc372243a17e854fb8dd1cc07b10d97bfc7"
+    },
+    {
+      "id": "spec:drow/family",
+      "path": "Nomina/live/shards/drow/family/z.jsonl",
+      "url": "/Nomina/live/shards/drow/family/z.jsonl",
+      "size": 64633,
+      "sha256": "19f9ac2c3abed8ac6790d2bfa134ab7bc902d2eae0fac81ab069aa20981f77de"
+    },
+    {
+      "id": "spec:drow/house",
+      "path": "Nomina/live/shards/drow/house/d.jsonl",
+      "url": "/Nomina/live/shards/drow/house/d.jsonl",
+      "size": 34561,
+      "sha256": "82c327589bec3ffa3cc786933e7fc76dc05472579ceb9b03503ce6947bc0a676"
+    },
+    {
+      "id": "spec:drow/house",
+      "path": "Nomina/live/shards/drow/house/r.jsonl",
+      "url": "/Nomina/live/shards/drow/house/r.jsonl",
+      "size": 7001,
+      "sha256": "7e5a72b37ecf4b2b45eb356867102a1cc6ec6da14b17ec347caa3b745e922b03"
+    },
+    {
+      "id": "spec:drow/house",
+      "path": "Nomina/live/shards/drow/house/w.jsonl",
+      "url": "/Nomina/live/shards/drow/house/w.jsonl",
+      "size": 32276,
+      "sha256": "fbf6223b6f8b157c0c00c9f659f07115382552f3657abf860a61a2a4441c1ac6"
+    },
+    {
+      "id": "spec:drow/house",
+      "path": "Nomina/live/shards/drow/house/z.jsonl",
+      "url": "/Nomina/live/shards/drow/house/z.jsonl",
+      "size": 29499,
+      "sha256": "d5b3295916ba68ec1d67855daf38af01ff1682ec437cbd66595b9134c55129ed"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/d.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/d.jsonl",
+      "size": 101416,
+      "sha256": "692ad8ede9b3b87457b45e45c5c8cc7aa52d281801abb2c8d7c22d28e75f19ae"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/g.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/g.jsonl",
+      "size": 102662,
+      "sha256": "877658b072797646bb23dd5dc81783df71af33a3ffdb3ff81bad2847e5938d81"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/h.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/h.jsonl",
+      "size": 12225,
+      "sha256": "010dd0ec7c4c98fb7196da644ae3d383612fe751545176729bff902dee4e3728"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/k.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/k.jsonl",
+      "size": 93221,
+      "sha256": "b47b92d6f51b8a657a3564782e10e89a9d45c0b716616689706a182fa28d492f"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/r.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/r.jsonl",
+      "size": 16542,
+      "sha256": "1bda9f9a8b9aa1768fd0a9deae82e90b824b846fb9df6b0ab93d77c906ab5dfc"
+    },
+    {
+      "id": "spec:duergar/core",
+      "path": "Nomina/live/shards/duergar/personal/t.jsonl",
+      "url": "/Nomina/live/shards/duergar/personal/t.jsonl",
+      "size": 93500,
+      "sha256": "6dfa53dfadc93d752311a1b1b4ea322b4b744a612a448cd3f57e5fb822159bfc"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/d.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/d.jsonl",
+      "size": 45950,
+      "sha256": "6cf82dde49b4590c449542ad126503954c2146a715ed1ac678c1c9939b281b06"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/g.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/g.jsonl",
+      "size": 48693,
+      "sha256": "1eb239a6c6b338b363fd98a787ab87081845dfe984dd0be2173894f5220b2822"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/h.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/h.jsonl",
+      "size": 7180,
+      "sha256": "8b7b72daa753cc6350276be056a2743d11b512c16c0daec2ce561712a4864797"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/k.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/k.jsonl",
+      "size": 44730,
+      "sha256": "a8481a47afc6d587da495fe9b37e3233f7dfee63c5b0cc1189acfc54186853fa"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/r.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/r.jsonl",
+      "size": 6990,
+      "sha256": "a4c512afb5dfe106c06fafed3e33e8a56e210822d0478654d6636854dc64fc09"
+    },
+    {
+      "id": "spec:duergar/family",
+      "path": "Nomina/live/shards/duergar/family/t.jsonl",
+      "url": "/Nomina/live/shards/duergar/family/t.jsonl",
+      "size": 54328,
+      "sha256": "3ca77957e4607804ee9c491d64d0f85b15bf49994aa50509a07707614d404324"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/d.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/d.jsonl",
+      "size": 25241,
+      "sha256": "7face9828e256652a3068070b7bb8b4dd600ffaef2da81d7aeeaa5e57fabe9de"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/g.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/g.jsonl",
+      "size": 27589,
+      "sha256": "8007d8ab23cf0f4d3bef924bc49fb5df84ff186bdd5350620b2ac16166efa4c0"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/h.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/h.jsonl",
+      "size": 3848,
+      "sha256": "76b0ed77a31f6b2f6022ff8d87473e45caad6f8c93791eac58a8aaa61e1713fb"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/k.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/k.jsonl",
+      "size": 23099,
+      "sha256": "0b2f104f87603986e118be5653a6fdd841ce932d14fc5a3a5c9bbfb4b79ff78c"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/r.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/r.jsonl",
+      "size": 3603,
+      "sha256": "fc3a3cf36b7499f3b18b7008b66f3ef74fd0766f4beafa1b9a6465fb32f05a18"
+    },
+    {
+      "id": "spec:duergar/house",
+      "path": "Nomina/live/shards/duergar/house/t.jsonl",
+      "url": "/Nomina/live/shards/duergar/house/t.jsonl",
+      "size": 20379,
+      "sha256": "b45cd30de5614835fa6d95828984976d0f010978478cd1e4910cc49ce7e5afdc"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/a.jsonl",
+      "size": 8535,
+      "sha256": "4901295110bbda935848a978178010f3cbe512e0dee2873d12eeb6293b7436b1"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/b.jsonl",
+      "size": 105987,
+      "sha256": "008757b3943a08862196cbfb1512f37e4ec6adc4c6d36d9dea37405b59920699"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/d.jsonl",
+      "size": 108914,
+      "sha256": "ed37b4908066b1701d9c5953c4bc94d8be1b3e824b8faf65fe5a335185c48f40"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/e.jsonl",
+      "size": 9863,
+      "sha256": "79894d9e1d008d0c9dd25a0345195c881532a8411c5b4792976d0a9c7c0ca352"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/g.jsonl",
+      "size": 106269,
+      "sha256": "0537b6cf9ffb30c464b0b54ef648f8dab483d2f7ce3a8be086581244ea9ec8b7"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/i.jsonl",
+      "size": 11165,
+      "sha256": "301da267e7e01ecae7fdc48e702899e222cdaccd1cd10795be3e8a5a67bc4399"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/m.jsonl",
+      "size": 99828,
+      "sha256": "30d9ab78d95e759a04148979045d25786463d6b4dafd6247564e5965e04488de"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/o.jsonl",
+      "size": 8937,
+      "sha256": "62c4c6e04da33727af80645178c0db2587cc46483c3518d9f2d25ff31791854c"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/r.jsonl",
+      "size": 100389,
+      "sha256": "d902dc29755ad0dbcc15e5a9341a57317a21b2afd5542f6ea0b0580c10f75aa8"
+    },
+    {
+      "id": "spec:dwarf_hill/core",
+      "path": "Nomina/live/shards/dwarf_hill/personal/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/personal/u.jsonl",
+      "size": 9826,
+      "sha256": "da20f3547ed26d772d82442cf848e694675da411145b09b994329e46a6828b05"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/a.jsonl",
+      "size": 3567,
+      "sha256": "c46330ba14431b7d4fc57d1534a756faeb2c82d8acfa3d573cda7bd86871bbcc"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/b.jsonl",
+      "size": 45976,
+      "sha256": "c3e1de3d2de9fa8e3cbc1b095b0ea9d82f3fcb2555078ee4146ee21c4d158217"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/d.jsonl",
+      "size": 54052,
+      "sha256": "98d42b26f8e383330e3a078602a278e031a4fd1fbb92eefb2944c893796e7121"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/e.jsonl",
+      "size": 4514,
+      "sha256": "55e29d18bab2586d7db31498b53d5863f5b3a5d3a5fb6e789a2a4d85f884893a"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/g.jsonl",
+      "size": 47292,
+      "sha256": "adac9716960c63c7220e79359f1aa6643290ad3bf9777b0028733f1285634951"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/i.jsonl",
+      "size": 5090,
+      "sha256": "667db3a2f57f5574d95d4e538ddbbda9671024560f3894765b109ad2b62c96a0"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/m.jsonl",
+      "size": 42541,
+      "sha256": "b0d39ca6dab581bd2c385cfe35a02a9ccc285aee14f945bf3e82e4c3b169d33e"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/o.jsonl",
+      "size": 4776,
+      "sha256": "94f7524c05e45cbb2b3d39992c79a1e8da8d6ef97e8fac56abc07cfd737d1588"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/r.jsonl",
+      "size": 51075,
+      "sha256": "4102f25cbdc8b77ab28c01ac6c5cfaa00622b9e06c666331e5851f3175e9cc04"
+    },
+    {
+      "id": "spec:dwarf_hill/family",
+      "path": "Nomina/live/shards/dwarf_hill/family/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/family/u.jsonl",
+      "size": 7901,
+      "sha256": "94edfa7f4a3a8d049d2b76fa55e7b18c0a4fb3e4e2d90b9e46d1eb033ad2b6bf"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/a.jsonl",
+      "size": 3553,
+      "sha256": "a75d67d798495211bfb995dc274136fd467fffeee6c7da9aa3eaf1de3c12f2a7"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/b.jsonl",
+      "size": 28287,
+      "sha256": "692c8af55e0b75f7bdcaa8373876d9acf02db56224a8a339edcaa40b1260ca97"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/d.jsonl",
+      "size": 25132,
+      "sha256": "333cb3e2692a6ec5d99f160bf2fcdb12b23b97c5a5458eded37f15d82bb64ad0"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/e.jsonl",
+      "size": 1297,
+      "sha256": "32f7da915ccd61f77c2aad77358ab00e0899d714ba2e05a23fbf96cc7857d030"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/g.jsonl",
+      "size": 22452,
+      "sha256": "5c7711d27625b18fda9e1035a50797a68f82585364aa9c4976397be34d51e55b"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/i.jsonl",
+      "size": 3305,
+      "sha256": "54930f3652f5953720d68ae69ebe684ec667ed81d5c88e68d53b8074712e62f8"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/m.jsonl",
+      "size": 24062,
+      "sha256": "a11c161a63e2647007a062f5e08a5e34ce64876bd4c587ba03297494082bca77"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/o.jsonl",
+      "size": 2580,
+      "sha256": "d5f75dbbe46c275bf4570573bf0373fa31a19f5a5970027f567a80775583cda4"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/r.jsonl",
+      "size": 24035,
+      "sha256": "6f0001bde1bcf8027d4dba8429757fa40e133cadcc086e7fe79b9cd19869593d"
+    },
+    {
+      "id": "spec:dwarf_hill/house",
+      "path": "Nomina/live/shards/dwarf_hill/house/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_hill/house/u.jsonl",
+      "size": 2401,
+      "sha256": "6696169f5895d57f181d2b14e8f4dc43c642c82c0d8ec68713f7d312f21c42bd"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/a.jsonl",
+      "size": 8846,
+      "sha256": "84055a7759f9cb78d3945b2e6984dcab4f018739212a56b1717984dd185f72d4"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/b.jsonl",
+      "size": 109868,
+      "sha256": "873d4039f9a0d2fb8bce78beb630b89567cb788bd7cc1ee0a9abf0ae622a9ec7"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/d.jsonl",
+      "size": 111404,
+      "sha256": "ef8eb24bba830a077333c7f438f8d789df2ffaaa22c43591740285061da29c74"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/e.jsonl",
+      "size": 10188,
+      "sha256": "ab348f30bb2b62d397a40fbae2ede5c9cbd36be3a1f373e76c6f3f8b403385b5"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/g.jsonl",
+      "size": 104896,
+      "sha256": "eecd2283e696300c4692d17337e9df145fa1c42229fa7e33fa1347653d66dc64"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/i.jsonl",
+      "size": 11719,
+      "sha256": "eb3ef675cfb197b0a5156208e7757ca60e916c7c7b8b7786cd599ca3fac7b03c"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/m.jsonl",
+      "size": 104708,
+      "sha256": "0aae01fc54255ac32a20d673eed9f31a47161d490deaf4d5e8e0b1160db30d6f"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/o.jsonl",
+      "size": 9264,
+      "sha256": "493252f782e8561eb73dec13122b761978d6e54049c5055976334a9be9cfbaa5"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/r.jsonl",
+      "size": 105178,
+      "sha256": "9ab8e9164995ba0f2fd87a8f9c79002a6862610b3a4339f5096468265ee8f8d6"
+    },
+    {
+      "id": "spec:dwarf_mountain/core",
+      "path": "Nomina/live/shards/dwarf_mountain/personal/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/personal/u.jsonl",
+      "size": 10087,
+      "sha256": "53d07a59f68050cc2529e820ac9a08208b072631b29e5b4bbd1ca442d86fbecf"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/a.jsonl",
+      "size": 3856,
+      "sha256": "5efe8085684801607124e3db718a93dd7884fc27915a0df4b02e55e6e197ef7e"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/b.jsonl",
+      "size": 48615,
+      "sha256": "5e1962761c5126af871014aea43552bf0c15d4d49633eddb435bf9b0db9d8813"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/d.jsonl",
+      "size": 56013,
+      "sha256": "2ff9ab9fc420b6df96ad871f253abea632ada9f0c5ca9458cedc91c2efbd167a"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/e.jsonl",
+      "size": 4730,
+      "sha256": "3412b8bfe2317c7f869a458311f2ceda65c561efdeb0b702ecfd9923d32eedf4"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/g.jsonl",
+      "size": 48777,
+      "sha256": "43b02d99ad44d384932422675c1a8d4dcd1a763016c7b71089e78341fc7500dc"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/i.jsonl",
+      "size": 5336,
+      "sha256": "8f833bf058f0e16d8fe8a0e369cc321eb9f17454637f2b3a8c8b6748f8946678"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/m.jsonl",
+      "size": 44833,
+      "sha256": "5fd60910b08336fc9ceb6428fe743557c35d8753fea4cdb5f05d5e82da64236d"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/o.jsonl",
+      "size": 5142,
+      "sha256": "70d30af149ce92db19091a4c464511317108a0731687e1af57f6db3c198f39cf"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/r.jsonl",
+      "size": 54765,
+      "sha256": "16b8236866462db1ce5980a2918c3a21dfda10f9594852a2836c503b50d2c0c9"
+    },
+    {
+      "id": "spec:dwarf_mountain/family",
+      "path": "Nomina/live/shards/dwarf_mountain/family/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/family/u.jsonl",
+      "size": 8118,
+      "sha256": "51fe99226ae8f4d120e0125caef13dc1ff2f6650802f89e06dbeb94b1e5d4b70"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/a.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/a.jsonl",
+      "size": 3801,
+      "sha256": "255d21468aedd921505b297b9a4169bf047de89485a0980384e2b1b2671ecaa5"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/b.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/b.jsonl",
+      "size": 30173,
+      "sha256": "caec07a711f70488c5e3c40c000415c30e7b53090c615c004a38740c7fccfe27"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/d.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/d.jsonl",
+      "size": 26164,
+      "sha256": "db38e3dc03902c603d98f723fb41c2499eda532a9cf4afa074a30872e5935cbd"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/e.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/e.jsonl",
+      "size": 1288,
+      "sha256": "f9955579c51bce16cc99f32573dd99d2a1e7cd950ec73a8a6c88c744770968c1"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/g.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/g.jsonl",
+      "size": 23934,
+      "sha256": "9b279b67a7c4fc4ba23515ecbb2d3c729822938595034011e92042fcf57006ae"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/i.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/i.jsonl",
+      "size": 3535,
+      "sha256": "8bd389559257d290aed05355eac06794a46df76441c2d0b1a54e8a82d5c8d384"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/m.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/m.jsonl",
+      "size": 24760,
+      "sha256": "7b863d248bc2467d156715d6ba5a937310523183cc422f2cae13202e044aa708"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/o.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/o.jsonl",
+      "size": 2652,
+      "sha256": "c61f4ad493de5f1541656a88fdcb591e9fb3271df629daaff6eea064ed0a4216"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/r.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/r.jsonl",
+      "size": 24852,
+      "sha256": "3c13a1d0899de7b1af808d9f200a4079d13c353ee6258143e3a004d884db6af9"
+    },
+    {
+      "id": "spec:dwarf_mountain/house",
+      "path": "Nomina/live/shards/dwarf_mountain/house/u.jsonl",
+      "url": "/Nomina/live/shards/dwarf_mountain/house/u.jsonl",
+      "size": 2541,
+      "sha256": "0255595882409b2d7ba3d16ca4ec67430afe2f1fdc1b829927c1f77ab07b79c7"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/a.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/a.jsonl",
+      "size": 14846,
+      "sha256": "6baa6c0db99bb72fe3f3a25dcc46f4a89db12856fae8bc6f0851f19a6981a1e1"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/e.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/e.jsonl",
+      "size": 13477,
+      "sha256": "56c7d45915cc0bbba6feaedd88c4913c9f7772239df56d3f7fab199305fccf89"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/i.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/i.jsonl",
+      "size": 12949,
+      "sha256": "bbb714e56b51a1aed892ca198344b770f2bbe134b5f8d4669a749e12d0ee5d63"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/l.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/l.jsonl",
+      "size": 135452,
+      "sha256": "c381237e8b844b319609eb5a3e2e213604bcffba6d70dae81bdd781353426b16"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/m.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/m.jsonl",
+      "size": 125782,
+      "sha256": "1d53e3534ff5e47fc74aeb582336ef064b5446686e5204a6d20f05a6ab50eaa4"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/n.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/n.jsonl",
+      "size": 131708,
+      "sha256": "7d72fa23a450fd0644296878fd8823134c02d2ba2779922ffbb6604a012db70f"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/o.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/o.jsonl",
+      "size": 5393,
+      "sha256": "7174c825cff626adca23bb1748076a8aa392569330be407cbfd5e3e82384a66f"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/r.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/r.jsonl",
+      "size": 134141,
+      "sha256": "f760e97890c1deca9425e583669457176416c46e0ad0504be757b88ebc171f6a"
+    },
+    {
+      "id": "spec:elf_drow/core",
+      "path": "Nomina/live/shards/elf_drow/personal/u.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/personal/u.jsonl",
+      "size": 5110,
+      "sha256": "0db9aa0df02d8350c79d2e58858d4388d4cc70b55fc807272018e09a3b34dd6b"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/a.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/a.jsonl",
+      "size": 7004,
+      "sha256": "42f788e29bd4d4b241d7d83097062e84574c5145b05bd9c063d383dafd502c42"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/e.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/e.jsonl",
+      "size": 3552,
+      "sha256": "34bb7002e004d12449797377570de9bf0e1ca44af907dadb6b908ebd6cdfd5cf"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/i.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/i.jsonl",
+      "size": 6892,
+      "sha256": "4db3d2b9f31176f1bbb45417074d043ae40c0354afdc19f303116b20b53ebf5e"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/l.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/l.jsonl",
+      "size": 63040,
+      "sha256": "d2ea3296dd7581340448b8c4cd2b9907f44daf9ae8901c198a050e65ae1b064b"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/m.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/m.jsonl",
+      "size": 62388,
+      "sha256": "9577ffd44ef6723bb3d24f532147bf0327af94eeb2a2de75ac5e8aac02c5d7aa"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/n.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/n.jsonl",
+      "size": 59081,
+      "sha256": "c486ca8f43f5dc230ff910f53e35da4648f9fec3e58831915ccfbc586bed957b"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/o.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/o.jsonl",
+      "size": 4654,
+      "sha256": "8ea26d688a556ce43a87f37dbc4be320e21adfa5ed8436b03cbb78023179e459"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/r.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/r.jsonl",
+      "size": 62279,
+      "sha256": "91b883afa781970a1a0e01ae5adabb97ac8fc581f77a44429e34e58d6ace4274"
+    },
+    {
+      "id": "spec:elf_drow/family",
+      "path": "Nomina/live/shards/elf_drow/family/u.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/family/u.jsonl",
+      "size": 3410,
+      "sha256": "532d134d5ea68185ddd3a686abfa378cf8195735e709e00c821201b2b40280a1"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/a.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/a.jsonl",
+      "size": 2141,
+      "sha256": "7e847e586e600115c73eeff794c11d6ef567682179bc611dc1bfb8990cc63a20"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/e.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/e.jsonl",
+      "size": 3645,
+      "sha256": "2ac2bb1838d0c3c00d4c41e387bfb38405112ae05586d468ae35f2c4823e333e"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/i.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/i.jsonl",
+      "size": 2674,
+      "sha256": "5b13204d3014647cd0ed02efd7ffd705aa2c8d4040ffaf867891ad1e036d64c1"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/l.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/l.jsonl",
+      "size": 31525,
+      "sha256": "36d0b176192888607c60f4752fdfa677070a2306175280f5de08b5f5e3c8ced8"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/m.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/m.jsonl",
+      "size": 37767,
+      "sha256": "416b6e5e6bad03696eb22dac219b3dd564564c5fcaecf412579a73e868436ae8"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/n.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/n.jsonl",
+      "size": 27337,
+      "sha256": "7b3fddbaf465394ccb6de69bed4eac7775b0152776b565e53370b06fe1792d41"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/o.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/o.jsonl",
+      "size": 2642,
+      "sha256": "deb24c28ad1e30c404a2c419d7fe7372a9d3b41303e8b5b8d974bc605d2fe75e"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/r.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/r.jsonl",
+      "size": 32752,
+      "sha256": "7e08ba97eba7c9df739778c8031f49a1342b9c58a212073e9aebd0655ebff81c"
+    },
+    {
+      "id": "spec:elf_drow/house",
+      "path": "Nomina/live/shards/elf_drow/house/u.jsonl",
+      "url": "/Nomina/live/shards/elf_drow/house/u.jsonl",
+      "size": 1000,
+      "sha256": "ebdb4a7453ef34114b5970be0a6cf362c2196557ede7ad440b7605501f3ca0f2"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/a.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/a.jsonl",
+      "size": 15133,
+      "sha256": "5fe9d361f7826c94e2bd0504cece112937fd24c31b4f76b9cc667b57df1d640f"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/e.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/e.jsonl",
+      "size": 13611,
+      "sha256": "8248566d17a4fb4954770e9b501343268adbe0e7ed05f869d8588317cc79a080"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/i.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/i.jsonl",
+      "size": 13048,
+      "sha256": "164700bec0876c2ba6a4e8c6c57909d96e67e5ed0d38316a58fc560f9f583b68"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/l.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/l.jsonl",
+      "size": 142000,
+      "sha256": "5b2a2fcc6ddb5a257c18b7e44dc5143820caf8688b4b110d0c1c62fdf2cb003e"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/m.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/m.jsonl",
+      "size": 134087,
+      "sha256": "956c803062bbeecb9de8140dc75bae2027641cc60f2da8b415b13dcfdfc16073"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/n.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/n.jsonl",
+      "size": 141602,
+      "sha256": "6d67329ea74ab74e84f6aa87701d7dbf563b9b71c3b14b27c02ed36ded6b968e"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/o.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/o.jsonl",
+      "size": 5505,
+      "sha256": "5177a15bbb61015ef646ce74a2385199c8cd9a811d248606f61668884a38cfb0"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/r.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/r.jsonl",
+      "size": 141858,
+      "sha256": "3666d632bead15710ce2c9240ade8429736d046f6a6eb1c2a29d7a1525b8a4f6"
+    },
+    {
+      "id": "spec:elf_high/core",
+      "path": "Nomina/live/shards/elf_high/personal/u.jsonl",
+      "url": "/Nomina/live/shards/elf_high/personal/u.jsonl",
+      "size": 4897,
+      "sha256": "2f7aefeb838c0310770dc050bccdb653fe91cc9ebdddc0ad7b8146e35ffafe0a"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/a.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/a.jsonl",
+      "size": 7099,
+      "sha256": "c331bd295577f34ab63a06a66c5a80bd7e6d740cd257d5b312da1daea45894c2"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/e.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/e.jsonl",
+      "size": 3488,
+      "sha256": "97a6cc71792094eaa3d1f2dc2ab392305899d636bfb0e54104aee3e0a66adb25"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/i.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/i.jsonl",
+      "size": 7005,
+      "sha256": "9984bcbc2caad7058b64cd4523b1f7ff35e02999bba8af79e2cc4e3a8a00ebe3"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/l.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/l.jsonl",
+      "size": 71723,
+      "sha256": "fffcd6c34ff3068b189d084c921518ede54e789172956456e24e8d96614f47d2"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/m.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/m.jsonl",
+      "size": 66333,
+      "sha256": "102b020899aa346acad1a4886d2ac140c821639900021e2ae735fec7bc1bced5"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/n.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/n.jsonl",
+      "size": 65040,
+      "sha256": "ecb0cfd4438c55b4555e504b5bc416263be722bd97f0750e0d2f139037f0ba4f"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/o.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/o.jsonl",
+      "size": 4787,
+      "sha256": "8b0b781f422d38e15345245fe6c0e1600e158a6a60142ab593e6b33ad2897428"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/r.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/r.jsonl",
+      "size": 65951,
+      "sha256": "be5b71289ce069b7014830aa482c770a8110648784e4f3533144d4bf0182707c"
+    },
+    {
+      "id": "spec:elf_high/family",
+      "path": "Nomina/live/shards/elf_high/family/u.jsonl",
+      "url": "/Nomina/live/shards/elf_high/family/u.jsonl",
+      "size": 3399,
+      "sha256": "bde18918834f652b3b3c6bbbd2c1a29db8c2f45373a0b70cfee1111a61080dd7"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/a.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/a.jsonl",
+      "size": 2020,
+      "sha256": "7ebc391b6d9bee880ac66fe21c5a89f86550141f20b7bc150c6206e42cca1502"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/e.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/e.jsonl",
+      "size": 3704,
+      "sha256": "16698535ea52031f30f0013030c053d47efb1e5cff92a0cac4f71117955f66fe"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/i.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/i.jsonl",
+      "size": 2795,
+      "sha256": "e767817c384c0529fb4bf2f810e0c7bc566579bafac28d25dcdc833f58a898fe"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/l.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/l.jsonl",
+      "size": 34118,
+      "sha256": "7ac7f3032916bdd68d98ec649e66a947f65816c1d909c8f5fb504114f0b22799"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/m.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/m.jsonl",
+      "size": 41752,
+      "sha256": "eb1dfd29df7add0461dcbc54fa14e600a819afd8e0dcfaa1bf8ffe2316b450da"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/n.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/n.jsonl",
+      "size": 30307,
+      "sha256": "b8d6d847779ea1c7208c60c37d1b27d6ded97a56a64899a5c058128d64616a5d"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/o.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/o.jsonl",
+      "size": 2616,
+      "sha256": "3d0a675d79f45939fcda60375d3b23df309743c18d862781f32c34940220eb21"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/r.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/r.jsonl",
+      "size": 34525,
+      "sha256": "e759c82bd8a345ef98fb8e0a9a0df7320aeab1b2403d09b86ab6d01d9a6aef73"
+    },
+    {
+      "id": "spec:elf_high/house",
+      "path": "Nomina/live/shards/elf_high/house/u.jsonl",
+      "url": "/Nomina/live/shards/elf_high/house/u.jsonl",
+      "size": 1002,
+      "sha256": "0a27707bebb974bab6789cd2c6c5ac7fe7d239bdc07f859e2c1212d6125b10b9"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/a.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/a.jsonl",
+      "size": 15107,
+      "sha256": "f90738d4d200a16122decc7b4ab972acf76208f895a524fbcc67bbffdcb49f77"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/e.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/e.jsonl",
+      "size": 13661,
+      "sha256": "d18048d833dc1f6bbab276403f4dc8990c335fe59f9adbacde6531c5d191cb4a"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/i.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/i.jsonl",
+      "size": 13196,
+      "sha256": "56042646cbb8c1f17421022e5177828ed991ec3e846ea7b9a7574b48d4a80e52"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/l.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/l.jsonl",
+      "size": 143945,
+      "sha256": "45c5eb1c663683a9687b04b0cdeca225dc5a07f0408147e41f28c2de4ade21ac"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/m.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/m.jsonl",
+      "size": 133983,
+      "sha256": "3de3b5d726d6ae0ebd06e0aa68d06dddd437bf3abab7fbdd4220fc1acf6006ee"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/n.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/n.jsonl",
+      "size": 145603,
+      "sha256": "1b8929e6ac88a325fab5f85981630492a831f3717c4fcaf223db10974450bb16"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/o.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/o.jsonl",
+      "size": 5505,
+      "sha256": "412f0c8ac5ddb4cb2da26b9b2217e655dbd6be58be7f8b9cb8b6b8f12d38f0fa"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/r.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/r.jsonl",
+      "size": 142780,
+      "sha256": "c98544a8d5e959088f1ddea65aafa420fab1c6920d707ee112b206f6412bcf51"
+    },
+    {
+      "id": "spec:elf_wood/core",
+      "path": "Nomina/live/shards/elf_wood/personal/u.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/personal/u.jsonl",
+      "size": 4888,
+      "sha256": "74404da442ac30e6fd69985927753e6377fc681b61d72319befe986425dcbc74"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/a.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/a.jsonl",
+      "size": 7178,
+      "sha256": "83e6ca27123fdf1507a1bd124b51225f565a41f99b4c836a84e3c2de54e6aa8e"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/e.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/e.jsonl",
+      "size": 3509,
+      "sha256": "4f08c4c3ff65e8a3bdc334ff01e20ad80f7524a2b6f9d1fb2023cf402912e122"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/i.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/i.jsonl",
+      "size": 7000,
+      "sha256": "034489ce82fcfaa86b9b310dd73c2ff1ee61cae59dbde086322a264cfa08d439"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/l.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/l.jsonl",
+      "size": 75940,
+      "sha256": "5df9b852ed7a791dfa8e9f51cedf8160043066b4520d99d42c526ad354622eb2"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/m.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/m.jsonl",
+      "size": 69648,
+      "sha256": "948fdb74a0dc87c24d64d707d29ce6268696ec36531f2bff9281c793b09de8cd"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/n.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/n.jsonl",
+      "size": 68569,
+      "sha256": "f60ac7bc8ec8ba438bba556ac45b86b8117672cb224778db55165cadfa3a1629"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/o.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/o.jsonl",
+      "size": 4789,
+      "sha256": "38e7aa701a175f42e46ebd1ded9ec195feff80331b8922f64d3a669ca11d26ab"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/r.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/r.jsonl",
+      "size": 69797,
+      "sha256": "bb7340a19cbf53632848d3b67bdc0dc332b7e99083f8540552d621c1866dba47"
+    },
+    {
+      "id": "spec:elf_wood/family",
+      "path": "Nomina/live/shards/elf_wood/family/u.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/family/u.jsonl",
+      "size": 3426,
+      "sha256": "1ed61734ecb6744c2541ebd8094ae5671c228fbde7c68efbad52fdc74415c987"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/a.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/a.jsonl",
+      "size": 2069,
+      "sha256": "9fa783575a3018db6d795f7a32d2cfdf9aeb091945811aac0f74ab9b361e21f3"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/e.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/e.jsonl",
+      "size": 3569,
+      "sha256": "7279742bea02b3c76a8c0645eb12557eb72984fba01b784055c52e5f449ede51"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/i.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/i.jsonl",
+      "size": 2852,
+      "sha256": "05b98a6cd8976f42f6e4424416f06b04efa642d15bef6819c8a5b4c6d31bf421"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/l.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/l.jsonl",
+      "size": 36543,
+      "sha256": "101545a9a897e27ceae761596bb783bd1f5d07cff50f4cf72db0a788845bf496"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/m.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/m.jsonl",
+      "size": 42783,
+      "sha256": "5d6a4842e8e3270c17ca25cb76304c75507dae3bf08467d58dabfbd7841a9de2"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/n.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/n.jsonl",
+      "size": 30825,
+      "sha256": "02bb139205c3523c420587cc440124d7783fb40744a745266ea10ba45dd276d8"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/o.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/o.jsonl",
+      "size": 2639,
+      "sha256": "eeddd46abf870483fee3b41869946108c1f1395e8a4545f22613dad5762c0799"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/r.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/r.jsonl",
+      "size": 34771,
+      "sha256": "03f944152440f39b1168f7d2fb7787d4ffb9cc478e868138da72fc76f0cc619e"
+    },
+    {
+      "id": "spec:elf_wood/house",
+      "path": "Nomina/live/shards/elf_wood/house/u.jsonl",
+      "url": "/Nomina/live/shards/elf_wood/house/u.jsonl",
+      "size": 1001,
+      "sha256": "7b9f2a0078d877eaf161c50062d0e460e2baac17b19f2afff22fed8b4b2de7fb"
+    },
+    {
+      "id": "spec:firbolg/core",
+      "path": "Nomina/live/shards/firbolg/personal/b.jsonl",
+      "url": "/Nomina/live/shards/firbolg/personal/b.jsonl",
+      "size": 137298,
+      "sha256": "557947e8771ba4b40dfb2526a5612e23301ce08695b5a2340476b4ef4e125267"
+    },
+    {
+      "id": "spec:firbolg/core",
+      "path": "Nomina/live/shards/firbolg/personal/f.jsonl",
+      "url": "/Nomina/live/shards/firbolg/personal/f.jsonl",
+      "size": 262698,
+      "sha256": "b963ae9625ff32cef935377f727acdb3a2561d28413ca910c34e646d5b8d6f82"
+    },
+    {
+      "id": "spec:firbolg/core",
+      "path": "Nomina/live/shards/firbolg/personal/g.jsonl",
+      "url": "/Nomina/live/shards/firbolg/personal/g.jsonl",
+      "size": 19281,
+      "sha256": "b3b05db4526fd62af8e71ee5292bfff3e571e20108b2ee00fabb73a700dc35ae"
+    },
+    {
+      "id": "spec:firbolg/core",
+      "path": "Nomina/live/shards/firbolg/personal/l.jsonl",
+      "url": "/Nomina/live/shards/firbolg/personal/l.jsonl",
+      "size": 19111,
+      "sha256": "03a892a91bce5c53baf83ca43bc76d82ac8b6a610a4de809037910abd98d12f7"
+    },
+    {
+      "id": "spec:firbolg/core",
+      "path": "Nomina/live/shards/firbolg/personal/r.jsonl",
+      "url": "/Nomina/live/shards/firbolg/personal/r.jsonl",
+      "size": 24921,
+      "sha256": "f598e640c9bd128f764fdab31ee21e67aabe4453404c436109761e4caafdd4ba"
+    },
+    {
+      "id": "spec:firbolg/family",
+      "path": "Nomina/live/shards/firbolg/family/b.jsonl",
+      "url": "/Nomina/live/shards/firbolg/family/b.jsonl",
+      "size": 68903,
+      "sha256": "c3993c0fdb919b87b21488b69117a4f9636f313a5c88320d59bc7ca374ff4c75"
+    },
+    {
+      "id": "spec:firbolg/family",
+      "path": "Nomina/live/shards/firbolg/family/f.jsonl",
+      "url": "/Nomina/live/shards/firbolg/family/f.jsonl",
+      "size": 131992,
+      "sha256": "104978f195c4f7d8fe03aab229b03f3e9480b8cf404316d5cd975835d0bcba5b"
+    },
+    {
+      "id": "spec:firbolg/family",
+      "path": "Nomina/live/shards/firbolg/family/g.jsonl",
+      "url": "/Nomina/live/shards/firbolg/family/g.jsonl",
+      "size": 8926,
+      "sha256": "07a0a57d3992e423b54d901676de4940dc899f056047d6699e1c9eab1f5ad7af"
+    },
+    {
+      "id": "spec:firbolg/family",
+      "path": "Nomina/live/shards/firbolg/family/l.jsonl",
+      "url": "/Nomina/live/shards/firbolg/family/l.jsonl",
+      "size": 10246,
+      "sha256": "3690b1286dfc0d0fb654f55849b7fa2a8171f21f9769fefd12bfc3b743223887"
+    },
+    {
+      "id": "spec:firbolg/family",
+      "path": "Nomina/live/shards/firbolg/family/r.jsonl",
+      "url": "/Nomina/live/shards/firbolg/family/r.jsonl",
+      "size": 11439,
+      "sha256": "d6768436b30c2681041152a9c3d34bb9550f65158abcac05061f36cbbf1dcd8b"
+    },
+    {
+      "id": "spec:firbolg/house",
+      "path": "Nomina/live/shards/firbolg/house/b.jsonl",
+      "url": "/Nomina/live/shards/firbolg/house/b.jsonl",
+      "size": 35103,
+      "sha256": "df7a2477f8a84126dc10242596887e6db898c6864e5bd2efb19aac9d66cb7abf"
+    },
+    {
+      "id": "spec:firbolg/house",
+      "path": "Nomina/live/shards/firbolg/house/f.jsonl",
+      "url": "/Nomina/live/shards/firbolg/house/f.jsonl",
+      "size": 64698,
+      "sha256": "58f048ba06d99cdf99a00b97ea403a362ef07bc14c6457a2e623fe6abd38bc96"
+    },
+    {
+      "id": "spec:firbolg/house",
+      "path": "Nomina/live/shards/firbolg/house/g.jsonl",
+      "url": "/Nomina/live/shards/firbolg/house/g.jsonl",
+      "size": 5778,
+      "sha256": "9a03d75d5b4452739e0b456f527c17bb990fd84a6037a4b4e5fdd39c5a00f5e2"
+    },
+    {
+      "id": "spec:firbolg/house",
+      "path": "Nomina/live/shards/firbolg/house/l.jsonl",
+      "url": "/Nomina/live/shards/firbolg/house/l.jsonl",
+      "size": 3841,
+      "sha256": "ef3a343cfd9447652a8de6d1eed336e2fad5fbc7d0d80e9e474cc044927cc25d"
+    },
+    {
+      "id": "spec:firbolg/house",
+      "path": "Nomina/live/shards/firbolg/house/r.jsonl",
+      "url": "/Nomina/live/shards/firbolg/house/r.jsonl",
+      "size": 7447,
+      "sha256": "08095c1009d083c9714966fec119c309a14e74baafe264032c2f0287e73cccd3"
+    },
+    {
+      "id": "spec:genasi-air/core",
+      "path": "Nomina/live/shards/genasi-air/personal/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/personal/f.jsonl",
+      "size": 21418,
+      "sha256": "881a732b137c4d9fcdd9b2fafced482bcbd30b2ec11318070a2e54e65b900124"
+    },
+    {
+      "id": "spec:genasi-air/core",
+      "path": "Nomina/live/shards/genasi-air/personal/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/personal/h.jsonl",
+      "size": 22543,
+      "sha256": "f2ff48ed7a8afae83f66df097135843b491b098d57d8392f7c17698f1c38cffa"
+    },
+    {
+      "id": "spec:genasi-air/core",
+      "path": "Nomina/live/shards/genasi-air/personal/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/personal/n.jsonl",
+      "size": 21942,
+      "sha256": "f85349c7d9e7063c86e2d2463588409edf34eafd21c77e7d4757583390cd30a2"
+    },
+    {
+      "id": "spec:genasi-air/core",
+      "path": "Nomina/live/shards/genasi-air/personal/s.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/personal/s.jsonl",
+      "size": 274873,
+      "sha256": "cf086dc76d781fd5ef1a9c4ae1a822f7b3ca2b02bbd45b1ee371491a328a518c"
+    },
+    {
+      "id": "spec:genasi-air/core",
+      "path": "Nomina/live/shards/genasi-air/personal/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/personal/t.jsonl",
+      "size": 147763,
+      "sha256": "fe6296dc36fba0c7f5dc47459f1b3a732c193e951c2f3b968b994778281ea9d2"
+    },
+    {
+      "id": "spec:genasi-air/family",
+      "path": "Nomina/live/shards/genasi-air/family/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/family/f.jsonl",
+      "size": 11280,
+      "sha256": "210645f51c252771991b46513d2585bfc9547b15e38041b00dd2fc35dce21a3c"
+    },
+    {
+      "id": "spec:genasi-air/family",
+      "path": "Nomina/live/shards/genasi-air/family/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/family/h.jsonl",
+      "size": 11708,
+      "sha256": "b4ed6241df957d6225d51e9da7c6b60deaa593d66b24b99cc5dceeb0d4109cc4"
+    },
+    {
+      "id": "spec:genasi-air/family",
+      "path": "Nomina/live/shards/genasi-air/family/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/family/n.jsonl",
+      "size": 10828,
+      "sha256": "4b3912d8fd3eab0b35ce3904fa7f1494a6d52608ddac40b7f66f01b424eb455d"
+    },
+    {
+      "id": "spec:genasi-air/family",
+      "path": "Nomina/live/shards/genasi-air/family/s.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/family/s.jsonl",
+      "size": 134040,
+      "sha256": "ad3dbab2d9c09191a8aba96323d31e8c04504c20182a37050422f763a8ecdc8e"
+    },
+    {
+      "id": "spec:genasi-air/family",
+      "path": "Nomina/live/shards/genasi-air/family/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/family/t.jsonl",
+      "size": 72834,
+      "sha256": "a669e6942203934e1f7521dd11d6df4b70728edbdd2da9ebfa0b93b05640d9d8"
+    },
+    {
+      "id": "spec:genasi-air/house",
+      "path": "Nomina/live/shards/genasi-air/house/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/house/f.jsonl",
+      "size": 5370,
+      "sha256": "03ec9765c64b951bf5d74de1ca179bed3752702ab1cb5abdf184ab3b36c4e021"
+    },
+    {
+      "id": "spec:genasi-air/house",
+      "path": "Nomina/live/shards/genasi-air/house/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/house/h.jsonl",
+      "size": 6402,
+      "sha256": "9e09498a510a46954e33429f3b0ed16080bd96d4de7d53c47802e0d1600abe97"
+    },
+    {
+      "id": "spec:genasi-air/house",
+      "path": "Nomina/live/shards/genasi-air/house/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/house/n.jsonl",
+      "size": 4315,
+      "sha256": "a8a00fa7f8fa041e6225b7d53e2cb1f9b876d0572218a3df39ded0c72b760f65"
+    },
+    {
+      "id": "spec:genasi-air/house",
+      "path": "Nomina/live/shards/genasi-air/house/s.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/house/s.jsonl",
+      "size": 66553,
+      "sha256": "45704295ae92df77e0faa21b04000c290ca9ab9792d84993860581953c849cc2"
+    },
+    {
+      "id": "spec:genasi-air/house",
+      "path": "Nomina/live/shards/genasi-air/house/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-air/house/t.jsonl",
+      "size": 39446,
+      "sha256": "ce94598908a02910f0fcabdf805caba5a45d34d82eb6afbd9915f8c64cf5803b"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/a.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/a.jsonl",
+      "size": 105276,
+      "sha256": "f5d99d89271f330335171c535f554c6b3b624618423b0dfe0a8d9ffb3a65489a"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/d.jsonl",
+      "size": 21155,
+      "sha256": "6aa4ba0660db5f4029ad8dfd4ae8822cf7a36c8676d3604e8e8da113d7e7fe27"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/e.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/e.jsonl",
+      "size": 230785,
+      "sha256": "909d37d53f7e7f3a5336a5a1f9f373ba11629f2ee82a213056fbbae14c523e17"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/h.jsonl",
+      "size": 21056,
+      "sha256": "af08b244265eb1c61a403a3d574d036e4f55ccb20276afb96317ce0cf6615e21"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/n.jsonl",
+      "size": 20415,
+      "sha256": "6659531b454c745a6f0b3b8989966afc5635c3a3858c4fbde41c026427a5a97e"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/r.jsonl",
+      "size": 22211,
+      "sha256": "5b2cef4133c3609b1383673c39118406d5b7da9d7ae96a5332b64f82da68b813"
+    },
+    {
+      "id": "spec:genasi-earth/core",
+      "path": "Nomina/live/shards/genasi-earth/personal/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/personal/t.jsonl",
+      "size": 18031,
+      "sha256": "7781a25bae149b4a990a7229160c6f881808543bc7e7fe3e47c57fdb78c00e71"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/a.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/a.jsonl",
+      "size": 62329,
+      "sha256": "18ad99035a66e437c9719c00414a0ac23fa2b8620e343137999fdd8e3507196b"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/d.jsonl",
+      "size": 7808,
+      "sha256": "d5d1f0f7c358c533ea2bde4346e4ec606dc93cd63eea9b3405d78c7c961c3a0b"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/e.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/e.jsonl",
+      "size": 106536,
+      "sha256": "eef5e339d39dc15a91f1be252fcc561ed8f5204ce1efe168792d4ada20d78bd0"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/h.jsonl",
+      "size": 10254,
+      "sha256": "eb6cae88340a95f899427d5d2673b4f250cff1feac9809d8f0f21a4ba73754b6"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/n.jsonl",
+      "size": 9651,
+      "sha256": "76b1c74cd716458a65e2b27a225931e0ad38a4f23e041516501712439201036c"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/r.jsonl",
+      "size": 12644,
+      "sha256": "1b910176df6f20a5bc2722a689ba4cbe65522d90be01fc9b7cd66893254797f6"
+    },
+    {
+      "id": "spec:genasi-earth/family",
+      "path": "Nomina/live/shards/genasi-earth/family/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/family/t.jsonl",
+      "size": 10187,
+      "sha256": "d85146d4df3ab08fdebf769e7a89f6bf652419316b1da96f2663a64343a71fe8"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/a.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/a.jsonl",
+      "size": 29215,
+      "sha256": "1a7f5612a602e7c9dcc26d8a6d48fa54adf2c56c11a0ee8bdc6ae8987b00ccd3"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/d.jsonl",
+      "size": 4683,
+      "sha256": "839d53ba4e9f9f0ee919b0a11e39988a95cbbfff6ed85586d0e23f6364b57f17"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/e.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/e.jsonl",
+      "size": 58550,
+      "sha256": "d6b61f02686a5343c68dc00262a7dfc14405cad0aaf085190bcd0a25d926449f"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/h.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/h.jsonl",
+      "size": 4787,
+      "sha256": "6bb7806e261732345b99f82f2e54919eca740460f4ce819da67cea16362581fd"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/n.jsonl",
+      "size": 5773,
+      "sha256": "bce0d1ff3ef4cd9648392d1e1c352763c001263ed585981d7f149cc9dc353722"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/r.jsonl",
+      "size": 5125,
+      "sha256": "ef35947d7fe87966ad22038fe518b71082ca85d5c921eede6918729c9afb8015"
+    },
+    {
+      "id": "spec:genasi-earth/house",
+      "path": "Nomina/live/shards/genasi-earth/house/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-earth/house/t.jsonl",
+      "size": 4926,
+      "sha256": "1929311e3d9b8cbe7a480483ff43f6c8cc2fc267863818b1345943d79ddebc41"
+    },
+    {
+      "id": "spec:genasi-fire/core",
+      "path": "Nomina/live/shards/genasi-fire/personal/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/personal/d.jsonl",
+      "size": 25432,
+      "sha256": "553be8f806e86dc9bbbfb82662a038b04682f2db39375802532c7b3f2e5a52c9"
+    },
+    {
+      "id": "spec:genasi-fire/core",
+      "path": "Nomina/live/shards/genasi-fire/personal/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/personal/f.jsonl",
+      "size": 369703,
+      "sha256": "53ebe928e42e2530e3ba0edc51eb16c576c7910b484f600ea901c1478850d2cd"
+    },
+    {
+      "id": "spec:genasi-fire/core",
+      "path": "Nomina/live/shards/genasi-fire/personal/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/personal/r.jsonl",
+      "size": 54952,
+      "sha256": "ecbbb6f6bcaee7802e14742ab1529b96a191434250c4da5ef5e24040032a33c9"
+    },
+    {
+      "id": "spec:genasi-fire/family",
+      "path": "Nomina/live/shards/genasi-fire/family/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/family/d.jsonl",
+      "size": 15938,
+      "sha256": "9250fbe370644060fd430afcf687d0e3f65e7ba40b835b2b8f7671a67ab7fcf9"
+    },
+    {
+      "id": "spec:genasi-fire/family",
+      "path": "Nomina/live/shards/genasi-fire/family/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/family/f.jsonl",
+      "size": 181961,
+      "sha256": "52e0386c865a5acf1804b4516741f8b4699a17cbc6854deb6572fce75ab287ae"
+    },
+    {
+      "id": "spec:genasi-fire/family",
+      "path": "Nomina/live/shards/genasi-fire/family/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/family/r.jsonl",
+      "size": 23610,
+      "sha256": "6f407d62a42d16b826a36bab6ed87bf4d5da8f5e1520cf507b01f7f7518006f5"
+    },
+    {
+      "id": "spec:genasi-fire/house",
+      "path": "Nomina/live/shards/genasi-fire/house/d.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/house/d.jsonl",
+      "size": 5417,
+      "sha256": "f5e14ebee231f65a2f7c3796031ea2bec258d3885887b665d385681942176b78"
+    },
+    {
+      "id": "spec:genasi-fire/house",
+      "path": "Nomina/live/shards/genasi-fire/house/f.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/house/f.jsonl",
+      "size": 95317,
+      "sha256": "db327c85c2922f7073e38e62b1f340e2882cdc359ab3fcfe186415bf07ad14c2"
+    },
+    {
+      "id": "spec:genasi-fire/house",
+      "path": "Nomina/live/shards/genasi-fire/house/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-fire/house/r.jsonl",
+      "size": 11445,
+      "sha256": "63e613567f1e95e69f0c7df8cae1221cdf699f278201e19e91a0b373edad0686"
+    },
+    {
+      "id": "spec:genasi-water/core",
+      "path": "Nomina/live/shards/genasi-water/personal/l.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/personal/l.jsonl",
+      "size": 19280,
+      "sha256": "584777cb38638413563a3a58538e32bd4c1d24b161d134ff83174d5e6d0f0268"
+    },
+    {
+      "id": "spec:genasi-water/core",
+      "path": "Nomina/live/shards/genasi-water/personal/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/personal/n.jsonl",
+      "size": 17613,
+      "sha256": "2836f3970c9c3f0260251bbe9517af692e24f93dc3bbc62621c531d7af8e326a"
+    },
+    {
+      "id": "spec:genasi-water/core",
+      "path": "Nomina/live/shards/genasi-water/personal/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/personal/r.jsonl",
+      "size": 248224,
+      "sha256": "1943863662c2108f5fbe4d52c1b6b5039b4b55242c0d750e79637cb062168f78"
+    },
+    {
+      "id": "spec:genasi-water/core",
+      "path": "Nomina/live/shards/genasi-water/personal/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/personal/t.jsonl",
+      "size": 21874,
+      "sha256": "caef71c8965a5b7d4953f224f8e9314f257f62628cf4b6aafa178abb672d81ad"
+    },
+    {
+      "id": "spec:genasi-water/core",
+      "path": "Nomina/live/shards/genasi-water/personal/w.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/personal/w.jsonl",
+      "size": 131421,
+      "sha256": "bd394ab4749b78a1c5a4ba230179fa8ec1558a99bbcac73b3cf593b05f677dd5"
+    },
+    {
+      "id": "spec:genasi-water/family",
+      "path": "Nomina/live/shards/genasi-water/family/l.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/family/l.jsonl",
+      "size": 11127,
+      "sha256": "caae80df8e60dded3d2239c0a21c17bee914bc1fc810a577ae5caf1d46807d72"
+    },
+    {
+      "id": "spec:genasi-water/family",
+      "path": "Nomina/live/shards/genasi-water/family/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/family/n.jsonl",
+      "size": 8343,
+      "sha256": "11ffb606bf73ca74d1f32b0418cb86d70fe31df5a3d07d2e31437de967516b7c"
+    },
+    {
+      "id": "spec:genasi-water/family",
+      "path": "Nomina/live/shards/genasi-water/family/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/family/r.jsonl",
+      "size": 126834,
+      "sha256": "e33bff2b48a77a4ee5ea37116025923491499a3caf42d5d2d76ed08fc03e8bcd"
+    },
+    {
+      "id": "spec:genasi-water/family",
+      "path": "Nomina/live/shards/genasi-water/family/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/family/t.jsonl",
+      "size": 11038,
+      "sha256": "fda5560dff1c8fb542eee989647c19dbfed0036c8b5db4943ddf2c40688df1f9"
+    },
+    {
+      "id": "spec:genasi-water/family",
+      "path": "Nomina/live/shards/genasi-water/family/w.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/family/w.jsonl",
+      "size": 62487,
+      "sha256": "23a9f91fc68794cb7bff34df7668cb18fb85d28b6ee2357d984d5b0d6a76b1e4"
+    },
+    {
+      "id": "spec:genasi-water/house",
+      "path": "Nomina/live/shards/genasi-water/house/l.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/house/l.jsonl",
+      "size": 4064,
+      "sha256": "ac2b81adfa6607fe9bed5e4455ca0103b8368e6b3d1bfc22d40f016a3ce8cb3b"
+    },
+    {
+      "id": "spec:genasi-water/house",
+      "path": "Nomina/live/shards/genasi-water/house/n.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/house/n.jsonl",
+      "size": 5001,
+      "sha256": "63746c1f0ca06de13199ab23c80a11fea7b5629aeef2f595d564ed8046529afb"
+    },
+    {
+      "id": "spec:genasi-water/house",
+      "path": "Nomina/live/shards/genasi-water/house/r.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/house/r.jsonl",
+      "size": 64926,
+      "sha256": "304ae1ce541f4d31bce4669235fed76a5cb72a1b189eeee7602c0275996a684b"
+    },
+    {
+      "id": "spec:genasi-water/house",
+      "path": "Nomina/live/shards/genasi-water/house/t.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/house/t.jsonl",
+      "size": 5058,
+      "sha256": "d904e9a6e539684cd4400a75b4b562dd82bc55d7370d8f61fa7733711cc2929c"
+    },
+    {
+      "id": "spec:genasi-water/house",
+      "path": "Nomina/live/shards/genasi-water/house/w.jsonl",
+      "url": "/Nomina/live/shards/genasi-water/house/w.jsonl",
+      "size": 27879,
+      "sha256": "107f02c57e68546c8eac915d6d9f568e97e983fc814c48fcd757271bf9de143a"
+    },
+    {
+      "id": "spec:gnome/core",
+      "path": "Nomina/live/shards/gnome/personal/g.jsonl",
+      "url": "/Nomina/live/shards/gnome/personal/g.jsonl",
+      "size": 403440,
+      "sha256": "3850061204cdb41a120c0a4d052cb5084aa440e69243012bee37626497259eb7"
+    },
+    {
+      "id": "spec:gnome/core",
+      "path": "Nomina/live/shards/gnome/personal/m.jsonl",
+      "url": "/Nomina/live/shards/gnome/personal/m.jsonl",
+      "size": 55324,
+      "sha256": "57a84f88130a4ac76b34d23ae035b551d4300328ae429e16c92e395fad7a8deb"
+    },
+    {
+      "id": "spec:gnome/core",
+      "path": "Nomina/live/shards/gnome/personal/n.jsonl",
+      "url": "/Nomina/live/shards/gnome/personal/n.jsonl",
+      "size": 50232,
+      "sha256": "7337922c20c4ce206cc8e8275dc9c94f9560ca15f915fee7a921d60b6ec2d993"
+    },
+    {
+      "id": "spec:gnome/family",
+      "path": "Nomina/live/shards/gnome/family/g.jsonl",
+      "url": "/Nomina/live/shards/gnome/family/g.jsonl",
+      "size": 204653,
+      "sha256": "60b7a9fed68fccb6181bc3950b48841db396cd5c7dab4c75649112df10a2c4a7"
+    },
+    {
+      "id": "spec:gnome/family",
+      "path": "Nomina/live/shards/gnome/family/m.jsonl",
+      "url": "/Nomina/live/shards/gnome/family/m.jsonl",
+      "size": 29854,
+      "sha256": "615aaf27e5ad4ea631ab7c511da7f4054d751190bee498d1d78e35fd27116706"
+    },
+    {
+      "id": "spec:gnome/family",
+      "path": "Nomina/live/shards/gnome/family/n.jsonl",
+      "url": "/Nomina/live/shards/gnome/family/n.jsonl",
+      "size": 21565,
+      "sha256": "2fb58b2a2fa76e9195804a0e39c176c2f32c434d3bc9785da1140b812be74c50"
+    },
+    {
+      "id": "spec:gnome/house",
+      "path": "Nomina/live/shards/gnome/house/g.jsonl",
+      "url": "/Nomina/live/shards/gnome/house/g.jsonl",
+      "size": 102252,
+      "sha256": "fc04bffb7f01ac5aa8dd1ae8c7a827d0e87f12421469560ed16528b171f9f207"
+    },
+    {
+      "id": "spec:gnome/house",
+      "path": "Nomina/live/shards/gnome/house/m.jsonl",
+      "url": "/Nomina/live/shards/gnome/house/m.jsonl",
+      "size": 13069,
+      "sha256": "a92b453984be62ea6ad72e06379ddca4d76daa8e059f6f45087ef1a278c4f7bf"
+    },
+    {
+      "id": "spec:gnome/house",
+      "path": "Nomina/live/shards/gnome/house/n.jsonl",
+      "url": "/Nomina/live/shards/gnome/house/n.jsonl",
+      "size": 13247,
+      "sha256": "5add2e0cd37a327b86421c4191839b0e653fa51abae772deded465e1d180903e"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/b.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/b.jsonl",
+      "size": 160688,
+      "sha256": "78e1956f7763dcc83e5e8a0e17dfb1f5e1b2eaf09a45f3c6d2ed4d86f83d1c63"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/g.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/g.jsonl",
+      "size": 154309,
+      "sha256": "eee8c17ac20675e5e63e1fe18145e74e8741abde1a6bafd86c358993444bb3fe"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/k.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/k.jsonl",
+      "size": 89464,
+      "sha256": "8847a9e02b12915a4246ce30dfc77cc71319317803d6c2a7de2d2d94c8f9fd67"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/l.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/l.jsonl",
+      "size": 9119,
+      "sha256": "8a2194cd6fee92016cf27e216fd88c6e8bdb8706d792099069a3341c03acf3c0"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/n.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/n.jsonl",
+      "size": 10659,
+      "sha256": "945b0dbefc5584460dd3eea4c00be31d5442de8a7aa520e4f86658149e73783e"
+    },
+    {
+      "id": "spec:goblin/core",
+      "path": "Nomina/live/shards/goblin/personal/r.jsonl",
+      "url": "/Nomina/live/shards/goblin/personal/r.jsonl",
+      "size": 11135,
+      "sha256": "6969f1900ff89e5b8dc23718c1e575047a8204fd0e0571801f89f03347c2d2f3"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/b.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/b.jsonl",
+      "size": 82979,
+      "sha256": "cee194b3a27f9a66156eb6a8c1a57603d21a90c88adc5b91fbbf74a9eb6a83a6"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/g.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/g.jsonl",
+      "size": 82415,
+      "sha256": "92749cf4815ad54ec6e2b05a07e4f1254c83f0805639555a0f329340e1f076e2"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/k.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/k.jsonl",
+      "size": 35770,
+      "sha256": "27a569ff40e0425421ff3ca9f7a064e07205172afa789e9e85f756ea4a8be068"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/l.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/l.jsonl",
+      "size": 4990,
+      "sha256": "341e7fc6bca06e250a05832e40e57513259a1de279b34d899e825be8d961a09e"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/n.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/n.jsonl",
+      "size": 3619,
+      "sha256": "553f0a324903e776b7748392e5a5e43969d740e6258d5ae025bd960253cc9f72"
+    },
+    {
+      "id": "spec:goblin/family",
+      "path": "Nomina/live/shards/goblin/family/r.jsonl",
+      "url": "/Nomina/live/shards/goblin/family/r.jsonl",
+      "size": 5090,
+      "sha256": "ca9912373bde5fef82dfcdf5e4674c7d75eccad95349c6c4bc4f4aebd4f3f16e"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/b.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/b.jsonl",
+      "size": 37022,
+      "sha256": "218ca9bcac7136091859fc7edb3131ad42f1b977a6f811dc44abdf86f3a9e796"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/g.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/g.jsonl",
+      "size": 40836,
+      "sha256": "7868319d66685279c7c445d3de7cb582a51baceaa05dc7760f443d56a5fdcea0"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/k.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/k.jsonl",
+      "size": 19963,
+      "sha256": "a5d463510a0b9b7a77c74ce14476bd4fe6bbf5238692c372e2b036d7e5c75302"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/l.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/l.jsonl",
+      "size": 3814,
+      "sha256": "0170082fd9f65e84a3417171a45617259dba227dad46d439342a525d5152a4c5"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/n.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/n.jsonl",
+      "size": 3026,
+      "sha256": "b1de79803a4f33b83a6a6207cb8ad9a7928e1411ec9eeb8f19ad593224335a1e"
+    },
+    {
+      "id": "spec:goblin/house",
+      "path": "Nomina/live/shards/goblin/house/r.jsonl",
+      "url": "/Nomina/live/shards/goblin/house/r.jsonl",
+      "size": 2953,
+      "sha256": "7dde28c854b73e8696791c5c4e5c351b0e78983bbd56b24f2380d3c7fa726e93"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/g.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/g.jsonl",
+      "size": 387673,
+      "sha256": "7d58f1376d753b09ade62d2a5674e0431b4aec71991cb230e8bc3a4b28b59214"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/h.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/h.jsonl",
+      "size": 25343,
+      "sha256": "23ad2897afe32981b84d46b98c2c8a778d7a64c24078eee15fb4b4afca450cef"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/l.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/l.jsonl",
+      "size": 27518,
+      "sha256": "f3cefe0ce3fc5119e8636d7a165bbcea85ad9c3e00c2d9e4e36805b804d672e4"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/n.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/n.jsonl",
+      "size": 20634,
+      "sha256": "14cc436aad7b7eb12223d9075330b8b5c89d1bc71f647fcd8d81b48362cfc8e3"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/r.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/r.jsonl",
+      "size": 23828,
+      "sha256": "436b4c0ba5d747ad99f15fe41e4c8675c0a3b2c841efc01e392164fe1b7f008c"
+    },
+    {
+      "id": "spec:goliath/core",
+      "path": "Nomina/live/shards/goliath/personal/t.jsonl",
+      "url": "/Nomina/live/shards/goliath/personal/t.jsonl",
+      "size": 22922,
+      "sha256": "3d240533c4be386c4830f36b5fcb5f3869685922b3ccf749d8461d2eb2347f7d"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/g.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/g.jsonl",
+      "size": 198187,
+      "sha256": "3a3a330181c2d96c2a9ca1b60c28f026c8ade642452e1ccb3dfd02cbb7fa1e84"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/h.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/h.jsonl",
+      "size": 13130,
+      "sha256": "ab4f892b7197b11c181d01afb895db30be7cd84b5e28abe65790b0fd5955f675"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/l.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/l.jsonl",
+      "size": 10730,
+      "sha256": "da6f633892113d945ba84cf987271577a740e235de3079d14ec6d4f9a4fbe075"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/n.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/n.jsonl",
+      "size": 12702,
+      "sha256": "25d0e70d378c5d85c9da3ae8e88e1cc807a9d420a32f050f435fb468fad4c6f5"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/r.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/r.jsonl",
+      "size": 11665,
+      "sha256": "eba26f7cbae8f217243b661893743c17a894175ba82ccaff4a8d47bdaf8c5c3d"
+    },
+    {
+      "id": "spec:goliath/family",
+      "path": "Nomina/live/shards/goliath/family/t.jsonl",
+      "url": "/Nomina/live/shards/goliath/family/t.jsonl",
+      "size": 11445,
+      "sha256": "370b3f65330e83402c49de73f43faa3e59de0ecbfcefb202dc91fb9f2cbb41bb"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/g.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/g.jsonl",
+      "size": 95269,
+      "sha256": "25f2c88cb56c198f10608ebd97afaba77f45f2a00278531866bdb71b77f96c6a"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/h.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/h.jsonl",
+      "size": 5617,
+      "sha256": "04638c373eea698a7e20d472d8557f02f2ea1c00973d9ca1a214de6a4d21274e"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/l.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/l.jsonl",
+      "size": 6375,
+      "sha256": "8469ad7b88dbff484e99a5edf2d82144a40a2ea5d00d04254c62239364659725"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/n.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/n.jsonl",
+      "size": 4341,
+      "sha256": "7e9ec3c47eac566f1224efa5eb792213988535f5dea39b6f6530f6873462404a"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/r.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/r.jsonl",
+      "size": 5275,
+      "sha256": "478bde16de524fafce4594a56b6bb0de2ef2ef7ac8e0c815d3de8161d1f50b2c"
+    },
+    {
+      "id": "spec:goliath/house",
+      "path": "Nomina/live/shards/goliath/house/t.jsonl",
+      "url": "/Nomina/live/shards/goliath/house/t.jsonl",
+      "size": 7476,
+      "sha256": "6fb50963ebefd3211ba0fe3359eb207ce590c3fba5b283a1c4777756f8a180cf"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/b.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/b.jsonl",
+      "size": 61897,
+      "sha256": "7480fd337ddcd362d9c017b33e8ee8e0e6c627474c98a3eed97a06a59ef03bd9"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/d.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/d.jsonl",
+      "size": 73575,
+      "sha256": "ea9dddc9768287f27bc5bdedeeec78edb312228c2339e597882b84a6233f5a2b"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/f.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/f.jsonl",
+      "size": 116536,
+      "sha256": "1a6921909f6a6c88b64e32c5a4246d25689dc6bb518f5837d2d2f23977ea40bc"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/g.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/g.jsonl",
+      "size": 72640,
+      "sha256": "62aa2df8149a6ae52ded845867ad95583906e93531908620e8a8fca5b801ad36"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/k.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/k.jsonl",
+      "size": 75448,
+      "sha256": "71a38f6282d9c4625ce5e9bde0706b3b6e832b3ab54a9f35430a0ae59e202943"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/l.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/l.jsonl",
+      "size": 6219,
+      "sha256": "6994b25b6a7a0b24adb94cc2b3cc847eb1fb54c25bcdd8326870145f77f419c1"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/m.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/m.jsonl",
+      "size": 6463,
+      "sha256": "8b58619a5c7d65748bfb95bde1290d56b7c55cf10a22acd6d87a7a18c7e557e7"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/n.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/n.jsonl",
+      "size": 5701,
+      "sha256": "0c2be9315cb645962dd95880f0b2ef791efb1b8cb361a9f3628f88156061964d"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/r.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/r.jsonl",
+      "size": 8377,
+      "sha256": "eaf879f8ba0d177ec3f23d6fd4e73b70bcc27d9df3094188694071ccfa7e442e"
+    },
+    {
+      "id": "spec:half-orc/core",
+      "path": "Nomina/live/shards/half-orc/personal/t.jsonl",
+      "url": "/Nomina/live/shards/half-orc/personal/t.jsonl",
+      "size": 7635,
+      "sha256": "96118e1231f74812b0cab6de862734fa608a1135e6d760fa9eb9f9dd3a423454"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/b.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/b.jsonl",
+      "size": 34900,
+      "sha256": "87dcb8b25bac585560532a63a19fe70baf816567b2b7a7006b0ae964c9e9e21a"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/d.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/d.jsonl",
+      "size": 39385,
+      "sha256": "e354c93877cd0fc5c7774c041d3a99ee21a03b807d7eead0fc1ce282d7923be2"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/f.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/f.jsonl",
+      "size": 59847,
+      "sha256": "39a225eb5536e1a03024647721770df659a6286b3ad40cff9ffc571567798e54"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/g.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/g.jsonl",
+      "size": 32225,
+      "sha256": "3985c3b886897f135c24cc23f2dff0b9c8b6d7424a77a7264e59b9828b3654f0"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/k.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/k.jsonl",
+      "size": 33232,
+      "sha256": "aa2344e9911b8de4db97e0fd3431692d07272e85ffca940e6aca981d36839c52"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/l.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/l.jsonl",
+      "size": 3628,
+      "sha256": "efdc337ea6522066c5c2b4135fd7865c32ac4d327b399fe69975bff6fd7b1952"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/m.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/m.jsonl",
+      "size": 3357,
+      "sha256": "c43f61bc98f8cd5a5d623b43a6a3d04e15f69709a464bba6f18c53ffaafde26e"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/n.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/n.jsonl",
+      "size": 3850,
+      "sha256": "70bc819817b481401f73467d72e2554c7c27fc84df1c2c013cce08652d1c569e"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/r.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/r.jsonl",
+      "size": 1724,
+      "sha256": "db1d42ce78aeac62fc9b2567e4feca1dc784ab5bbb66b60458c692025e3ed18e"
+    },
+    {
+      "id": "spec:half-orc/family",
+      "path": "Nomina/live/shards/half-orc/family/t.jsonl",
+      "url": "/Nomina/live/shards/half-orc/family/t.jsonl",
+      "size": 3597,
+      "sha256": "58d76e586c60ddbf6aca15a60d66cdac94add4a787d620fd242fdd6af7df00ce"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/b.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/b.jsonl",
+      "size": 15319,
+      "sha256": "635c9113e9be1474b2936c6980038c3e33598478aa3665176041a57fa90a3e4b"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/d.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/d.jsonl",
+      "size": 18328,
+      "sha256": "2f1e2b6f28c93605dea43b50046aa9a44b5f6c3832b8d9738df409f0749054cf"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/f.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/f.jsonl",
+      "size": 30852,
+      "sha256": "8a257b70f41ff63d44718affd27faf76751df6e77988e7c079df1c81435faf15"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/g.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/g.jsonl",
+      "size": 16970,
+      "sha256": "f9b5754d02a67eccabf2218ed15e458cddc0ee595a271295e4a2c7e7c2b9b2f4"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/k.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/k.jsonl",
+      "size": 16463,
+      "sha256": "22c75226b54787316bb52a3722032b04c037e7578d50435a3cfcd252c0424d10"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/l.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/l.jsonl",
+      "size": 2597,
+      "sha256": "c612135953c6bb7938089e1dcbfca3492a2d8497e9d3856a6501cca3b342edf1"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/m.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/m.jsonl",
+      "size": 1845,
+      "sha256": "fb53268e8bbd7100676cb516a6e12f9867b5c165c2f2bc0f79831febdbae94fc"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/n.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/n.jsonl",
+      "size": 1923,
+      "sha256": "6300e0b04e420ce2ffd2f2cfa6c522e96db6dbd875eecb234837a39741996155"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/r.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/r.jsonl",
+      "size": 1030,
+      "sha256": "a1a6b01dfacf14752abfeda11582454f0d15340e6cf59483594f1bb277f4fd96"
+    },
+    {
+      "id": "spec:half-orc/house",
+      "path": "Nomina/live/shards/half-orc/house/t.jsonl",
+      "url": "/Nomina/live/shards/half-orc/house/t.jsonl",
+      "size": 1821,
+      "sha256": "5cc8ae60992c4efaad34183b8dba6108bd9445cb675d4174f94f9d8b8b587453"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/a.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/a.jsonl",
+      "size": 7701,
+      "sha256": "ff5ffc47d8db5607c4568de025e93db6d9a8ec7c978d381bf8c70853a232c947"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/e.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/e.jsonl",
+      "size": 9732,
+      "sha256": "10b43a4f90bee3fcaeef210c86b283abfa61cc13b62713f4fef7537a9754897f"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/f.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/f.jsonl",
+      "size": 65117,
+      "sha256": "878a65d1966f481a0d05b85c0d432d23cffee60ebdf82a0c6a0c437991abd90a"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/i.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/i.jsonl",
+      "size": 6497,
+      "sha256": "1ecd5a3bdb31ba1dcae5b4c82ed6e4b293a7cb49a3a068e3e4740fe4281f77e7"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/l.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/l.jsonl",
+      "size": 87924,
+      "sha256": "41c69554b17dd49c26bcc8f5325b13d40b34e9cd47241f198e11fa9948512c40"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/m.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/m.jsonl",
+      "size": 100772,
+      "sha256": "5b47ae4aefb96fb7d03d0d0b4f81c34ef043c46596fa7f9f0ae6864419ae53be"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/n.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/n.jsonl",
+      "size": 70798,
+      "sha256": "e925aab7257846bbdfde766d1b8940039129e4372571d858facc50f0c03f6cd2"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/o.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/o.jsonl",
+      "size": 9399,
+      "sha256": "885202cee4d5537565d3e25fe0a35f86f0bfb5cbeaef2bb9bbdff1cfae47905d"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/p.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/p.jsonl",
+      "size": 12401,
+      "sha256": "5bbeaf57ee93eb7d7df041f7306d837a890279d82026c9e11dc6622ac89214ee"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/s.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/s.jsonl",
+      "size": 9850,
+      "sha256": "8727f453fc6f8e5e5296cafb472eb1f78bc160e6d44826e5012a311ceff83c13"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/t.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/t.jsonl",
+      "size": 8414,
+      "sha256": "510ec36c3f50bf80c3128823fb51f05828895e5a698882a34c7270a4fdc26fa2"
+    },
+    {
+      "id": "spec:halfling/core",
+      "path": "Nomina/live/shards/halfling/personal/u.jsonl",
+      "url": "/Nomina/live/shards/halfling/personal/u.jsonl",
+      "size": 10078,
+      "sha256": "b9c52b32a0bb1bc5133480e54bfc5c88d86b7b2a181f5290b7b94b656571e419"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/a.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/a.jsonl",
+      "size": 5371,
+      "sha256": "1406c98ab0cbd97cc9596b200cd8e690f09bb0b48c1206400eed8943bd4d57e9"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/e.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/e.jsonl",
+      "size": 4929,
+      "sha256": "53a1d42ef5d0a575ae41b583636a1e957ab525c678f061886c4d8638dbc653f4"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/f.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/f.jsonl",
+      "size": 30979,
+      "sha256": "4b47979259269611385f653dba439dead304d60e34560816d242829ece60f545"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/i.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/i.jsonl",
+      "size": 3250,
+      "sha256": "4e6acffc2dcc64242c6c7d57b32585fb15c4383502ab598e9afa55ae30cdbdcd"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/l.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/l.jsonl",
+      "size": 47291,
+      "sha256": "d1c3c86a8e30f94ca9b0dbb4575be53dc96fb034e6cdcadb1bf6116c0726269a"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/m.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/m.jsonl",
+      "size": 45646,
+      "sha256": "daf549acd18512588b38dfc7defebc7ba81e6f6e84cd610d0211aa5e7fbf4eef"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/n.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/n.jsonl",
+      "size": 36764,
+      "sha256": "56ba6819fedfb51cc875fe185699dfe62df3a467c770d4eeb9b67bb17c3537d7"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/o.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/o.jsonl",
+      "size": 4414,
+      "sha256": "9d956eb2aa683187693d3f619e7b9e6a451ccd27ab896c521c87df9726dea207"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/p.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/p.jsonl",
+      "size": 3616,
+      "sha256": "f0359504b05837ea6734b866a50910bcf05f5ea2af97bc20eb73fd9c1aa266e0"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/s.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/s.jsonl",
+      "size": 6114,
+      "sha256": "8c9b7f847ccd2617ab5105624d2349ed754ea9d6a7e94af024c97be22ee1e263"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/t.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/t.jsonl",
+      "size": 6277,
+      "sha256": "5e668e37b817f57a4316924868c8d2cd66b6ba35a4ec20275d8a776ddf2c6717"
+    },
+    {
+      "id": "spec:halfling/family",
+      "path": "Nomina/live/shards/halfling/family/u.jsonl",
+      "url": "/Nomina/live/shards/halfling/family/u.jsonl",
+      "size": 4085,
+      "sha256": "cf8ae357d418bb3bec66bada5b49f1184bc57ff584950c995e87359c94ec6898"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/a.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/a.jsonl",
+      "size": 1368,
+      "sha256": "27b3e2c1cc0aada9e91ea6ccf67bd98270b1c63119b11dbb3cff865561856500"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/e.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/e.jsonl",
+      "size": 2017,
+      "sha256": "350f733b0aed4f9fdfed2d05cafad4460baca305312d5d9be45724e1791c984c"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/f.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/f.jsonl",
+      "size": 14774,
+      "sha256": "103a298446dd0792069b88b6afed4fc7fb558fb2b4fef73d36162180727209df"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/i.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/i.jsonl",
+      "size": 3550,
+      "sha256": "c385bd42c66a197e66ea90f2e87ab6b3aebb00c6be0bd4b0e5c7d0e0933b48a3"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/l.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/l.jsonl",
+      "size": 21196,
+      "sha256": "b62b8c62f88fac7cc8ab8abc30fc329c20fb802f9b405b0cd37f4eba822889d2"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/m.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/m.jsonl",
+      "size": 20442,
+      "sha256": "709201253545eec42e1a876e811cd270a9ce23c02b0e5853ee7d219d1f3ecf59"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/n.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/n.jsonl",
+      "size": 22182,
+      "sha256": "8432dc7ceaee35b75bffdd85f4b85d040ad0eb22902db98e6ae9b56d439e790a"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/o.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/o.jsonl",
+      "size": 2716,
+      "sha256": "4383cd212cb18de9ae62d66e296afa2525280b473f1487b188becf210681dace"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/p.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/p.jsonl",
+      "size": 2111,
+      "sha256": "1282f91da4c2df90103742663d4f4735170e053ddf48e9a37e385d8c1d51add9"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/s.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/s.jsonl",
+      "size": 3120,
+      "sha256": "c2d4d746278c5ee78025ecd07dfd01a49fd59a14faf2565754fee1b7d1b57677"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/t.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/t.jsonl",
+      "size": 2477,
+      "sha256": "07b78f737f126fb6657f7872f83801d37d1c781c9c172a16afd2468ecca51cfc"
+    },
+    {
+      "id": "spec:halfling/house",
+      "path": "Nomina/live/shards/halfling/house/u.jsonl",
+      "url": "/Nomina/live/shards/halfling/house/u.jsonl",
+      "size": 2799,
+      "sha256": "17f742d5f69aa4bb935bf7a8b42689e269d8ef266825fb79aecd29c3bffbec26"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/b.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/b.jsonl",
+      "size": 103176,
+      "sha256": "dbc18bcfe9a1287627c42add345e9b1c175fbfb364dd900491c5faf9082c286e"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/g.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/g.jsonl",
+      "size": 97520,
+      "sha256": "e8cb85b618c76748c425290048c704734232a344df885531556ea806f0d55547"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/h.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/h.jsonl",
+      "size": 112025,
+      "sha256": "69946848fbc68d2893fdb0a9cc21f86e3b9062ce482260ed426aa97ebdaa60e8"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/k.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/k.jsonl",
+      "size": 95919,
+      "sha256": "9754fa97ce14507abcbdbc69e65932def9df3363f3383aa33c7953ca10e40e3b"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/l.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/l.jsonl",
+      "size": 8949,
+      "sha256": "2202f930a16fb1f611beecd99b57fc02dfe74c7ed6011cbb806f33c56ab89087"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/n.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/n.jsonl",
+      "size": 11572,
+      "sha256": "8800dae4a2878c425488cbc89976aacbab0c6eb8baeb6d6f12444aee0a78c2be"
+    },
+    {
+      "id": "spec:hobgoblin/core",
+      "path": "Nomina/live/shards/hobgoblin/personal/r.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/personal/r.jsonl",
+      "size": 14101,
+      "sha256": "bcd7fc14ac1066712d6c1cf0b6c76d797ea62e9709b94b1c7d05d3121bf8e518"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/b.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/b.jsonl",
+      "size": 48541,
+      "sha256": "12bb4c6acfa5a104f61867daec0d58ee126b07087439bf26ca33917460413968"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/g.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/g.jsonl",
+      "size": 48974,
+      "sha256": "367d69f51c5629f3358eb747fbc38155ec66e924d95301dde384c2edde1c953c"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/h.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/h.jsonl",
+      "size": 55760,
+      "sha256": "f10a77132786babad8d51ba54270ebf711586ba72ef9803c7faa81e27440110c"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/k.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/k.jsonl",
+      "size": 49647,
+      "sha256": "d8b036564fe36b32a5412f952f3fa87213d7ed4fb193a8d0b6cd549e409feca1"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/l.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/l.jsonl",
+      "size": 6112,
+      "sha256": "2a05de3af38ee5cc9350478e20b534b48c8082c5f0799e0833c5c2ab0d1f2799"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/n.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/n.jsonl",
+      "size": 5259,
+      "sha256": "cd58d17f5c663869e739f1cbdd863272c7e8e6d935a862dfdb44511fd18294a1"
+    },
+    {
+      "id": "spec:hobgoblin/family",
+      "path": "Nomina/live/shards/hobgoblin/family/r.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/family/r.jsonl",
+      "size": 5973,
+      "sha256": "90abe831d364b80becdee9c795fd31052800d7be911c283f4905afa28a8e2a6f"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/b.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/b.jsonl",
+      "size": 22549,
+      "sha256": "3e398b1a318ad94f060aa3b2c66eb8b783bc60e22c50da232352786016c86895"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/g.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/g.jsonl",
+      "size": 24873,
+      "sha256": "c50beed8d9e2c59af4ff6e980ef124bb7f410caf8b296ee35737120c6431beaa"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/h.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/h.jsonl",
+      "size": 28851,
+      "sha256": "3001651da22b17eb12871de4f78a59f7f8e851de4a592b4074afa290516357dd"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/k.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/k.jsonl",
+      "size": 24961,
+      "sha256": "07bb086fab18e9b97fe471d316cf31c7ce2911b8d3c91bdaba24ee3ed7c1234a"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/l.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/l.jsonl",
+      "size": 2548,
+      "sha256": "eecfe8d40a9cd1a209476c11d325dbac78b540990505cb6d2fab1bfe1716f94d"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/n.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/n.jsonl",
+      "size": 2793,
+      "sha256": "bb631688d07599b7548de90640609abebf5fa4236f861593f2b5e5c15da279f5"
+    },
+    {
+      "id": "spec:hobgoblin/house",
+      "path": "Nomina/live/shards/hobgoblin/house/r.jsonl",
+      "url": "/Nomina/live/shards/hobgoblin/house/r.jsonl",
+      "size": 1913,
+      "sha256": "b7075dfaadb3e805a9f447e32dffd38b9976cfaf7ca552fce827829d1bfbf58b"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/a.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/a.jsonl",
+      "size": 11718,
+      "sha256": "18e40d0d2fff56d8578527add959dcfa60b2dd71f4a8c3318681f22b4d9dbb7e"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/e.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/e.jsonl",
+      "size": 9979,
+      "sha256": "c60ca925b209293d6859a17e35935955d85904595189f24b35c425db3a7312d8"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/i.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/i.jsonl",
+      "size": 13461,
+      "sha256": "ecb953ac6f983b2b901d13a7433bc7a64eaef4218e2f659a2979a93a9044958e"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/l.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/l.jsonl",
+      "size": 90757,
+      "sha256": "7a508707788265d69698839b9c29d90c33bfd22151ecfb05fb5d589122fdc5dc"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/m.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/m.jsonl",
+      "size": 94462,
+      "sha256": "f2bb6c3b4cab5d02b544c12f10a721c45066042c66bde6a148bcf690b4e253dc"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/n.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/n.jsonl",
+      "size": 86094,
+      "sha256": "412fef0ef9da366980b915ed1b5119601e9fa3f074fa3819bc3fa59343ba5767"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/o.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/o.jsonl",
+      "size": 9136,
+      "sha256": "b91d17001f9c761c87e6693f019647de19202739d70bef858eaeaaaec2840a57"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/r.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/r.jsonl",
+      "size": 92916,
+      "sha256": "ae2b95584dc09eea8bb83df69e811df9c633bebf29d611ac3a3c0ad102dbda86"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/s.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/s.jsonl",
+      "size": 96199,
+      "sha256": "7a7e6156c4a288aba9537a070dcc90ec7fd05c2efc4f406eada8f87ffa44e53e"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/t.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/t.jsonl",
+      "size": 89425,
+      "sha256": "8f2410a3e554824ef03e76194c8581ee767821086a29b0a036e9ad785c3bc735"
+    },
+    {
+      "id": "spec:human_northern/core",
+      "path": "Nomina/live/shards/human_northern/personal/u.jsonl",
+      "url": "/Nomina/live/shards/human_northern/personal/u.jsonl",
+      "size": 8101,
+      "sha256": "991bef6bacb9f5be0097f765a12a46788eec45944c1aab87829f95420036183b"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/a.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/a.jsonl",
+      "size": 6076,
+      "sha256": "0fa2c6f4840e7607f93fa1b8341bb3a2e4a3cbf5c6b148f432d3440f905319ed"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/e.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/e.jsonl",
+      "size": 4959,
+      "sha256": "9e567ad4a998bc7a857ec0b7c2072da903bbc48b6d86faee7b4a5f01ebdc63db"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/i.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/i.jsonl",
+      "size": 5417,
+      "sha256": "39fbe5b560ef547fc1a70e486ff0cd816854bbf2d2e34a2357d3f8e455e8fe27"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/l.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/l.jsonl",
+      "size": 48026,
+      "sha256": "6d4a660eeb9c0b6568935e357785316a2c27212aecc1a98dc1f7bba1bde76d97"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/m.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/m.jsonl",
+      "size": 48153,
+      "sha256": "b4ec34813d9f81ad54533ab33e2273e558aadb745f2957b6d5732732ded28e13"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/n.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/n.jsonl",
+      "size": 41184,
+      "sha256": "2384a5f155846e29cd1d2c40a9b83ecd2ad82300ec73e8eb8a53d8682a7abe6a"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/o.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/o.jsonl",
+      "size": 5850,
+      "sha256": "159597fe4a1b056913b6d72da241154c7c546ceb223c635b7b80872aa8cb76d1"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/r.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/r.jsonl",
+      "size": 41977,
+      "sha256": "b35db05fb4e77e6ccd3c95910b89b77e907509b19b811685ff792a33337c8b0b"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/s.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/s.jsonl",
+      "size": 39149,
+      "sha256": "fd2bf47fe9469c78a86fef279b7dc38ee0d8d17854977c60b4994b5c110eacde"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/t.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/t.jsonl",
+      "size": 40438,
+      "sha256": "a29eaff0aec247ec5f31cf220686ed71db2a4faa68651f5efd9a8dedf8fdd5fa"
+    },
+    {
+      "id": "spec:human_northern/family",
+      "path": "Nomina/live/shards/human_northern/family/u.jsonl",
+      "url": "/Nomina/live/shards/human_northern/family/u.jsonl",
+      "size": 5294,
+      "sha256": "80f2f112d515bbe05f6d834c5f6ef9f590ca48d6006bd1342d4c3cbfb9f2b8c1"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/a.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/a.jsonl",
+      "size": 2618,
+      "sha256": "6e1aedaf4c1e7d07365492908a4954bddb7c91967b63fa9f8b5090d8d6fcebe9"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/e.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/e.jsonl",
+      "size": 766,
+      "sha256": "f129cbef0c21251c20b8ffb3b638aa8ceedb1403ff28c95ae7d93081b7744976"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/i.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/i.jsonl",
+      "size": 4990,
+      "sha256": "0f190f31ee3ed414ede800af1e034536dd3c14ddd76191595376a722e045399d"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/l.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/l.jsonl",
+      "size": 20278,
+      "sha256": "89bc9169cc5265601ff6a7a7e710f0ddd9d5dbd9be3ac2a5bc141f80fdc6a812"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/m.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/m.jsonl",
+      "size": 18952,
+      "sha256": "214c1c767edb364d9d03dab9964c9aa992c958261e9c48335b97bfb651bfd397"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/n.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/n.jsonl",
+      "size": 26455,
+      "sha256": "d3c69eda99f4c9fe1ad8f49664944d0e1fbf62b2fbcab3fa7eeb6ade2015cab8"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/o.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/o.jsonl",
+      "size": 2295,
+      "sha256": "9413169681da4c445bd4873ea0279537c85a9a713e36e387cbcc849c1a6d986d"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/r.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/r.jsonl",
+      "size": 22914,
+      "sha256": "c0d34f52c413b994971eec8298b7d075956508e150c279e9ba7bc3d7211baf19"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/s.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/s.jsonl",
+      "size": 21211,
+      "sha256": "efce5ad0b224e1dcec9af9a5b6b76272620e48aba003728d1fae583f21c354bb"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/t.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/t.jsonl",
+      "size": 20322,
+      "sha256": "170449c54b574a676405feb96a922d718a1556c5a850f3d2e1bc0d8f2f88afc4"
+    },
+    {
+      "id": "spec:human_northern/house",
+      "path": "Nomina/live/shards/human_northern/house/u.jsonl",
+      "url": "/Nomina/live/shards/human_northern/house/u.jsonl",
+      "size": 3426,
+      "sha256": "b57ab870b78d614d6219cdcd8cbe6fdd7e4df51ba95f9856caab91e9cb3286cb"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/a.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/a.jsonl",
+      "size": 11845,
+      "sha256": "cea52dead46886ca33dfbadc7e06d45202a2cb56673fdbd3561cc7820cb55414"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/e.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/e.jsonl",
+      "size": 10021,
+      "sha256": "9d657e4082f0a0bdfa48c8ae44f732b813983f02558cf2ad0617e21b95685cee"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/i.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/i.jsonl",
+      "size": 13444,
+      "sha256": "4453cff3703e031284c5594ed9a4d109c8e6c5efde52563e962d21f2c8043a42"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/l.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/l.jsonl",
+      "size": 92253,
+      "sha256": "20924a7e0f9e6a02397a50fa795749bb331dbe3eba12e924322d33c45316025d"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/m.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/m.jsonl",
+      "size": 95359,
+      "sha256": "39107748ca125e7ca0450a9571fc07f64f32d88675eedbb83bb58f1048dd5c6e"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/n.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/n.jsonl",
+      "size": 85164,
+      "sha256": "bc7b8d4a181595fd4f57877f4ec0ce7e59924ec070de670aa4ff79234083a2f8"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/o.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/o.jsonl",
+      "size": 9136,
+      "sha256": "73b74d264bd07826973995a3495dba00d37a62d4bbb707b08deef137d6bb41b3"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/r.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/r.jsonl",
+      "size": 92340,
+      "sha256": "f0aa579c7fb3cfaedeb43f70bff0451c2e29c6584280d631f0ceba0a52f20f7e"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/s.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/s.jsonl",
+      "size": 95731,
+      "sha256": "dd4aa603d88354bcd90c494dc603f8a465cc33cbf0caf3b3ca314273c137886d"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/t.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/t.jsonl",
+      "size": 91677,
+      "sha256": "68259841ca167eeddaa6445a2464504e0d9cbb7cfdb7dbb229d1c41568a7773a"
+    },
+    {
+      "id": "spec:human_southern/core",
+      "path": "Nomina/live/shards/human_southern/personal/u.jsonl",
+      "url": "/Nomina/live/shards/human_southern/personal/u.jsonl",
+      "size": 8260,
+      "sha256": "2c85f0306b94d09273ef3b60999a22d655f2333b8331860d6219f01011c30400"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/a.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/a.jsonl",
+      "size": 5923,
+      "sha256": "29cbc3c0e07918ff2d03d7aabde5c262fbc54ec11f7028fd81b31f2404863493"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/e.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/e.jsonl",
+      "size": 5021,
+      "sha256": "85d13cb185bf0bc8c916ac1f8c8cdf5d03141e189bcd81aa25649c2ef8cb785f"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/i.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/i.jsonl",
+      "size": 5387,
+      "sha256": "02170d4c8c37cf22cb9d8cda01cd4b4fe02527e0cf8fc614174c47388eb6c1c4"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/l.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/l.jsonl",
+      "size": 48113,
+      "sha256": "8cf3f74e4211d02432b3abcab981bf663fa379a74e38ad32a1825f1f7d191a74"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/m.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/m.jsonl",
+      "size": 49308,
+      "sha256": "402c8076cccc6b898c3e6c0f3e16c6f5ed237ddecb2e5d932f1b4a54f499cbd7"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/n.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/n.jsonl",
+      "size": 41847,
+      "sha256": "364c55b6c2cc4835eac0b93d91bb4b2a643086894a782d3ea88b2fa8e3d141ae"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/o.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/o.jsonl",
+      "size": 5724,
+      "sha256": "14e515e9902c4d6b819499ae4e60cc71b2c0854d5e43f3de92fb45b6108f1647"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/r.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/r.jsonl",
+      "size": 42390,
+      "sha256": "b7e0337f5bcb94af2057b8bd5f005afc0448dc5c5aab8f9ab64bbaf204f6a1bb"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/s.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/s.jsonl",
+      "size": 39288,
+      "sha256": "77c26f12623166e62e0a2951b2ef7fc24ee5bb3037a9ee8f9f47e5f08fe95c6d"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/t.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/t.jsonl",
+      "size": 41320,
+      "sha256": "2c1a4d0b3803f2d33592c556213f2f9eb33f5c1aa07266e4acae3e856d94fd76"
+    },
+    {
+      "id": "spec:human_southern/family",
+      "path": "Nomina/live/shards/human_southern/family/u.jsonl",
+      "url": "/Nomina/live/shards/human_southern/family/u.jsonl",
+      "size": 5336,
+      "sha256": "5e882ab8ea601c29673f4054359cb975e0cfe9fb7b02d8f4d080856e7e029e60"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/a.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/a.jsonl",
+      "size": 2598,
+      "sha256": "b023c47a7c46c40711ed33d58123c0218337f4d80f954db06f1c697cab909831"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/e.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/e.jsonl",
+      "size": 769,
+      "sha256": "9131907b38fcf908e91143ceb732e763e626586308ba07d034115a6e09ce9630"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/i.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/i.jsonl",
+      "size": 5051,
+      "sha256": "74d06b1d15b5c143254ce52a37d20c76a17061e381dfaff1daf4f7ccd86e4bbd"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/l.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/l.jsonl",
+      "size": 21309,
+      "sha256": "e39f432aafb1bb451ef589808784cc4d8dff4e751056d8d412b9d09133bc3139"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/m.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/m.jsonl",
+      "size": 18139,
+      "sha256": "44c8438eff0e4eafdfd42133ef470e0b157462caf7bb1a751d15451d98738a4a"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/n.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/n.jsonl",
+      "size": 27856,
+      "sha256": "6effdea57cd3a22e12c76f36c97f5c429084d1c09bc5b77058b0371f3e728a28"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/o.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/o.jsonl",
+      "size": 2274,
+      "sha256": "68ee1cc281fcafbd880e3f6eb3cf04bb07d9432252ebb7305561de32cf9ec8f0"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/r.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/r.jsonl",
+      "size": 23121,
+      "sha256": "c30ed51458a486376549db24ecf70b1e4ad1b84772d75622a7fb2206433eaa70"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/s.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/s.jsonl",
+      "size": 21742,
+      "sha256": "e98303be945ffdc122b253a6d3688b1ea7298aacd555fd839aeb7f09a1501d4e"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/t.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/t.jsonl",
+      "size": 21027,
+      "sha256": "f21b719c3bb00327ee05092aaa079e1433795c75bf423ef3a3a3b00b34af56e5"
+    },
+    {
+      "id": "spec:human_southern/house",
+      "path": "Nomina/live/shards/human_southern/house/u.jsonl",
+      "url": "/Nomina/live/shards/human_southern/house/u.jsonl",
+      "size": 3474,
+      "sha256": "a19bbd808bbdb2abfdd3c5d42959d8c56d0427b094cd4394344c4bc95afeea12"
+    },
+    {
+      "id": "spec:kobold/core",
+      "path": "Nomina/live/shards/kobold/personal/b.jsonl",
+      "url": "/Nomina/live/shards/kobold/personal/b.jsonl",
+      "size": 267031,
+      "sha256": "587b1b2f83eb87211e2b2c7e9430f8b688321c0e32062ce88fa8ec611bfbc132"
+    },
+    {
+      "id": "spec:kobold/core",
+      "path": "Nomina/live/shards/kobold/personal/d.jsonl",
+      "url": "/Nomina/live/shards/kobold/personal/d.jsonl",
+      "size": 20977,
+      "sha256": "d52338f5d0d22345ba77780abecf7ba2ee83ae4f2412560c94b8c863ad65e9a7"
+    },
+    {
+      "id": "spec:kobold/core",
+      "path": "Nomina/live/shards/kobold/personal/k.jsonl",
+      "url": "/Nomina/live/shards/kobold/personal/k.jsonl",
+      "size": 132220,
+      "sha256": "5bbd62ac1056dd51231aea5496d8b7167c16bcaac029e1d50c0d0c834f9372c6"
+    },
+    {
+      "id": "spec:kobold/core",
+      "path": "Nomina/live/shards/kobold/personal/l.jsonl",
+      "url": "/Nomina/live/shards/kobold/personal/l.jsonl",
+      "size": 22450,
+      "sha256": "97e01b482f090b58b327930ccb06ddc432061484cf835cbc81c7f28bf1d5ef09"
+    },
+    {
+      "id": "spec:kobold/core",
+      "path": "Nomina/live/shards/kobold/personal/r.jsonl",
+      "url": "/Nomina/live/shards/kobold/personal/r.jsonl",
+      "size": 24093,
+      "sha256": "9ad09e1ef9a78c70e5f9d073447f116eb78fa818ae762e9c9992ae9811114fe8"
+    },
+    {
+      "id": "spec:kobold/family",
+      "path": "Nomina/live/shards/kobold/family/b.jsonl",
+      "url": "/Nomina/live/shards/kobold/family/b.jsonl",
+      "size": 143242,
+      "sha256": "fb4cad5f1ba2850cc1f6f996c19a2bc68b854db238ead48f854d016df4446930"
+    },
+    {
+      "id": "spec:kobold/family",
+      "path": "Nomina/live/shards/kobold/family/d.jsonl",
+      "url": "/Nomina/live/shards/kobold/family/d.jsonl",
+      "size": 9034,
+      "sha256": "ec610762829e88dc493700234952abf38001269be7292635e68950d0fcc34aaa"
+    },
+    {
+      "id": "spec:kobold/family",
+      "path": "Nomina/live/shards/kobold/family/k.jsonl",
+      "url": "/Nomina/live/shards/kobold/family/k.jsonl",
+      "size": 63119,
+      "sha256": "84448476ebf67ac60b07c9c18d850227911b57e6fba591300f7fc0b5a08b2293"
+    },
+    {
+      "id": "spec:kobold/family",
+      "path": "Nomina/live/shards/kobold/family/l.jsonl",
+      "url": "/Nomina/live/shards/kobold/family/l.jsonl",
+      "size": 7519,
+      "sha256": "f578f0953b962199390224f174d1f7dd113d83c9e1a84e50171475422627059f"
+    },
+    {
+      "id": "spec:kobold/family",
+      "path": "Nomina/live/shards/kobold/family/r.jsonl",
+      "url": "/Nomina/live/shards/kobold/family/r.jsonl",
+      "size": 10988,
+      "sha256": "9192703aff2cb00cb82bed7a60c07078bb0a1f3448e02183135b87f58a25b302"
+    },
+    {
+      "id": "spec:kobold/house",
+      "path": "Nomina/live/shards/kobold/house/b.jsonl",
+      "url": "/Nomina/live/shards/kobold/house/b.jsonl",
+      "size": 71359,
+      "sha256": "9f0832af515a082c5ae07f459f942dd8811a0efc68cf1df5034c0bcdc001cf6a"
+    },
+    {
+      "id": "spec:kobold/house",
+      "path": "Nomina/live/shards/kobold/house/d.jsonl",
+      "url": "/Nomina/live/shards/kobold/house/d.jsonl",
+      "size": 6327,
+      "sha256": "a1638c842c6e1db52e66e36bd8f8e872cbb6b62e0ec1517a12de23ae41d6a376"
+    },
+    {
+      "id": "spec:kobold/house",
+      "path": "Nomina/live/shards/kobold/house/k.jsonl",
+      "url": "/Nomina/live/shards/kobold/house/k.jsonl",
+      "size": 31125,
+      "sha256": "1b952d03408006f4cfd871d33d6844c700a121172333cadcc94308e2e53308e5"
+    },
+    {
+      "id": "spec:kobold/house",
+      "path": "Nomina/live/shards/kobold/house/l.jsonl",
+      "url": "/Nomina/live/shards/kobold/house/l.jsonl",
+      "size": 4155,
+      "sha256": "83d3abdd0bd7215d7841716e458fbd68bc1cb30947bac34098ce37144b1178b6"
+    },
+    {
+      "id": "spec:kobold/house",
+      "path": "Nomina/live/shards/kobold/house/r.jsonl",
+      "url": "/Nomina/live/shards/kobold/house/r.jsonl",
+      "size": 5066,
+      "sha256": "4394de8a225fa499982229f986ba7cda27dfaf570c90c5d007c8cb671e105863"
+    },
+    {
+      "id": "spec:loxodon/core",
+      "path": "Nomina/live/shards/loxodon/personal/d.jsonl",
+      "url": "/Nomina/live/shards/loxodon/personal/d.jsonl",
+      "size": 35409,
+      "sha256": "67ae708f24a9ceca119d02e232f7cff2b002853109db5c529682826c806ac33d"
+    },
+    {
+      "id": "spec:loxodon/core",
+      "path": "Nomina/live/shards/loxodon/personal/l.jsonl",
+      "url": "/Nomina/live/shards/loxodon/personal/l.jsonl",
+      "size": 480896,
+      "sha256": "965cd98d775e504c15b0ae5c6ab668f44ea45fc1753824d2189cf4ddc458448d"
+    },
+    {
+      "id": "spec:loxodon/core",
+      "path": "Nomina/live/shards/loxodon/personal/n.jsonl",
+      "url": "/Nomina/live/shards/loxodon/personal/n.jsonl",
+      "size": 41013,
+      "sha256": "dcae09615a373ad9ce8bbaa97c2a50f2dc7039e75586b39c5c45f9e3be24d6b8"
+    },
+    {
+      "id": "spec:loxodon/core",
+      "path": "Nomina/live/shards/loxodon/personal/x.jsonl",
+      "url": "/Nomina/live/shards/loxodon/personal/x.jsonl",
+      "size": 41405,
+      "sha256": "ecd040ee3140c750f893ae65aa0c3e61b45c5a5ff7d5255a01a36c2321eba346"
+    },
+    {
+      "id": "spec:loxodon/family",
+      "path": "Nomina/live/shards/loxodon/family/d.jsonl",
+      "url": "/Nomina/live/shards/loxodon/family/d.jsonl",
+      "size": 21251,
+      "sha256": "9e010b9087b205708a49a6a84812c74081624af64786935dbdc573817e984dda"
+    },
+    {
+      "id": "spec:loxodon/family",
+      "path": "Nomina/live/shards/loxodon/family/l.jsonl",
+      "url": "/Nomina/live/shards/loxodon/family/l.jsonl",
+      "size": 248771,
+      "sha256": "34efcb724f2a90f9b63eac6f6a8d69535ebbd391e9b66ff10c9fa6c9b6ef8081"
+    },
+    {
+      "id": "spec:loxodon/family",
+      "path": "Nomina/live/shards/loxodon/family/n.jsonl",
+      "url": "/Nomina/live/shards/loxodon/family/n.jsonl",
+      "size": 19438,
+      "sha256": "96d4645905bbd04f66493ce09ae4162d6f54ca638c40b1bd2f30276b7ea3083d"
+    },
+    {
+      "id": "spec:loxodon/family",
+      "path": "Nomina/live/shards/loxodon/family/x.jsonl",
+      "url": "/Nomina/live/shards/loxodon/family/x.jsonl",
+      "size": 17897,
+      "sha256": "2391666c0788b5c68474c628453d53a3315cfb42b37308606aac7488103e4011"
+    },
+    {
+      "id": "spec:loxodon/house",
+      "path": "Nomina/live/shards/loxodon/house/d.jsonl",
+      "url": "/Nomina/live/shards/loxodon/house/d.jsonl",
+      "size": 9831,
+      "sha256": "ae1e42a868910245be7127b7e15549c45ef98b69bb843479420171816e234b42"
+    },
+    {
+      "id": "spec:loxodon/house",
+      "path": "Nomina/live/shards/loxodon/house/l.jsonl",
+      "url": "/Nomina/live/shards/loxodon/house/l.jsonl",
+      "size": 117141,
+      "sha256": "cc48abd13d547995f98742cc969ace9ad9406005d9de37deb8bf637a174cdf94"
+    },
+    {
+      "id": "spec:loxodon/house",
+      "path": "Nomina/live/shards/loxodon/house/n.jsonl",
+      "url": "/Nomina/live/shards/loxodon/house/n.jsonl",
+      "size": 8311,
+      "sha256": "e9960145b8908d26454dabbe55cdc7417535284844f1b7185f795a34e82cc482"
+    },
+    {
+      "id": "spec:loxodon/house",
+      "path": "Nomina/live/shards/loxodon/house/x.jsonl",
+      "url": "/Nomina/live/shards/loxodon/house/x.jsonl",
+      "size": 11815,
+      "sha256": "a305ad2c3df44badca954c09e76cb50a1a522c2a4a19bcd4266eb93fcaf4ed6a"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/a.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/a.jsonl",
+      "size": 13755,
+      "sha256": "c43c2d7f10a6d58be689142b05b7e130ab0dd8bfad3f45b35747c27f63c03542"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/b.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/b.jsonl",
+      "size": 64726,
+      "sha256": "43dc5909728876119b3b879b0c80751182acb517da19910df0f1c066f4b3bb9c"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/d.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/d.jsonl",
+      "size": 79152,
+      "sha256": "ef5857112a2920d0f730322d617affad612eea52a930ed17ee5f6dbf76bdf5a7"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/g.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/g.jsonl",
+      "size": 102088,
+      "sha256": "5262517c0145e96f888f5150b576d774367f2b2cf5cfa8ffd635a7eada87cba9"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/h.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/h.jsonl",
+      "size": 1600,
+      "sha256": "7b720a22e964561f397f28c0fe367bcb68d5a914114e0804799248baa9c80fbd"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/k.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/k.jsonl",
+      "size": 106991,
+      "sha256": "fdbad1d22bf86b8c8d91c4d86c0a15bcebd5489367f241cbcf33e948b70ba83e"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/m.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/m.jsonl",
+      "size": 15915,
+      "sha256": "eb7140c9846d0345fd7d09de2c755f70760994801cd687f9f2ba9333a5a6adf0"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/n.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/n.jsonl",
+      "size": 13665,
+      "sha256": "6e4f57cfbd94e40de4b292043f062ff6bc16232ce259780fd80fe131137fbb6e"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/o.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/o.jsonl",
+      "size": 11100,
+      "sha256": "fcedbf425efd7c70b4030f92940e91edb3ca522388b7b54a4bcbda7592c6fc39"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/r.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/r.jsonl",
+      "size": 39724,
+      "sha256": "bd55a94968bf60e260a94c5376f6578649498be6141e5643cb7426482dd3a45b"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/s.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/s.jsonl",
+      "size": 1451,
+      "sha256": "db2451134aecb00af34e47a724c9a78fe7b5514b57f22c83bd265d0f7db88643"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/t.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/t.jsonl",
+      "size": 9824,
+      "sha256": "348c8635c2ea3574dc3441b41317a70556c232c0622b42a3b31b7df0d57ef170"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/u.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/u.jsonl",
+      "size": 160774,
+      "sha256": "ea077c10717f58e798a9d5362c84869b61126d5d78386eff2306586409b34238"
+    },
+    {
+      "id": "spec:orc_clan/core",
+      "path": "Nomina/live/shards/orc_clan/personal/z.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/personal/z.jsonl",
+      "size": 1178,
+      "sha256": "5f72169eab1478826bc506cbb40bb1a9b1299b01812ce7462ef652dce92a4ad2"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/a.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/a.jsonl",
+      "size": 6760,
+      "sha256": "2738a3a26133b1c476c078dc70baf6062ce9596ce179a6ae5e9f1cbef7bacb71"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/b.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/b.jsonl",
+      "size": 30974,
+      "sha256": "da8ed6d0ca975789d7f0c53c77fdfd2d133d6804a539d598b877b77a384120da"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/d.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/d.jsonl",
+      "size": 36766,
+      "sha256": "ce87a05cb3d7e87c4773dd33e4961df90b12323c807c755cdd3dd12356052c32"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/g.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/g.jsonl",
+      "size": 48515,
+      "sha256": "a68b99fb40b1f39c3c51551c28ee0f35b5a025c8418f7044c4adc96604528554"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/h.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/h.jsonl",
+      "size": 1166,
+      "sha256": "ed7fbac660b58b7f5caac34f5c1286c881a1fc3b1ea1e98f61fc598a1aa3321a"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/k.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/k.jsonl",
+      "size": 53861,
+      "sha256": "608158604952e89ec9cbcdc8c30d582cb1e77e5775940be96c2f4304763fc143"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/m.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/m.jsonl",
+      "size": 7354,
+      "sha256": "93eb14d8f99d983008f77c69046cc2c926394ef2ad4434473d9d8fe4602a77ff"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/n.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/n.jsonl",
+      "size": 7222,
+      "sha256": "bbcc7df6cb322e899e9dd35926e02745471e7e7e501130cd258722489c0d490c"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/o.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/o.jsonl",
+      "size": 7853,
+      "sha256": "0c8afb95e8da40c269cfd4382a004aac1a62238040f238805e16c763494c4495"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/r.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/r.jsonl",
+      "size": 12131,
+      "sha256": "b5ae90cd4c02e94d67d4bda04bfaa03d2723a666e6ad4473c5f5ac0a95b47fcc"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/s.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/s.jsonl",
+      "size": 242,
+      "sha256": "f01f8905fdfbc297beb9362459a1d49ab6a40ebf86fd73bd9edcc4b81a403822"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/t.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/t.jsonl",
+      "size": 7050,
+      "sha256": "8f8bee989cab4a74b2426c4bc67cdeb45fa1eac991ef919c41e52cb9cc87ea19"
+    },
+    {
+      "id": "spec:orc_clan/family",
+      "path": "Nomina/live/shards/orc_clan/family/u.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/family/u.jsonl",
+      "size": 77800,
+      "sha256": "43331b15a9f8e6eaaf1e1c10dc975b120de0a20a4d3e98d0df92b0603b6f1290"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/a.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/a.jsonl",
+      "size": 4243,
+      "sha256": "8ba32b1a43e8eb932aadb9797ad6fd88de77e41fbaec4ffa2c29be925bba2332"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/b.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/b.jsonl",
+      "size": 16346,
+      "sha256": "a51239544b8b21fe77ead468f3b4724437bc37cb9fda837a0f787cc1c42cc07d"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/d.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/d.jsonl",
+      "size": 17664,
+      "sha256": "73c72d81fa47e90eb4f36bc97c2d560a657a1af6d568cd8e4c6e852e99bd15d9"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/g.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/g.jsonl",
+      "size": 28086,
+      "sha256": "f057359fcb7ff28fa88ab8afdf7b31626b6dcfdfda82ff3c99daf884d8106129"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/h.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/h.jsonl",
+      "size": 460,
+      "sha256": "ad230b312b883f32cc13527d590a29ab133c38a1baa33c78973a51e0e29d74ba"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/k.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/k.jsonl",
+      "size": 22798,
+      "sha256": "45ecfbec31455b912129645ab5f61cf9b5da16c2f2db1413df56031a7a14226a"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/m.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/m.jsonl",
+      "size": 1703,
+      "sha256": "796404b041520ccfe5f7f11dd8bd6e088381693c1df52fff8c621a4267937626"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/n.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/n.jsonl",
+      "size": 1721,
+      "sha256": "4bd7185c89e107032f990d4284a149022030116fce016137291a05dfd7c77898"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/o.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/o.jsonl",
+      "size": 3578,
+      "sha256": "ee6398ea85dea809c46c62010236eac9327dbcf98c57222986ec675b67e79ce8"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/r.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/r.jsonl",
+      "size": 7776,
+      "sha256": "f177bf053a0fa2afca9ad559e9fec21c3e60b992b854d084ec0145fd708d0f65"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/s.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/s.jsonl",
+      "size": 202,
+      "sha256": "fbaeaef75ae43c20af1fd11859414214c527a9de5e5944efc9fb0f1b109a1c37"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/t.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/t.jsonl",
+      "size": 3868,
+      "sha256": "16444b0102b4ea15f35559f16a88d8863c78bf17cce4e2e6c385006976759cc6"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/u.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/u.jsonl",
+      "size": 40707,
+      "sha256": "1b994e5edffb8e9bef8ae723fa4ccef9edbd08bc1cc8e3df11a67d11df989ff7"
+    },
+    {
+      "id": "spec:orc_clan/house",
+      "path": "Nomina/live/shards/orc_clan/house/z.jsonl",
+      "url": "/Nomina/live/shards/orc_clan/house/z.jsonl",
+      "size": 437,
+      "sha256": "40bf015ca71f26f59a9c5edfda6b6a6cef07bc8ed22570b4f451654050a110cc"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/a.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/a.jsonl",
+      "size": 14080,
+      "sha256": "4fcf8898e183f4404876babe2a029fc7e274dbd89c7089b5b166f896a32d2b2f"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/b.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/b.jsonl",
+      "size": 67475,
+      "sha256": "72588e7f4141131860d3f1032757589081a3b47055f4794d37573cd67ca30c10"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/d.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/d.jsonl",
+      "size": 81413,
+      "sha256": "ceea4b0aa265e4044a3cf9ea7c0d1f51c9329435db1bb9ef9e8fa53b3205165f"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/g.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/g.jsonl",
+      "size": 104763,
+      "sha256": "ff717e427fc5babc4a7e38981f2220f1f53800ecce39458132e5faf0b826e851"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/h.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/h.jsonl",
+      "size": 469,
+      "sha256": "6ddf0d9ff34fd9f5028c2f754c23f18ad5979597adbc8d5e0ae189bb42b2bb71"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/k.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/k.jsonl",
+      "size": 105757,
+      "sha256": "b97364328b28b427f4261ec4356775ecc9e09b19d126f442443df9d241167268"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/m.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/m.jsonl",
+      "size": 15474,
+      "sha256": "e78571a7fc865f2518ade4b033ff69e39edaf2bd4fb6677d81778bb287655722"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/n.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/n.jsonl",
+      "size": 13703,
+      "sha256": "bd49e5fe13c569535353192b93278eb505a997f6bab4a581e6ffb63d55302bb9"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/o.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/o.jsonl",
+      "size": 11195,
+      "sha256": "8659f7392777236b66c4e06fdbe0a4d2aa7b5228f7493ee0c63836f490efc6fd"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/r.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/r.jsonl",
+      "size": 38613,
+      "sha256": "49c23ebd297d0d81fbefecde07a277dccf4a551fde90fdf8162e9353ea87344c"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/s.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/s.jsonl",
+      "size": 1740,
+      "sha256": "1381b2add712c9b21d5cad42fdbdd55ceed1030820a382c76bfb606ee47350c3"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/t.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/t.jsonl",
+      "size": 9916,
+      "sha256": "3f5498618da353a341e63638df24815928e27401025ed2ec55ac124437806f58"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/u.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/u.jsonl",
+      "size": 162863,
+      "sha256": "07004f2aa4fe880aa27be85bc1a4b2392e03b29985cc14b3084586fb9b80718c"
+    },
+    {
+      "id": "spec:orc_tribe/core",
+      "path": "Nomina/live/shards/orc_tribe/personal/z.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/personal/z.jsonl",
+      "size": 929,
+      "sha256": "7cb7df0fb77c6981fcac52a140ea857dd5a34444ed5af419155f96ef68e5ebe6"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/a.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/a.jsonl",
+      "size": 6685,
+      "sha256": "1ccfdce0b2d97bce00de7178e6cd07b5ea84442a41ea36350eb40eee1e00eeca"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/b.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/b.jsonl",
+      "size": 32192,
+      "sha256": "18d97874bba986629b4b5152f6936113e882585dc26835a04510766892a23ffd"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/d.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/d.jsonl",
+      "size": 37544,
+      "sha256": "4155be1d00341d8a76666eb228b089547aab548e16925d2b50c9c4d4d06ff2bf"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/g.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/g.jsonl",
+      "size": 49065,
+      "sha256": "4557eac12a643b37299f35f2cef365634d2b491adc6879c6867dfea199c7a400"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/k.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/k.jsonl",
+      "size": 55946,
+      "sha256": "f1b11c286eb752551823dcaeaf7e74b4d1974653237f352faa15e5b5a35a2160"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/m.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/m.jsonl",
+      "size": 7147,
+      "sha256": "fee40e8dd64c3b1bff8801aec9a481d28566f8634659888f7e9b057fecfe3967"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/n.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/n.jsonl",
+      "size": 7242,
+      "sha256": "bc0af5f6168906eef6966e6d2db667e2503d034a9c332abd4077bc6e0501bc22"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/o.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/o.jsonl",
+      "size": 7944,
+      "sha256": "d1132559749a2d96bd6aade6f1b26771be9015cb5909953ad519a4ca3e0ad73a"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/r.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/r.jsonl",
+      "size": 11897,
+      "sha256": "c3b938c925c65a78ab31db341776e5dd0eed969695a2ee4a3d309b4e49f4301e"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/s.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/s.jsonl",
+      "size": 771,
+      "sha256": "dbeaf52d3ccf0447cb8a9d49fe08ae4c4fd7664f6d7e3971fae591a6fe0bc99c"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/t.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/t.jsonl",
+      "size": 6922,
+      "sha256": "6fc582df81ee0e0608e05129ad53c37c3c41bbe3bf0ea5274bd01781349aac87"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/u.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/u.jsonl",
+      "size": 79165,
+      "sha256": "a641eb4db7fd023f7efde6083428ae4812557dc409154a744ce58930750b4a4b"
+    },
+    {
+      "id": "spec:orc_tribe/family",
+      "path": "Nomina/live/shards/orc_tribe/family/z.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/family/z.jsonl",
+      "size": 201,
+      "sha256": "bb1b91afa7de19a231f832b195f86e6215dbd319edbccc21c49cc9f526578e07"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/a.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/a.jsonl",
+      "size": 4458,
+      "sha256": "4431d6bf3840440b644b84585673a45a829a653906a0c7e60f4479879e42865d"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/b.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/b.jsonl",
+      "size": 16819,
+      "sha256": "bc0d6f3381a2ece26b22506e0563acf7a09412bf5843f682a48b41f68c28d20c"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/d.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/d.jsonl",
+      "size": 18062,
+      "sha256": "2a24788f9fc869c2be0355a440e69729e57331e0123bda43ad8989e3fd9f9bc8"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/g.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/g.jsonl",
+      "size": 29234,
+      "sha256": "47dcadecd464cd7ff557fb12d17523b43a93a488c4f37a25b3bd658679502301"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/h.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/h.jsonl",
+      "size": 228,
+      "sha256": "cebd08754d17bedf0d6a60141699f22c45dcbc43988fcd00e6114d840945aecd"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/k.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/k.jsonl",
+      "size": 23415,
+      "sha256": "288680b25aeadf388352b295ab6c71030b7a55f6d53d590ba2686129125c8656"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/m.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/m.jsonl",
+      "size": 1473,
+      "sha256": "0b63aafd50c34782d1244a6597cbeb0dba6a9f9a7e713c2c08162854f6c2ddeb"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/n.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/n.jsonl",
+      "size": 1705,
+      "sha256": "a1407faf8fedcbfd43a3daea3a5e5f84e8b21dd75a6bfcde002ee096e78fba14"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/o.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/o.jsonl",
+      "size": 3755,
+      "sha256": "8cbe08275ebeeb508b99cc549a000c19f8b91b2c7a43135a70396092081e744a"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/r.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/r.jsonl",
+      "size": 8606,
+      "sha256": "cc0734e9c79481c8b909460b95f68c3e103908002b5198f8e0142456b13a1273"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/s.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/s.jsonl",
+      "size": 445,
+      "sha256": "0b2e86c18ffd86cc5af4ca2dd34928167f35a525a72a4e42042e0e712c922cf6"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/t.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/t.jsonl",
+      "size": 3604,
+      "sha256": "e6ac9bf334f2377484bfc4759e9c9709ff4ed2f90d55edaff5561eeef29fdf5c"
+    },
+    {
+      "id": "spec:orc_tribe/house",
+      "path": "Nomina/live/shards/orc_tribe/house/u.jsonl",
+      "url": "/Nomina/live/shards/orc_tribe/house/u.jsonl",
+      "size": 42112,
+      "sha256": "301a3b16f4c35e5cfd98990bb33f92d1e6c32f1f81c30a481a73233b760da902"
+    },
+    {
+      "id": "spec:tabaxi/core",
+      "path": "Nomina/live/shards/tabaxi/personal/b.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/personal/b.jsonl",
+      "size": 123236,
+      "sha256": "3a13a4288e31e98b6c1eb6cd0c56e78a2bc8719e6eb34244547f9188359b216d"
+    },
+    {
+      "id": "spec:tabaxi/core",
+      "path": "Nomina/live/shards/tabaxi/personal/k.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/personal/k.jsonl",
+      "size": 25108,
+      "sha256": "aa6511d4c5335671e3f44421e3998fa43ba034c4def3275f04e8209d2a8d122f"
+    },
+    {
+      "id": "spec:tabaxi/core",
+      "path": "Nomina/live/shards/tabaxi/personal/t.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/personal/t.jsonl",
+      "size": 126940,
+      "sha256": "bbb1c601cdf3779764912b0f09ef16908283c17741dcbd884f798023c60af007"
+    },
+    {
+      "id": "spec:tabaxi/core",
+      "path": "Nomina/live/shards/tabaxi/personal/x.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/personal/x.jsonl",
+      "size": 135067,
+      "sha256": "b20dd2f85bc580a891b0ca90da44978014bdc9342027edac48e3af8a3f90975b"
+    },
+    {
+      "id": "spec:tabaxi/family",
+      "path": "Nomina/live/shards/tabaxi/family/b.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/family/b.jsonl",
+      "size": 61383,
+      "sha256": "32ee0614087f6ea1d127b6abe70901c7725ea41749b0f1c58b5a245f72746947"
+    },
+    {
+      "id": "spec:tabaxi/family",
+      "path": "Nomina/live/shards/tabaxi/family/k.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/family/k.jsonl",
+      "size": 11385,
+      "sha256": "4cbae1d8d75505349cbd9cdd5ee72cfe8fcb4b143f170b2e24cacf8d98086be3"
+    },
+    {
+      "id": "spec:tabaxi/family",
+      "path": "Nomina/live/shards/tabaxi/family/t.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/family/t.jsonl",
+      "size": 70001,
+      "sha256": "3ea2c38def411d5d4f0174ac1d3a2fddc814678ca8854b860d223fa8aae65260"
+    },
+    {
+      "id": "spec:tabaxi/family",
+      "path": "Nomina/live/shards/tabaxi/family/x.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/family/x.jsonl",
+      "size": 63911,
+      "sha256": "3ad04ec1651e1303b7e3a2cd24e2e2d5b44e5b344e838c8d4d150e17eab67991"
+    },
+    {
+      "id": "spec:tabaxi/house",
+      "path": "Nomina/live/shards/tabaxi/house/b.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/house/b.jsonl",
+      "size": 29519,
+      "sha256": "3538c18492b570410b67f53411dc5f85529255ac49497cc192db4bded8328727"
+    },
+    {
+      "id": "spec:tabaxi/house",
+      "path": "Nomina/live/shards/tabaxi/house/k.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/house/k.jsonl",
+      "size": 4158,
+      "sha256": "d07d9d85868ff1606c2ed0220b2560d640c5598cd09cea8c35899cfad0a8edc3"
+    },
+    {
+      "id": "spec:tabaxi/house",
+      "path": "Nomina/live/shards/tabaxi/house/t.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/house/t.jsonl",
+      "size": 33206,
+      "sha256": "af85c4c4b1469a22480387cbc873b568dc0711086cce9569ddb7b09a34bf9e30"
+    },
+    {
+      "id": "spec:tabaxi/house",
+      "path": "Nomina/live/shards/tabaxi/house/x.jsonl",
+      "url": "/Nomina/live/shards/tabaxi/house/x.jsonl",
+      "size": 35267,
+      "sha256": "de68b7244dfd8f2a5b4bde13316ac10188cae01d3949d3060d41418e2ea9a707"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/d.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/d.jsonl",
+      "size": 12032,
+      "sha256": "3fd1070c44e8a6c0e2a91e04dbaf9239cdeed76f241159cd332ef9bff923b5d2"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/f.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/f.jsonl",
+      "size": 218593,
+      "sha256": "b726607f353575484eb95adf448a10a95b70d043c0073516166ba536233aa5d8"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/g.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/g.jsonl",
+      "size": 12958,
+      "sha256": "1ccb2548ac8c5bee7a61a6ec65e2f29dc30761f050c87a4858eda00ca416a3c4"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/l.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/l.jsonl",
+      "size": 89650,
+      "sha256": "d35db7eb7eed64a1dc2b4daa749c9cd8501e70cc58a09889c9632ad00bc426b2"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/n.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/n.jsonl",
+      "size": 11697,
+      "sha256": "874bd146117d3cc29e5383cc4301ae7bbe03a1a4ed7cd3ac9da61b20bdadedac"
+    },
+    {
+      "id": "spec:tiefling/core",
+      "path": "Nomina/live/shards/tiefling/personal/t.jsonl",
+      "url": "/Nomina/live/shards/tiefling/personal/t.jsonl",
+      "size": 82780,
+      "sha256": "fb115bcd7f055929f3a39ddf068649cf04c32f12e090f2a92cddcc808f067ef9"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/d.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/d.jsonl",
+      "size": 5205,
+      "sha256": "2357b48efe7f31ad16e315c2c95810903fbc020728de009c05b11d38deca9915"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/f.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/f.jsonl",
+      "size": 111108,
+      "sha256": "b815ce3cd80c34c0023fd8406b40990de7503998db3c216dfd36bfc2ade6305f"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/g.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/g.jsonl",
+      "size": 6855,
+      "sha256": "24436d4f5e62e98f3b9c848d8ce33233c1af03691ca7b086237e033224a7e8ea"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/l.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/l.jsonl",
+      "size": 35443,
+      "sha256": "6222eb404bd3ddcc87c38e9da30c1c24aac48d8b549262a745ac093f0b71320f"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/n.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/n.jsonl",
+      "size": 3432,
+      "sha256": "41e27715d4ff0e80d911bbcb7e5e9b5421210862a174e4ddffc4766acd81e71d"
+    },
+    {
+      "id": "spec:tiefling/family",
+      "path": "Nomina/live/shards/tiefling/family/t.jsonl",
+      "url": "/Nomina/live/shards/tiefling/family/t.jsonl",
+      "size": 50534,
+      "sha256": "ad76f77e1eac1b9a6b808c2ff3d23b30c87d35261d9264e968292b0a48a0884f"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/d.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/d.jsonl",
+      "size": 2998,
+      "sha256": "a9f4f79cada4f725bb52a84621c7bf52f81a698496a9ad5bab00b7714f6ac35d"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/f.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/f.jsonl",
+      "size": 55576,
+      "sha256": "bae40754c7b589cb0183612bff004205ae3607e65ac4d02265b15ea0d38e5074"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/g.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/g.jsonl",
+      "size": 1367,
+      "sha256": "b41f597ec9d8e6191a549014d356c8235304c6b744cebb34aa95cc3042368190"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/l.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/l.jsonl",
+      "size": 19338,
+      "sha256": "a97267a132a16f69fc406211b0f87ee053807d9ba245a154f39373c9b7a7baa4"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/n.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/n.jsonl",
+      "size": 2596,
+      "sha256": "5a6005be19f47a18ff66b7fa9f9d3e5519f198c5f5d3318dc7d9ad1c7ffc981b"
+    },
+    {
+      "id": "spec:tiefling/house",
+      "path": "Nomina/live/shards/tiefling/house/t.jsonl",
+      "url": "/Nomina/live/shards/tiefling/house/t.jsonl",
+      "size": 22966,
+      "sha256": "98fe459ff1f25646fbdf15cc7899fdf6f4adec10b69a145232055962f70f383a"
+    },
+    {
+      "id": "spec:tortle/core",
+      "path": "Nomina/live/shards/tortle/personal/l.jsonl",
+      "url": "/Nomina/live/shards/tortle/personal/l.jsonl",
+      "size": 32299,
+      "sha256": "45f397e940bf39c1d0f898623de6b78c4d10479ddb8142914d91253e82638f86"
+    },
+    {
+      "id": "spec:tortle/core",
+      "path": "Nomina/live/shards/tortle/personal/r.jsonl",
+      "url": "/Nomina/live/shards/tortle/personal/r.jsonl",
+      "size": 39180,
+      "sha256": "1f7ee715b4eb76795026e404b2530f508da50a213cd8d4f8a13b60df992fb69b"
+    },
+    {
+      "id": "spec:tortle/core",
+      "path": "Nomina/live/shards/tortle/personal/t.jsonl",
+      "url": "/Nomina/live/shards/tortle/personal/t.jsonl",
+      "size": 454180,
+      "sha256": "4533137ab6b527474f0476a2dcddb2a59fe33a218b8e01b96d88356f6a6924af"
+    },
+    {
+      "id": "spec:tortle/family",
+      "path": "Nomina/live/shards/tortle/family/l.jsonl",
+      "url": "/Nomina/live/shards/tortle/family/l.jsonl",
+      "size": 17137,
+      "sha256": "4755cc2eec784fa4d783ef507d8e7224682803d614226645b23d7c0779474ed1"
+    },
+    {
+      "id": "spec:tortle/family",
+      "path": "Nomina/live/shards/tortle/family/r.jsonl",
+      "url": "/Nomina/live/shards/tortle/family/r.jsonl",
+      "size": 17024,
+      "sha256": "f7364cd0a27826b3526c1027b81d0994ecd6b4cb444a0c91a4a64eb1dbc00679"
+    },
+    {
+      "id": "spec:tortle/family",
+      "path": "Nomina/live/shards/tortle/family/t.jsonl",
+      "url": "/Nomina/live/shards/tortle/family/t.jsonl",
+      "size": 222954,
+      "sha256": "1f1e6134b36d4a81ce75920407b84cfdf12501163b831d454ea0e2c6e197d10c"
+    },
+    {
+      "id": "spec:tortle/house",
+      "path": "Nomina/live/shards/tortle/house/l.jsonl",
+      "url": "/Nomina/live/shards/tortle/house/l.jsonl",
+      "size": 9211,
+      "sha256": "483bd89337b2741c4032106a6e6c2d989c0f35c623ef057619aff93f30e4444a"
+    },
+    {
+      "id": "spec:tortle/house",
+      "path": "Nomina/live/shards/tortle/house/r.jsonl",
+      "url": "/Nomina/live/shards/tortle/house/r.jsonl",
+      "size": 7880,
+      "sha256": "bccbc269d9a709857c7229b98b5f05ff4aeee1593258283c45c271fa08f1e595"
+    },
+    {
+      "id": "spec:tortle/house",
+      "path": "Nomina/live/shards/tortle/house/t.jsonl",
+      "url": "/Nomina/live/shards/tortle/house/t.jsonl",
+      "size": 111059,
+      "sha256": "5554ec27f041e814e5b4ad5a2bab1218ffd20d96801c9f130918ff35897b5258"
+    },
+    {
+      "id": "spec:yuan-ti/core",
+      "path": "Nomina/live/shards/yuan-ti/personal/n.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/personal/n.jsonl",
+      "size": 102698,
+      "sha256": "086344156007441997baea43164054cae42ee7d330e309b38d0db7c6a72d23aa"
+    },
+    {
+      "id": "spec:yuan-ti/core",
+      "path": "Nomina/live/shards/yuan-ti/personal/s.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/personal/s.jsonl",
+      "size": 177244,
+      "sha256": "6d976ce06db8cb9e93fb8cdbaa75f7c0eda08269f4d58d0381488f8a85a9684c"
+    },
+    {
+      "id": "spec:yuan-ti/core",
+      "path": "Nomina/live/shards/yuan-ti/personal/t.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/personal/t.jsonl",
+      "size": 17348,
+      "sha256": "2ed5ee7d0390d904e5bfa2705080c0a1624f9cdafd0a3343fbd960257996c928"
+    },
+    {
+      "id": "spec:yuan-ti/core",
+      "path": "Nomina/live/shards/yuan-ti/personal/y.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/personal/y.jsonl",
+      "size": 95773,
+      "sha256": "85906c5abf412620134da3f021b4f67579c71810ea69cc2ba1a47f2e65bf38e7"
+    },
+    {
+      "id": "spec:yuan-ti/core",
+      "path": "Nomina/live/shards/yuan-ti/personal/z.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/personal/z.jsonl",
+      "size": 20029,
+      "sha256": "3ea424e3136e95d737af706019d89d38cfdbbe054d181feda242af2d0151e25d"
+    },
+    {
+      "id": "spec:yuan-ti/family",
+      "path": "Nomina/live/shards/yuan-ti/family/n.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/family/n.jsonl",
+      "size": 48777,
+      "sha256": "742a0eabca4077a7d865b388917ce786d8f201b595b601279921c5442c293840"
+    },
+    {
+      "id": "spec:yuan-ti/family",
+      "path": "Nomina/live/shards/yuan-ti/family/s.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/family/s.jsonl",
+      "size": 91026,
+      "sha256": "30eefef445c0f8cc262766ccd02ee8cdb4868b44a4c440a143b0f3bf7acb1c2d"
+    },
+    {
+      "id": "spec:yuan-ti/family",
+      "path": "Nomina/live/shards/yuan-ti/family/t.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/family/t.jsonl",
+      "size": 8446,
+      "sha256": "1d7ef3010f034b7a66ff5238b39ee44faaabff681a01c2396100a5fd6ab2451b"
+    },
+    {
+      "id": "spec:yuan-ti/family",
+      "path": "Nomina/live/shards/yuan-ti/family/y.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/family/y.jsonl",
+      "size": 51780,
+      "sha256": "de30a1e2708e53bf254af87f4bb78ae2121ab7eb71d3854c448435ee39b21e9f"
+    },
+    {
+      "id": "spec:yuan-ti/family",
+      "path": "Nomina/live/shards/yuan-ti/family/z.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/family/z.jsonl",
+      "size": 6790,
+      "sha256": "83af41648e0d783abd35973ff42d3567ce16b314155ecd07c1788dbdade112f4"
+    },
+    {
+      "id": "spec:yuan-ti/house",
+      "path": "Nomina/live/shards/yuan-ti/house/n.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/house/n.jsonl",
+      "size": 27599,
+      "sha256": "7f87a67adbf3c0ea1d3bc61cf7e7735aece3778129f0b1cf9dc43e7737c94eb2"
+    },
+    {
+      "id": "spec:yuan-ti/house",
+      "path": "Nomina/live/shards/yuan-ti/house/s.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/house/s.jsonl",
+      "size": 44921,
+      "sha256": "68b5c2edbbdb401e240fe96195cfa55ccc0f2e1f57040b51c9636682e77b0fed"
+    },
+    {
+      "id": "spec:yuan-ti/house",
+      "path": "Nomina/live/shards/yuan-ti/house/t.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/house/t.jsonl",
+      "size": 3221,
+      "sha256": "d2c93fcbe8e8fb7eeb4e24a7779f0fd86597fdb2e49f4ec58e98fa07d3b8bfc1"
+    },
+    {
+      "id": "spec:yuan-ti/house",
+      "path": "Nomina/live/shards/yuan-ti/house/y.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/house/y.jsonl",
+      "size": 23038,
+      "sha256": "5651ee6b08f81d37266a2acde76fd1bfa9e1ebb188a1be47ff76a72ddd438f59"
+    },
+    {
+      "id": "spec:yuan-ti/house",
+      "path": "Nomina/live/shards/yuan-ti/house/z.jsonl",
+      "url": "/Nomina/live/shards/yuan-ti/house/z.jsonl",
+      "size": 4649,
+      "sha256": "75e7950d42a18104c069fd7b0d46ac6d8fd892a3a9d59d4e778afbce3f7ce6e3"
     }
   ],
-  "coverage": {
-    "species_growth_vs_v3.5.4_pct": 3.9,
-    "letter_delta_pct": 2.7
-  },
-  "generated_on": "2025-11-10"
+  "generated_on": "2025-11-11"
 }
