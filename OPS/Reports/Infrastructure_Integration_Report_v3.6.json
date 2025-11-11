@@ -1,0 +1,21 @@
+{
+  "report": "Infrastructure_Integration_Report",
+  "version": "v3.6",
+  "verified_on": "2025-11-10",
+  "workers": {
+    "worldforge-api": "https://worldforge-api.hydremia.workers.dev",
+    "worldforge-archivist": "https://worldforge-archivist.hydremia.workers.dev"
+  },
+  "kv_bindings": {
+    "runtime": "WF_KV_RUNTIME",
+    "canon": "WF_KV_CANON",
+    "sessions": "WF_KV_SESSIONS",
+    "staging": "WF_KV_STAGING"
+  },
+  "status": "operational",
+  "tests": {
+    "version": "PASS",
+    "routes": "PASS",
+    "archivist_export_index": "PASS (empty OK)"
+  }
+}

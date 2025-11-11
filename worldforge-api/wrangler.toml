@@ -16,6 +16,9 @@ REPO_OWNER = "worldforge"
 REPO_NAME = "ops-core"
 REPO_BRANCH = "main"
 OPS_TOKEN = "YOUR_OPS_TOKEN_PLACEHOLDER"
+ARCHIVIST_URL = "https://worldforge-archivist.hydremia.workers.dev/archivist/promote"
+DATA_REPO_RAW_BASE = "https://raw.githubusercontent.com/hydremia/Worldforge-data/main"
+DATA_REPO_MANIFEST_URL = "https://raw.githubusercontent.com/hydremia/Worldforge-data/main/reference/manifest.json"
 
 # -----------------------------
 # Key-Value Namespace Bindings (shared)

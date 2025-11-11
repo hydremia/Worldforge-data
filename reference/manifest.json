@@ -1,0 +1,38 @@
+{
+  "schema": "repo_reference_contract@1",
+  "workers": {
+    "ops_core": "https://worldforge-api.hydremia.workers.dev",
+    "archivist_core": "https://worldforge-archivist.hydremia.workers.dev"
+  },
+  "modules": [
+    {
+      "name": "Nomina",
+      "current": "v3.5.5",
+      "versions": [
+        {
+          "v": "v3.5.5",
+          "index_url": "/Nomina/v3.5.5/index.json",
+          "hash": ""
+        },
+        {
+          "v": "v3.5.4",
+          "index_url": "/Nomina/v3.5.4/index.json",
+          "hash": ""
+        }
+      ],
+      "routes": {
+        "raw": "/raw/{version}/Nomina/{path}",
+        "id": "/id/nomina/{version}/{logical_id}"
+      },
+      "service": {
+        "resolve": "https://worldforge-api.hydremia.workers.dev/nomina/resolve",
+        "meta": "https://worldforge-api.hydremia.workers.dev/nomina/meta"
+      }
+    }
+  ],
+  "signing": {
+    "algo": "sha256",
+    "pubkey": ""
+  },
+  "generated_on": "2025-11-10"
+}

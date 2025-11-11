@@ -1,0 +1,19 @@
+{
+  "module": "Nomina",
+  "version": "v3.5.5",
+  "sha256_bundle": "",
+  "files": [
+    {
+      "id": "spec:elf/core",
+      "path": "Nomina/v3.5.5/shards/elf_core.jsonl",
+      "url": "/Nomina/v3.5.5/shards/elf_core.jsonl",
+      "size": 0,
+      "sha256": ""
+    }
+  ],
+  "coverage": {
+    "species_growth_vs_v3.5.4_pct": 3.9,
+    "letter_delta_pct": 2.7
+  },
+  "generated_on": "2025-11-10"
+}

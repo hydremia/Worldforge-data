@@ -1,0 +1,17 @@
+{
+  "ecosystem_version": "v3.6.0",
+  "latest": {
+    "Nomina": "v3.5.5",
+    "Archivist": "v3.5",
+    "OPS": "v3.5",
+    "Hub": "v3.5",
+    "Creator": "v3.3",
+    "Atelier": "v3.3"
+  },
+  "infra_version": "v3.6.0",
+  "components": ["OPS Worker", "Archivist Worker"],
+  "manifests": {
+    "reference": "/reference/manifest.json"
+  },
+  "generated_on": "2025-11-10"
+}
