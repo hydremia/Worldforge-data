@@ -1,0 +1,2 @@
+{"name": "Hku", "species": "orc", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan"}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hushtausrgaoku", "species": "orc", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:clan", "entropy_refined"]}

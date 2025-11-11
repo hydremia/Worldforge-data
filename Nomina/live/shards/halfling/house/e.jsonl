@@ -1,0 +1,10 @@
+{"name": "Ellu", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Emmalme", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Elmomi", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Emul", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Euha", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Eu"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Emno", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Elmo"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Eloh", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Elo"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Emoa", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Eolh", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Eol"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Emoi", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

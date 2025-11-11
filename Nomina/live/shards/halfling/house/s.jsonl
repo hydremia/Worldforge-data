@@ -1,0 +1,16 @@
+{"name": "Saoli", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Sanuh", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Sanu"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Sioniie", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Seynuy", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Seomiotiy", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Somoymia", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Saiefuyfua", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Siiemao", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Suleah", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_pass_2": "Sulea"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Sotaa", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Seofunoo", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Suamuonaie", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Soofooneie", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Saiefu", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Suonoluie", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Sunaa", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

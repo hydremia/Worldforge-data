@@ -1,0 +1,14 @@
+{"name": "Umulmu", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ulue", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Umei", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Emay", "species": "halfling", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Uma", "modified_from2": "Ama", "modified_pass_1": "Amay"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Ullama", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ululel", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ulomu", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Uiha", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Ui"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Uha", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Umi"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Ulmulu", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Amam", "species": "halfling", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Umam"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Uui", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Umemim", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Umma", "species": "halfling", "type": "house", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}

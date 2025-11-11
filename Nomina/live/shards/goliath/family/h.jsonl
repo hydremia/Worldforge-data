@@ -1,0 +1,65 @@
+{"name": "Hegoloath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiarlaathhaath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hearrothti", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathloarhear", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hathglae", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heargolath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoarhethgoloar", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathniargolear", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiathgoleathglaoar", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoglaeath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathgola", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haarrear", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoathgoleglae", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hithglaiar", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegoli", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Hagoli"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Hithglaith", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haathgoliath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higlaathglaeath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathro", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hothgoligoloth", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haheath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hoauihmaiago", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Heathglaiath", "modified_from2": "Hiathglaiath", "modified_pass_1": "Hiauiglaiath", "modified_pass_2": "Hoauiglaiath", "modified_pass_3": "Hoauihmaiath"}, "rare": true, "tags": ["mythic", "uniqueness_normalized", "entropy_refined"]}
+{"name": "Hagoleath", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiathgoloar", "species": "goliath", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higolear", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hathtaiarglaiar", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hine", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hothgith", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heriar", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Heglaethglaa", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiathglaeth", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiarlothgoliath", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hothhiathgoleth", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoglarglaeth", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hearri", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Higoliar", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoargolaargoleath", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiathglaaath", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegolaar", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoargoleathglaa", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haarta", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Haathniarrith", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hothteth", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathniathglaeth", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hearglathnaiath", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hahiarh", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "modified_from": "Hahiar"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Hagi", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hoarhath", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hena", "species": "goliath", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Haathgoloath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Higolaath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haathglaaathgoliar", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathglaeargolo", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hoathlaathgoliar", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiriath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Heathgoleth", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Haathglaath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hargla", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heathgolathglaaath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hegolath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heartahoth", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heargethglaith", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hothglaearlaar", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Heglaath", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Hiargla", "species": "goliath", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}

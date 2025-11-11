@@ -1,0 +1,5 @@
+{"name": "Hu", "species": "orc", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan"}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hurushoh", "species": "orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan"}, "rare": true, "tags": ["mythic", "cultural_origin:clan", "entropy_refined"]}
+{"name": "Haggdaohkuksur", "species": "orc", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:clan", "entropy_refined"]}
+{"name": "Humrorshauga", "species": "orc", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:clan", "entropy_refined"]}
+{"name": "Huroro", "species": "orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "clan"}, "rare": false, "tags": ["entropy_refined"]}

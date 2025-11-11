@@ -1,0 +1,8 @@
+{"name": "Rigrfrafri", "species": "half-orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rukgrau", "species": "half-orc", "type": "family", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Ragflankdrand", "species": "half-orc", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Runkbrauflind", "species": "half-orc", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rirgdraunddraug", "species": "half-orc", "type": "family", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Renkdraenkkraond", "species": "half-orc", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rindflaend", "species": "half-orc", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}
+{"name": "Rikekkrae", "species": "half-orc", "type": "family", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "entropy_refined"]}

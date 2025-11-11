@@ -16,7 +16,7 @@ export interface Env {
   WF_KV_SESSIONS: KVNamespace;
   WF_KV_STAGING: KVNamespace;
   WF_KV_MEDIA: KVNamespace;
-  // Optional, used by Nomina inline helpers:
+  // Optional, override defaults for repo locations:
   DATA_REPO_RAW_BASE?: string;        // default: https://raw.githubusercontent.com/hydremia/Worldforge-data/main
   DATA_REPO_MANIFEST_URL?: string;    // default: https://raw.githubusercontent.com/hydremia/Worldforge-data/main/reference/manifest.json
 }
@@ -70,34 +70,64 @@ async function promoteToArchivist(env: Env, payload: any) {
 }
 
 // =====================================================================
-// Inline Nomina helpers (no external imports)
+// Inline Nomina helpers (live-path aware)
 // =====================================================================
 
-type RepoModule = { name: string; current: string; versions: { v: string; index_url: string; hash?: string }[]; service?: any };
+type RepoModule = {
+  name: string;
+  current: string;
+  current_index_url?: string;
+  versions?: { v: string; index_url: string; hash?: string }[];
+  service?: any;
+};
 type RepoManifest = { modules: RepoModule[] };
 
+function rawBase(env: Env) {
+  return env.DATA_REPO_RAW_BASE || "https://raw.githubusercontent.com/hydremia/Worldforge-data/main";
+}
+function manifestUrl(env: Env) {
+  return env.DATA_REPO_MANIFEST_URL || "https://raw.githubusercontent.com/hydremia/Worldforge-data/main/reference/manifest.json";
+}
+
 async function loadManifestInline(env: Env): Promise<RepoManifest> {
-  const url =
-    env.DATA_REPO_MANIFEST_URL ||
-    "https://raw.githubusercontent.com/hydremia/Worldforge-data/main/reference/manifest.json";
-  const r = await fetch(url, { cf: { cacheEverything: true, cacheTtl: 300 } });
+  const r = await fetch(manifestUrl(env), { cf: { cacheEverything: true, cacheTtl: 300 } });
   if (!r.ok) throw new Error(`manifest fetch failed: ${r.status}`);
   return await r.json();
 }
 
+function toAbsolute(env: Env, maybeRelative: string) {
+  if (/^https?:\/\//i.test(maybeRelative)) return maybeRelative;
+  const base = rawBase(env);
+  return base.replace(/\/$/, "") + (maybeRelative.startsWith("/") ? "" : "/") + maybeRelative;
+}
+
+/**
+ * Load Nomina index with priority:
+ *   1) explicit ?v=<version>
+ *   2) module.current_index_url (live)
+ *   3) versions entry matching module.current
+ */
 async function loadNominaIndexInline(env: Env, version?: string): Promise<any> {
   const m = await loadManifestInline(env);
   const mod = m.modules.find(x => x.name.toLowerCase() === "nomina");
   if (!mod) throw new Error("Nomina module not found in manifest");
-  const v = version || mod.current;
-  const entry = mod.versions.find(x => x.v === v);
-  if (!entry) throw new Error(`Nomina version not found: ${v}`);
-  const base =
-    env.DATA_REPO_RAW_BASE || "https://raw.githubusercontent.com/hydremia/Worldforge-data/main";
-  const indexUrl = entry.index_url.startsWith("http")
-    ? entry.index_url
-    : `${base}${entry.index_url.startsWith("/") ? "" : "/"}${entry.index_url}`;
-  const r = await fetch(indexUrl, { cf: { cacheEverything: true, cacheTtl: 300 } });
+
+  let indexUrl: string | undefined;
+
+  if (version) {
+    const entry = mod.versions?.find((x) => x.v === version);
+    if (!entry) throw new Error(`Nomina version not found: ${version}`);
+    indexUrl = entry.index_url;
+  } else if (mod.current_index_url) {
+    indexUrl = mod.current_index_url; // live
+  } else {
+    const entry = mod.versions?.find((x) => x.v === mod.current);
+    if (!entry) throw new Error(`Nomina version not found: ${mod.current}`);
+    indexUrl = entry.index_url;
+  }
+
+  const url = toAbsolute(env, indexUrl!);
+  const r = await fetch(url, { cf: { cacheEverything: true, cacheTtl: 300 } });
   if (!r.ok) throw new Error(`nomina index fetch failed: ${r.status}`);
   return await r.json();
 }
@@ -120,11 +150,7 @@ function makeXorShift128Plus(seedHex: string) {
 }
 
 async function fetchShardText(env: Env, urlOrPath: string): Promise<string> {
-  const base =
-    env.DATA_REPO_RAW_BASE || "https://raw.githubusercontent.com/hydremia/Worldforge-data/main";
-  const url = /^https?:\/\//i.test(urlOrPath)
-    ? urlOrPath
-    : `${base}${urlOrPath.startsWith("/") ? "" : "/"}${urlOrPath}`;
+  const url = /^https?:\/\//i.test(urlOrPath) ? urlOrPath : toAbsolute(env, urlOrPath);
   const r = await fetch(url, { cf: { cacheEverything: true, cacheTtl: 600 } });
   if (!r.ok) throw new Error(`shard fetch failed: ${r.status}`);
   return await r.text();
@@ -142,7 +168,8 @@ async function handleNominaMeta(_req: Request, env: Env): Promise<Response> {
   return json({
     module: "Nomina",
     current: mod.current,
-    versions: mod.versions.map(v => v.v),
+    current_index_url: mod.current_index_url || null,
+    versions: mod.versions?.map(v => v.v) || [],
     service: mod.service ?? null
   });
 }
@@ -165,26 +192,45 @@ async function handleNominaResolve(req: Request, env: Env): Promise<Response> {
   const seed    = url.searchParams.get("seed") || cryptoRandomSeed();
 
   const index = await loadNominaIndexInline(env);
-  const ids: string[] = [];
-  if (culture && index.files.some((f: any) => f.id === `spec:${species}/${culture}`)) ids.push(`spec:${species}/${culture}`);
-  if (gender  && index.files.some((f: any) => f.id === `spec:${species}/${gender}`)) ids.push(`spec:${species}/${gender}`);
-  if (index.files.some((f: any) => f.id === `spec:${species}/core`)) ids.push(`spec:${species}/core`);
-  if (ids.length === 0) return json({ error: "No matching logical IDs", species, culture, gender }, 404);
 
-  // Build pool from shards
+  // Map facets: personal→core (given), family→family (surnames), house→house
+  // Your index should already encode these via ids like spec:<species>/core|family|house.
+  const wantedIds: string[] = [];
+
+  if (culture && index.files.some((f: any) => f.id === `spec:${species}/${culture}`)) {
+    wantedIds.push(`spec:${species}/${culture}`);
+  }
+  if (gender && index.files.some((f: any) => f.id === `spec:${species}/${gender}`)) {
+    wantedIds.push(`spec:${species}/${gender}`);
+  }
+  // Default facet for given names:
+  if (index.files.some((f: any) => f.id === `spec:${species}/core`)) {
+    wantedIds.push(`spec:${species}/core`);
+  }
+
+  if (wantedIds.length === 0) {
+    return json({ error: "No matching logical IDs", species, culture, gender }, 404);
+  }
+
+  // Pull ALL shards for each matching id (aggregates all letters)
+  const selected = index.files.filter((f: any) => wantedIds.includes(f.id));
   const rng = makeXorShift128Plus(seed);
+
   const pool: string[] = [];
-  for (const id of ids) {
-    const f = index.files.find((x: any) => x.id === id)!;
+  for (const f of selected) {
     const txt = await fetchShardText(env, f.url || f.path);
-    if ((f.path || f.url || "").endsWith(".jsonl")) {
+    const isJsonl = (f.path || f.url || "").toLowerCase().endsWith(".jsonl");
+    if (isJsonl) {
       for (const line of txt.split(/\r?\n/)) {
-        const t = line.trim(); if (t) pool.push(JSON.parse(t));
+        const t = line.trim();
+        if (t) pool.push(JSON.parse(t));
       }
     } else {
-      const arr = JSON.parse(txt); if (Array.isArray(arr)) pool.push(...arr);
+      const arr = JSON.parse(txt);
+      if (Array.isArray(arr)) pool.push(...arr);
     }
   }
+
   // Deterministic shuffle (Fisher–Yates)
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
@@ -195,10 +241,10 @@ async function handleNominaResolve(req: Request, env: Env): Promise<Response> {
   return json({
     module: "Nomina",
     version: index.version,
-    resolved_from: { logical_ids: ids },
+    resolved_from: { logical_ids: wantedIds, shards: selected.length },
     rng: { seed, algo: "xorshift128+" },
     results,
-    provenance: { manifest: `/Nomina/${index.version}/index.json`, sha256_bundle: index.sha256_bundle || null }
+    provenance: { manifest: (index._source ?? `/Nomina/${index.version}/index.json`), sha256_bundle: index.sha256_bundle || null }
   });
 }
 
@@ -222,9 +268,9 @@ export default {
       });
     }
 
-    // --- Nomina service endpoints (must come before other routing) ---
+    // --- Nomina service endpoints (prefer live index via current_index_url) ---
     if (req.method === "GET" && pathname === "/nomina/meta")    return handleNominaMeta(req, env);
-    if (req.method === "GET" && pathname === "/nomina/index")   return handleNominaIndex(req, env);
+    if (req.method === "GET" && pathname === "/nomina/index")   return handleNominaIndex(req, env);  // ?v=<version> optional
     if (req.method === "GET" && pathname === "/nomina/resolve") return handleNominaResolve(req, env);
     // --- end Nomina endpoints ---
 

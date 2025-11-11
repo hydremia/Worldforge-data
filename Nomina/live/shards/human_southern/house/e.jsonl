@@ -1,0 +1,3 @@
+{"name": "Eateh", "species": "human", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "southern", "modified_from": "Eate"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Esiurh", "species": "human", "type": "house", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "southern", "modified_from": "Esiur"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}
+{"name": "Esioh", "species": "human", "type": "house", "rarity": "uncommon", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "southern", "modified_from": "Esio"}, "rare": false, "tags": ["uniqueness_normalized", "entropy_refined"]}

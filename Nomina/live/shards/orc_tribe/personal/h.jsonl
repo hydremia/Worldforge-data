@@ -1,0 +1,2 @@
+{"name": "Hasudr", "species": "orc", "type": "personal", "rarity": "rare", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "tribe"}, "rare": false, "tags": ["entropy_refined"]}
+{"name": "Hogkrauborg", "species": "orc", "type": "personal", "rarity": "common", "phon": {}, "meta": {"created_in": "v3.5.2", "nfc": true, "subculture": "tribe", "v3.5.4_mutated": true}, "rare": true, "tags": ["mythic", "cultural_origin:tribe", "entropy_refined"]}
