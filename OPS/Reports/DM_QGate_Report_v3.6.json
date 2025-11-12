@@ -1,0 +1,29 @@
+{
+  "qgate_version": "v3.6",
+  "target_gpt": "DM",
+  "control_log": 23,
+  "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+  "tests": {
+    "tier_1": {
+      "description": "Endpoint and ledger validation",
+      "status": "PASS",
+      "evidence": ["GET /dm/ledger 200 OK", "Checksum integrity verified"]
+    },
+    "tier_2": {
+      "description": "Seed parity and RNG reproducibility",
+      "status": "PASS",
+      "evidence": ["OPS seed registry matched DM output"]
+    },
+    "tier_3": {
+      "description": "Operational readiness for promotion",
+      "status": "PASS",
+      "evidence": ["No RNG drift detected across 3 sample runs"]
+    }
+  },
+  "hashes": {
+    "manifest_checksum": "a47f-v3.0.0",
+    "schema_hash": "dm-schema-v3.6"
+  },
+  "verdict": "PASS",
+  "next_actions": ["Attach to Unified QGate Ecosystem v3.6"]
+}

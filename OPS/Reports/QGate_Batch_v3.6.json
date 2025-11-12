@@ -1,0 +1,83 @@
+{
+  "qgates": [
+    {
+      "qgate_version": "v3.6",
+      "target_gpt": "ARCHIVIST",
+      "control_log": 23,
+      "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+      "tests": {
+        "tier_1": {"description": "Endpoint and ingestion validation", "status": "PENDING", "evidence": []},
+        "tier_2": {"description": "Cross-GPT bridge and Nomina data parity", "status": "PENDING", "evidence": []},
+        "tier_3": {"description": "Lineage and canon sync integrity", "status": "PENDING", "evidence": []}
+      },
+      "hashes": {"manifest_checksum": "", "schema_hash": ""},
+      "verdict": "PENDING",
+      "next_actions": ["Run ingestion and lineage validation", "Confirm Nomina lookups", "Save QGate report"]
+    },
+    {
+      "qgate_version": "v3.6",
+      "target_gpt": "DM",
+      "control_log": 23,
+      "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+      "tests": {
+        "tier_1": {"description": "Endpoint availability and ledger validation", "status": "PENDING", "evidence": []},
+        "tier_2": {"description": "Seed registry parity with OPS", "status": "PENDING", "evidence": []},
+        "tier_3": {"description": "Deterministic RNG test suite", "status": "PENDING", "evidence": []}
+      },
+      "hashes": {"manifest_checksum": "", "schema_hash": ""},
+      "verdict": "PENDING",
+      "next_actions": ["Validate /dm/ledger", "Record RNG parity", "Submit for unified QGate"]
+    },
+    {
+      "qgate_version": "v3.6",
+      "target_gpt": "CREATOR",
+      "control_log": 23,
+      "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+      "tests": {
+        "tier_1": {"description": "Render and meta endpoint validation", "status": "PENDING", "evidence": []},
+        "tier_2": {"description": "Cross-link with Cartographer and Atelier schemas", "status": "PENDING", "evidence": []},
+        "tier_3": {"description": "Visual lineage and provenance tracking", "status": "PENDING", "evidence": []}
+      },
+      "hashes": {"manifest_checksum": "", "schema_hash": ""},
+      "verdict": "PENDING",
+      "next_actions": ["Confirm schema alignment", "Validate render linkage", "Save report"]
+    },
+    {
+      "qgate_version": "v3.6",
+      "target_gpt": "HUB",
+      "control_log": 23,
+      "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+      "tests": {
+        "tier_1": {"description": "Telemetry endpoint and capsule persistence check", "status": "PENDING", "evidence": []},
+        "tier_2": {"description": "Manifest and OPS parity test", "status": "PENDING", "evidence": []},
+        "tier_3": {"description": "Session and capsule state validation", "status": "PENDING", "evidence": []}
+      },
+      "hashes": {"manifest_checksum": "", "schema_hash": ""},
+      "verdict": "PENDING",
+      "next_actions": ["Ping /hub/telemetry", "Check capsule persistence", "Submit unified QGate entry"]
+    },
+    {
+      "qgate_version": "v3.6",
+      "target_gpt": "Cartographer",
+      "control_log": 23,
+      "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
+      "tests": {
+        "tier_1": {"description": "Schema and endpoint placeholder validation", "status": "PENDING", "evidence": []},
+        "tier_2": {"description": "Bridge with Archivist and Creator tests", "status": "PENDING", "evidence": []},
+        "tier_3": {"description": "Spatial schema integration readiness", "status": "PENDING", "evidence": []}
+      },
+      "hashes": {"manifest_checksum": "", "schema_hash": ""},
+      "verdict": "PENDING",
+      "next_actions": ["Define Cartographer schemas", "Validate OPS endpoints", "Submit placeholder report"]
+    }
+  ],
+  "ops_run_sequence": [
+    "QGATE ARCHIVIST v3.6",
+    "QGATE DM v3.6",
+    "QGATE CREATOR v3.6",
+    "QGATE HUB v3.6",
+    "QGATE CARTOGRAPHER v3.6",
+    "UNIFIED QGATE ECOSYSTEM v3.6"
+  ],
+  "notes": "Each QGate should be run sequentially by OPS in one thread (Mode A). After completion, OPS compiles the unified report into /OPS/Reports/OPS_Ecosystem_QGate_Report_v3.6.json."
+}

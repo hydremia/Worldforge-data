@@ -1,0 +1,74 @@
+{
+  "manifest_version": "v3.6",
+  "ecosystem": "Worldforge Unified Runtime",
+  "description": "Baseline manifest defining GPT versions, schema mappings, and bridge endpoints for Worldforge v3.6.",
+
+  "gpts": {
+    "OPS": {
+      "version": "3.6",
+      "role": "Governance and QGate Orchestration",
+      "endpoints": ["/ops/qgate", "/ops/checkpoint", "/ops/watchdog"]
+    },
+    "ARCHIVIST": {
+      "version": "3.6",
+      "role": "Canon ingestion and lineage tracking",
+      "endpoints": ["/archivist/ingest", "/archivist/resolve", "/archivist/meta"]
+    },
+    "DM": {
+      "version": "3.5",
+      "role": "Procedural generation and RNG seed management",
+      "endpoints": ["/dm/generate", "/dm/seed", "/dm/ledger"]
+    },
+    "CREATOR": {
+      "version": "3.3",
+      "role": "Narrative synthesis and concept development",
+      "endpoints": ["/creator/render", "/creator/meta"]
+    },
+    "ATELIER": {
+      "version": "3.3",
+      "role": "Visual synthesis and illustration pipeline",
+      "endpoints": ["/atelier/image", "/atelier/meta"]
+    },
+    "HUB": {
+      "version": "3.5",
+      "role": "Telemetry, capsule management, and user interface layer",
+      "endpoints": ["/hub/telemetry", "/hub/capsule", "/hub/meta"]
+    },
+    "Cartographer": {
+      "version": "3.6",
+      "role": "Spatial and geographic intelligence (Pending Build)",
+      "endpoints": ["/cartographer/render", "/cartographer/analyze", "/cartographer/telemetry"],
+      "status": "Placeholder - GPT not yet deployed"
+    }
+  },
+
+  "schemas": {
+    "nomina_schema": "/Nomina/live/index.json",
+    "cartographer_map_schema": "/schemas/cartographer_map_schema.json",
+    "cartographer_layer_schema": "/schemas/cartographer_layer_schema.json",
+    "capsule_user_schema": "/schemas/capsule_user_schema.json"
+  },
+
+  "references": {
+    "canon_baseline": "/Nomina/live/index.json",
+    "rollback_reference": "/OPS/Checkpoints/control_21.json",
+    "current_checkpoint": "/OPS/Checkpoints/control_23.json",
+    "active_roadmap": "/Roadmap/Worldforge_Roadmap_v3.6_to_v4.0.md"
+  },
+
+  "bridge_endpoints": {
+    "OPS_to_ARCHIVIST": "/archivist/resolve",
+    "OPS_to_Cartographer": "/cartographer/render",
+    "OPS_to_HUB": "/hub/telemetry",
+    "OPS_to_DM": "/dm/ledger",
+    "OPS_to_CREATOR": "/creator/render",
+    "OPS_to_ATELIER": "/atelier/image"
+  },
+
+  "metadata": {
+    "created_by": "OPS Runtime",
+    "control_log": 23,
+    "status": "Active",
+    "notes": "Validated v3.6 ecosystem manifest. Adjusted for actual repo folder structure and placeholder Cartographer pending build."
+  }
+}
