@@ -1,0 +1,14 @@
+{
+  "runtime_mode": "disabled",
+  "api_token": "api-token",
+  "paths": {
+    "staging": "/staging/",
+    "canon": "/canon/",
+    "archive": "/archive/"
+  },
+  "ops_functions": {
+    "saveSession": false,
+    "putRuntime": false
+  },
+  "notes": "Initial config for enabling live OPS runtime in v3.7 phase."
+}
