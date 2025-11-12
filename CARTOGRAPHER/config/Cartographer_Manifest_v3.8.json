@@ -1,0 +1,20 @@
+{
+  "manifest_version": "v3.8",
+  "target_gpt": "Cartographer",
+  "control_log": 26,
+  "baseline_version": "v3.6",
+  "schemas": {
+    "map_schema": "/Cartographer/schemas/cartographer_map_schema.json",
+    "layer_schema": "/Cartographer/schemas/cartographer_layer_schema.json"
+  },
+  "runtime_capsules": {
+    "canon": "WF_KV_CANON",
+    "runtime": "WF_KV_RUNTIME",
+    "sessions": "WF_KV_SESSIONS",
+    "staging": "WF_KV_STAGING"
+  },
+  "bridge_links": ["OPS", "Creator", "Archivist"],
+  "status": "active",
+  "last_verified": "2025-11-12",
+  "checksum": "cartographer-manifest-v3.8-a1"
+}

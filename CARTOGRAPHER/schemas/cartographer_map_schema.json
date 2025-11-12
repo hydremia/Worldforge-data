@@ -1,0 +1,21 @@
+{
+  "$schema": "https://worldforge.dev/schema/cartographer_map_schema.json",
+  "type": "object",
+  "properties": {
+    "map_id": { "type": "string" },
+    "title": { "type": "string" },
+    "scale": { "type": "number" },
+    "features": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "legend": {
+      "type": "object",
+      "properties": {
+        "symbol": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    }
+  },
+  "required": ["map_id", "title", "scale"]
+}

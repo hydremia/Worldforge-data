@@ -1,0 +1,14 @@
+{
+  "$schema": "https://worldforge.dev/schema/cartographer_layer_schema.json",
+  "type": "object",
+  "properties": {
+    "layer_id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["terrain", "political", "trade", "travel"]
+    },
+    "metadata": { "type": "object" },
+    "visibility": { "type": "boolean" }
+  },
+  "required": ["layer_id", "type"]
+}
