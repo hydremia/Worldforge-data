@@ -1,0 +1,643 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Worldforge Archivist API",
+    "version": "v3.4",
+    "summary": "Archivist review intake, canon promotion, and OPS QGate preflight"
+  },
+  "servers": [
+    {
+      "url": "https://worldforge-api.hydremia.workers.dev",
+      "description": "Production"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "API health check",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "ok"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/version": {
+      "get": {
+        "operationId": "version",
+        "summary": "Active API version info",
+        "responses": {
+          "200": {
+            "description": "Version",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "active": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "active"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/archivist/review": {
+      "post": {
+        "operationId": "archivistReview",
+        "summary": "Submit staged items for review intake",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewSubmission"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Review Summary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReviewSummary"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/SchemaError"
+          },
+          "401": {
+            "$ref": "#/components/responses/AuthError"
+          }
+        }
+      }
+    },
+    "/archivist/promote": {
+      "post": {
+        "operationId": "archivistPromote",
+        "summary": "Promote reviewed entities to canon",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PromotionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Promoted Canon Records",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "records": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/ArchivistRecord"
+                      }
+                    }
+                  },
+                  "required": [
+                    "records"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/SchemaError"
+          },
+          "401": {
+            "$ref": "#/components/responses/AuthError"
+          },
+          "412": {
+            "$ref": "#/components/responses/PreflightRequired"
+          },
+          "409": {
+            "$ref": "#/components/responses/Conflict"
+          }
+        }
+      }
+    },
+    "/ops/audit/qgate": {
+      "post": {
+        "operationId": "opsQGatePreflight",
+        "summary": "Submit QGate preflight for Archivist",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QGatePreflight"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Recorded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "ok"
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/AuthError"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "responses": {
+      "SchemaError": {
+        "description": "Request body failed schema validation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "AuthError": {
+        "description": "Missing or invalid authorization",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "PreflightRequired": {
+        "description": "QGate preflight required before promotion",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Conflict": {
+        "description": "Conflicting sources require escalation",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      }
+    },
+    "schemas": {
+      "ReviewSubmission": {
+        "type": "object",
+        "required": [
+          "submission_id",
+          "submitted_by",
+          "items"
+        ],
+        "properties": {
+          "submission_id": {
+            "type": "string"
+          },
+          "submitted_by": {
+            "type": "string"
+          },
+          "source_uri": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "slug",
+                "entity_type",
+                "status",
+                "content"
+              ],
+              "properties": {
+                "slug": {
+                  "type": "string"
+                },
+                "entity_type": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "staging",
+                    "pending_review"
+                  ]
+                },
+                "nomina": {
+                  "type": "object",
+                  "properties": {
+                    "species": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "rarity": {
+                      "type": "string"
+                    },
+                    "phonotactics": {
+                      "type": "object",
+                      "additionalProperties": true
+                    }
+                  }
+                },
+                "content": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ReviewSummary": {
+        "type": "object",
+        "required": [
+          "summary_id",
+          "items"
+        ],
+        "properties": {
+          "summary_id": {
+            "type": "string"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "slug",
+                "proposed_action",
+                "confidence"
+              ],
+              "properties": {
+                "slug": {
+                  "type": "string"
+                },
+                "proposed_action": {
+                  "type": "string",
+                  "enum": [
+                    "merge",
+                    "add",
+                    "reject",
+                    "escalate"
+                  ]
+                },
+                "confidence": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "delta": {
+                  "$ref": "#/components/schemas/CanonDelta"
+                }
+              }
+            }
+          }
+        }
+      },
+      "CanonDelta": {
+        "type": "object",
+        "required": [
+          "entity_id",
+          "changes",
+          "confidence",
+          "action"
+        ],
+        "properties": {
+          "entity_id": {
+            "type": "string"
+          },
+          "changes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "path",
+                "from",
+                "to"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "from": {},
+                "to": {},
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "merge",
+              "add",
+              "reject",
+              "escalate"
+            ]
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "PromotionRequest": {
+        "type": "object",
+        "required": [
+          "promotion_ticket",
+          "ops_token",
+          "entities"
+        ],
+        "properties": {
+          "promotion_ticket": {
+            "type": "string"
+          },
+          "ops_token": {
+            "type": "string"
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "entity_id",
+                "delta"
+              ],
+              "properties": {
+                "entity_id": {
+                  "type": "string"
+                },
+                "delta": {
+                  "$ref": "#/components/schemas/CanonDelta"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ArchivistRecord": {
+        "type": "object",
+        "required": [
+          "id",
+          "slug",
+          "entity_type",
+          "status",
+          "version",
+          "lineage",
+          "sources"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "staging",
+              "pending_review",
+              "canon"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "nomina": {
+            "type": "object",
+            "properties": {
+              "species": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "rarity": {
+                "type": "string"
+              },
+              "phonotactics": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          },
+          "lineage": {
+            "type": "object",
+            "required": [
+              "created_at",
+              "sources"
+            ],
+            "properties": {
+              "created_at": {
+                "type": "string"
+              },
+              "modified_at": {
+                "type": "string"
+              },
+              "promotion_ticket": {
+                "type": "string"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "uri"
+                  ],
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "QGatePreflight": {
+        "type": "object",
+        "required": [
+          "component",
+          "version",
+          "checks"
+        ],
+        "properties": {
+          "component": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "checks": {
+            "type": "object",
+            "properties": {
+              "schemas_resolvable": {
+                "type": "boolean"
+              },
+              "core_length_ok": {
+                "type": "boolean"
+              },
+              "endpoints_configured": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "schemas_resolvable",
+              "core_length_ok",
+              "endpoints_configured"
+            ]
+          },
+          "artifacts": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "FAIL",
+              "WARN"
+            ]
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "code": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "error"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Worldforge OPS API Worker — Cartographer Access",
+    "version": "v3.7",
+    "description": "Shared API interface for all Worldforge GPTs (OPS, Creator, Cartographer, Archivist). Cartographer uses this worker to ingest visuals, save map sessions, and perform OPS audits."
+  },
+  "servers": [
+    { "url": "https://worldforge-api.hydremia.workers.dev" }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Check worker health and connectivity.",
+        "responses": {
+          "200": {
+            "description": "Worker operational and reachable."
+          }
+        }
+      }
+    },
+    "/version": {
+      "get": {
+        "operationId": "version",
+        "summary": "Get current OPS runtime version of the worker.",
+        "responses": {
+          "200": {
+            "description": "Current runtime version returned."
+          }
+        }
+      }
+    },
+    "/createCapsule": {
+      "post": {
+        "operationId": "createCapsule",
+        "summary": "Create or initialize a new OPS runtime capsule.",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "OPS authorization token."
+          }
+        ],
+        "responses": {
+          "200": { "description": "Capsule created or retrieved successfully." }
+        }
+      }
+    },
+    "/getRuntime": {
+      "get": {
+        "operationId": "getRuntime",
+        "summary": "Retrieve current OPS runtime configuration.",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Runtime configuration retrieved." }
+        }
+      }
+    },
+    "/putRuntime": {
+      "post": {
+        "operationId": "putRuntime",
+        "summary": "Update the runtime configuration or canon version in OPS.",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "canonVersion",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Runtime updated successfully." }
+        }
+      }
+    },
+    "/saveSession": {
+      "post": {
+        "operationId": "saveSession",
+        "summary": "Save a map metadata file, GPT session, or OPS record to runtime storage.",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "filename",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "File name to save (e.g. map metadata, QGate log)."
+          },
+          {
+            "name": "markdown",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Serialized text or JSON data to save."
+          }
+        ],
+        "responses": {
+          "200": { "description": "Session or file saved successfully." }
+        }
+      }
+    },
+    "/ingestVisual": {
+      "post": {
+        "operationId": "ingestVisual",
+        "summary": "Ingest a visual asset (map, draft, or overlay) into the OPS staging system.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Unique identifier for the asset."
+          },
+          {
+            "name": "prompt",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Descriptive prompt for ingestion (e.g., map type or region)."
+          },
+          {
+            "name": "tags",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "array", "items": { "type": "string" } },
+            "description": "Optional tag list for indexing."
+          }
+        ],
+        "responses": {
+          "200": { "description": "Visual or map asset ingested successfully." }
+        }
+      }
+    },
+    "/audit": {
+      "post": {
+        "operationId": "audit",
+        "summary": "Perform an OPS audit operation for verification or logging.",
+        "parameters": [
+          {
+            "name": "dummy",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Placeholder or structured audit context."
+          }
+        ],
+        "responses": {
+          "200": { "description": "Audit completed successfully." }
+        }
+      }
+    }
+  }
+}

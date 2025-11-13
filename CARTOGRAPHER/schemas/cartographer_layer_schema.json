@@ -3,12 +3,12 @@
   "type": "object",
   "properties": {
     "layer_id": { "type": "string" },
-    "type": {
-      "type": "string",
-      "enum": ["terrain", "political", "trade", "travel"]
-    },
+    "type": { "enum": ["terrain", "political", "trade", "travel"] },
     "metadata": { "type": "object" },
     "visibility": { "type": "boolean" }
   },
-  "required": ["layer_id", "type"]
+  "required": ["layer_id", "type"],
+  "version": "v3.8",
+  "last_verified": "2025-11-12",
+  "checksum": "cartographer-layer-schema-v3.8-a1"
 }

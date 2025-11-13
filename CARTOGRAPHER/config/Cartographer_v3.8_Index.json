@@ -1,0 +1,37 @@
+{
+  "index_version": "v3.8-grid",
+  "target_gpt": "Cartographer",
+  "control_log": 26,
+  "description": "Comprehensive manifest and checksum index for Cartographer GPT v3.8-grid stable release.",
+  "files": {
+    "config": {
+      "Cartographer_Manifest_v3.8.json": "cartographer-manifest-v3.8-a2",
+      "Cartographer_Profile.json": "cartographer-profile-v3.8-a2",
+      "Cartographer_Runtime_Core_v3.8.txt": "cartographer-runtime-core-v3.8-grid-a1",
+      "Cartographer_Capabilities.json": "cartographer-capabilities-v3.8-grid-a1",
+      "Cartographer_Ingestion_Workflow.json": "cartographer-ingestion-workflow-v3.8-grid-a1"
+    },
+    "schemas": {
+      "cartographer_map_schema.json": "cartographer-map-schema-v3.8-grid-a1",
+      "cartographer_layer_schema.json": "cartographer-layer-schema-v3.8-a1"
+    },
+    "prompts": {
+      "system_prompt.txt": "cartographer-system-prompt-v3.8-a2",
+      "example_interactions.json": "cartographer-example-interactions-v3.8-a2"
+    },
+    "maps": {
+      "map_template_v1.meta.json": "cartographer-map-template-v1-grid-a1",
+      "grid_template_v1.json": "cartographer-grid-template-v1-a1",
+      "Faerun_v1.meta.json": "cartographer-faerun-v1-meta-v3.8-grid-a1"
+    },
+    "reports": {
+      "Cartographer_QGate_Report_v3.8.json": "cartographer-qgate-report-v3.8-a1",
+      "control_26.json": "cartographer-checkpoint-26-v3.8-a1",
+      "Promotion_Summary_v3.8.md": "cartographer-promotion-v3.8-a1"
+    }
+  },
+  "canon_directory": "/worldforge-data/Cartographer/v3.8/",
+  "verified": true,
+  "generated": "2025-11-12T23:20:00Z",
+  "checksum": "cartographer-v3.8-grid-index-a1"
+}

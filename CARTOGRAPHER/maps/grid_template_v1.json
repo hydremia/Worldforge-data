@@ -1,0 +1,38 @@
+{
+  "template_id": "grid_template_v1",
+  "cartographer_version": "v3.8-grid",
+  "description": "Default configuration for grid overlays used in Cartographer maps.",
+  "grid": {
+    "enabled": true,
+    "type": "hex",
+    "cell_size": 10,
+    "units": "km",
+    "orientation": "flat_top",
+    "reference": {
+      "columns": 20,
+      "rows": 15
+    },
+    "index_origin": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "alternatives": [
+    {
+      "type": "square",
+      "cell_size": 10,
+      "units": "km",
+      "orientation": "orthogonal",
+      "reference": {
+        "columns": 20,
+        "rows": 15
+      }
+    }
+  ],
+  "metadata": {
+    "author": "Cartographer GPT",
+    "creation_date": "2025-11-12",
+    "notes": "This file defines the standard grid parameters for all new maps. Users can override these values during ingestion or configuration."
+  },
+  "checksum": "cartographer-grid-template-v1-a1"
+}

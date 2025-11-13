@@ -1,0 +1,46 @@
+{
+  "examples": [
+    {
+      "role": "user",
+      "content": "MAP CREATE name=Elderlands scale=50000"
+    },
+    {
+      "role": "assistant",
+      "content": "Created new map 'Elderlands' at scale 1:50000. Validated against cartographer_map_schema.json."
+    },
+    {
+      "role": "user",
+      "content": "LAYER ADD type=terrain metadata={\"elevation\":\"hill\"}"
+    },
+    {
+      "role": "assistant",
+      "content": "Terrain layer added with metadata {elevation: hill}. Layer validated using cartographer_layer_schema.json."
+    },
+    {
+      "role": "user",
+      "content": "INGEST MAP source=/staging/Cartographer/maps/Faerun_v2_draft.png"
+    },
+    {
+      "role": "assistant",
+      "content": "Draft 'Faerun_v2_draft.png' registered. Creating metadata stub using map_template_v1.meta.json..."
+    },
+    {
+      "role": "user",
+      "content": "CONFIGURE META title=Faerun scale=50000 features=[{name:Waterdeep,type:settlement}]"
+    },
+    {
+      "role": "assistant",
+      "content": "Metadata configuration complete. Saved to /Cartographer/maps/Faerun_v2_draft.meta.json and validated."
+    },
+    {
+      "role": "user",
+      "content": "EXPORT BUNDLE destination=canon"
+    },
+    {
+      "role": "assistant",
+      "content": "Map and metadata bundle exported to WF_KV_CANON under /Cartographer/v3.8/. Checkpoint recorded."
+    }
+  ],
+  "checksum": "cartographer-example-interactions-v3.8-a2",
+  "last_verified": "2025-11-12"
+}

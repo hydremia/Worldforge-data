@@ -1,0 +1,73 @@
+{
+  "$schema": "https://worldforge.dev/schema/cartographer_map_schema.json",
+  "cartographer_version": "v3.8-grid",
+  "template_id": "map_template_v1",
+  "description": "Baseline metadata template for all Cartographer maps (city, region, country, continent, world) including grid support.",
+  "map_id": "example_map_id",
+  "title": "Example Map Title",
+  "type": "region",
+  "scale": 50000,
+  "projection": "equirectangular",
+  "coordinate_origin": {
+    "x": 0,
+    "y": 0,
+    "units": "km"
+  },
+  "features": [
+    {
+      "name": "Sample City",
+      "type": "settlement",
+      "symbol": "black_circle",
+      "coordinates": {"x": 120, "y": 45},
+      "notes": "Placeholder city for template."
+    },
+    {
+      "name": "Sample River",
+      "type": "river",
+      "symbol": "blue_line",
+      "coordinates": [{"x": 30, "y": 80}, {"x": 160, "y": 90}],
+      "notes": "Placeholder river path."
+    }
+  ],
+  "legend": {
+    "blue_line": "Rivers and lakes",
+    "brown_fill": "Mountains",
+    "green_fill": "Forests or wooded areas",
+    "black_square": "Cities (major urban centers)",
+    "black_circle": "Towns or minor settlements",
+    "red_line": "Trade routes or major roads"
+  },
+  "layers": [
+    {
+      "layer_id": "terrain_base",
+      "type": "terrain",
+      "visibility": true
+    },
+    {
+      "layer_id": "political_overlay",
+      "type": "political",
+      "visibility": false
+    }
+  ],
+  "grid": {
+    "enabled": true,
+    "type": "hex",
+    "cell_size": 10,
+    "units": "km",
+    "orientation": "flat_top",
+    "reference": { "columns": 20, "rows": 15 },
+    "index_origin": { "x": 0, "y": 0 }
+  },
+  "metadata": {
+    "author": "Cartographer GPT",
+    "creation_date": "2025-11-12",
+    "notes": "This template includes default grid configuration for maps using Cartographer GPT.",
+    "example_query_usage": [
+      "Distance from Sample City to Sample River",
+      "Direction from Town A to City B",
+      "Estimate travel time based on scale",
+      "Which hex contains Sample City?"
+    ]
+  },
+  "checksum": "cartographer-map-template-v1-grid-a1"
+}

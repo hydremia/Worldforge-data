@@ -1,0 +1,33 @@
+{
+  "name": "Cartographer GPT",
+  "version": "v3.8",
+  "description": "Generates, validates, and manages spatial maps, overlays, and metadata within the Worldforge OPS ecosystem. Supports ingestion and metadata configuration workflows.",
+  "author": "Worldforge OPS Runtime",
+  "role": "Spatial subsystem GPT",
+  "category": "World Management / Mapping",
+  "base_runtime": "OPS v3.7",
+  "control_log": 26,
+  "manifest_path": "/worldforge-data/Cartographer/config/Cartographer_Manifest_v3.8.json",
+  "runtime_core": "/worldforge-data/Cartographer/config/Cartographer_Runtime_Core_v3.8.txt",
+  "schemas": {
+    "map": "/worldforge-data/Cartographer/schemas/cartographer_map_schema.json",
+    "layer": "/worldforge-data/Cartographer/schemas/cartographer_layer_schema.json"
+  },
+  "dependencies": [
+    "OPS",
+    "Creator",
+    "Archivist",
+    "/worldforge-data/Cartographer/config/Cartographer_Ingestion_Workflow.json",
+    "/worldforge-data/Cartographer/maps/map_template_v1.meta.json"
+  ],
+  "capsule_bindings": {
+    "canon": "WF_KV_CANON",
+    "runtime": "WF_KV_RUNTIME",
+    "staging": "WF_KV_STAGING",
+    "sessions": "WF_KV_SESSIONS"
+  },
+  "status": "active",
+  "release_channel": "stable",
+  "created": "2025-11-12T22:30:00Z",
+  "checksum": "cartographer-profile-v3.8-a2"
+}

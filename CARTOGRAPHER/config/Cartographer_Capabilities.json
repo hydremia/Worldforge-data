@@ -1,0 +1,44 @@
+{
+  "version": "v3.8-grid",
+  "target_gpt": "Cartographer",
+  "description": "Defines toolset and operational capabilities for Cartographer GPT, including ingestion, metadata configuration, and grid workflows.",
+  "capabilities": {
+    "file_access": {
+      "read": true,
+      "write": true,
+      "kv_capsules": ["WF_KV_RUNTIME", "WF_KV_CANON", "WF_KV_STAGING"]
+    },
+    "spatial_functions": [
+      "generate_map",
+      "validate_map",
+      "create_layer",
+      "export_bundle",
+      "sync_metadata",
+      "ingest_map",
+      "configure_meta",
+      "grid_enable",
+      "grid_configure",
+      "grid_validate",
+      "promote_draft"
+    ],
+    "integrations": {
+      "OPS": true,
+      "Archivist": true,
+      "Creator": true
+    },
+    "permissions": {
+      "network_calls": false,
+      "external_apis": false,
+      "user_content_storage": false
+    },
+    "safety": {
+      "geolocation_data": "restricted",
+      "user_identifiers": "forbidden",
+      "canon_overwrite": false,
+      "image_ingest": "allowed_staging_only"
+    }
+  },
+  "workflow_reference": "/worldforge-data/Cartographer/config/Cartographer_Ingestion_Workflow.json",
+  "checksum": "cartographer-capabilities-v3.8-grid-a1",
+  "last_verified": "2025-11-12"
+}

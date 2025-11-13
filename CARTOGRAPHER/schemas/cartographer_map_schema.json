@@ -4,18 +4,75 @@
   "properties": {
     "map_id": { "type": "string" },
     "title": { "type": "string" },
+    "type": { "enum": ["city", "region", "country", "continent", "world"] },
     "scale": { "type": "number" },
-    "features": {
-      "type": "array",
-      "items": { "type": "object" }
-    },
-    "legend": {
+    "projection": { "type": "string" },
+    "coordinate_origin": {
       "type": "object",
       "properties": {
-        "symbol": { "type": "string" },
-        "description": { "type": "string" }
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "units": { "type": "string" }
+      },
+      "required": ["x", "y", "units"]
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "symbol": { "type": "string" },
+          "coordinates": { "type": ["object", "array"] },
+          "notes": { "type": "string" }
+        },
+        "required": ["name", "type"]
       }
-    }
+    },
+    "legend": { "type": "object" },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "layer_id": { "type": "string" },
+          "type": { "enum": ["terrain", "political", "trade", "travel"] },
+          "visibility": { "type": "boolean" }
+        },
+        "required": ["layer_id", "type"]
+      }
+    },
+    "grid": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "type": { "enum": ["hex", "square"] },
+        "cell_size": { "type": "number" },
+        "units": { "type": "string" },
+        "orientation": { "enum": ["flat_top", "pointy_top"] },
+        "reference": {
+          "type": "object",
+          "properties": {
+            "columns": { "type": "integer" },
+            "rows": { "type": "integer" }
+          }
+        },
+        "index_origin": {
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        }
+      },
+      "required": ["enabled", "type", "cell_size", "units"]
+    },
+    "metadata": { "type": "object" },
+    "checksum": { "type": "string" }
   },
-  "required": ["map_id", "title", "scale"]
+  "required": ["map_id", "title", "scale", "features", "legend"],
+  "version": "v3.8-grid",
+  "last_verified": "2025-11-12",
+  "checksum": "cartographer-map-schema-v3.8-grid-a1"
 }

@@ -1,29 +1,20 @@
 {
-  "qgate_version": "v3.8",
+  "report_type": "QGATE",
   "target_gpt": "Cartographer",
+  "version": "v3.8",
   "control_log": 26,
-  "tiers_run": ["Tier 1", "Tier 2", "Tier 3"],
-  "tests": {
-    "tier_1": {
-      "description": "Schema and manifest validation",
-      "status": "PASS",
-      "evidence": ["Schemas syntactically valid", "Manifest checksum cartographer-manifest-v3.8-a1"]
-    },
-    "tier_2": {
-      "description": "Bridge and version parity checks",
-      "status": "PASS",
-      "evidence": ["OPS baseline v3.7 aligned", "DM hash chain continuity confirmed"]
-    },
-    "tier_3": {
-      "description": "Promotion readiness validation",
-      "status": "PASS",
-      "evidence": ["All deliverables generated", "Rollback plan stub verified"]
-    }
+  "tiers_run": [1, 2, 3],
+  "tier_results": {
+    "Tier_1_Structure": "PASS",
+    "Tier_2_Parity": "PASS",
+    "Tier_3_Integration": "PASS"
   },
-  "hashes": {
-    "manifest_checksum": "cartographer-manifest-v3.8-a1",
-    "schema_hash": "cartographer-schema-v3.8-verified"
-  },
+  "schema_integrity": "Verified",
+  "file_persistence": "Verified (/staging/Cartographer/v3.8/map_test.json)",
+  "cross_gpt_parity": "PASS",
+  "risk_flags": [],
   "verdict": "PASS",
-  "next_actions": ["Proceed to Capsule Governance Thread v3.9"]
+  "report_generated": "2025-11-12T22:45:00Z",
+  "report_path": "/worldforge-data/OPS/Reports/Cartographer_QGate_Report_v3.8.json",
+  "checksum": "cartographer-qgate-report-v3.8-a1"
 }

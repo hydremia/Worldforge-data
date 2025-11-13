@@ -4,8 +4,8 @@
   "control_log": 26,
   "baseline_version": "v3.6",
   "schemas": {
-    "map_schema": "/Cartographer/schemas/cartographer_map_schema.json",
-    "layer_schema": "/Cartographer/schemas/cartographer_layer_schema.json"
+    "map_schema": "/worldforge-data/Cartographer/schemas/cartographer_map_schema.json",
+    "layer_schema": "/worldforge-data/Cartographer/schemas/cartographer_layer_schema.json"
   },
   "runtime_capsules": {
     "canon": "WF_KV_CANON",
@@ -13,8 +13,21 @@
     "sessions": "WF_KV_SESSIONS",
     "staging": "WF_KV_STAGING"
   },
+  "maps_path": "/worldforge-data/Cartographer/maps/",
+  "default_template": "/worldforge-data/Cartographer/maps/map_template_v1.meta.json",
+  "canon_maps": {
+    "Faerun": {
+      "image": "/worldforge-data/Cartographer/maps/Faerun_v1.png",
+      "metadata": "/worldforge-data/Cartographer/maps/Faerun_v1.meta.json",
+      "scale": 50000,
+      "status": "canon"
+    }
+  },
   "bridge_links": ["OPS", "Creator", "Archivist"],
+  "dependencies": [
+    "/worldforge-data/Cartographer/config/Cartographer_Ingestion_Workflow.json"
+  ],
   "status": "active",
   "last_verified": "2025-11-12",
-  "checksum": "cartographer-manifest-v3.8-a1"
+  "checksum": "cartographer-manifest-v3.8-a2"
 }

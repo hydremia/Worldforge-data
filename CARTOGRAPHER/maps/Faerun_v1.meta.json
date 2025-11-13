@@ -1,0 +1,93 @@
+{
+  "$schema": "https://worldforge.dev/schema/cartographer_map_schema.json",
+  "cartographer_version": "v3.8-grid",
+  "map_id": "faerun_v1",
+  "title": "Faerûn — The Heartlands",
+  "type": "continent",
+  "scale": 50000,
+  "projection": "equirectangular",
+  "coordinate_origin": {
+    "x": 0,
+    "y": 0,
+    "units": "km"
+  },
+  "features": [
+    {
+      "name": "Waterdeep",
+      "type": "settlement",
+      "symbol": "black_square",
+      "coordinates": {"x": 340, "y": 220},
+      "notes": "Major port city on the Sword Coast."
+    },
+    {
+      "name": "Baldur's Gate",
+      "type": "settlement",
+      "symbol": "black_square",
+      "coordinates": {"x": 310, "y": 260},
+      "notes": "Trade hub south of Waterdeep."
+    },
+    {
+      "name": "Neverwinter",
+      "type": "settlement",
+      "symbol": "black_circle",
+      "coordinates": {"x": 350, "y": 200},
+      "notes": "Smaller but historically important city north of Waterdeep."
+    },
+    {
+      "name": "Sword Coast",
+      "type": "region",
+      "symbol": "blue_line",
+      "coordinates": [{"x": 280, "y": 180}, {"x": 380, "y": 280}],
+      "notes": "Main western trade coastline."
+    }
+  ],
+  "legend": {
+    "blue_line": "Coastline or rivers",
+    "brown_fill": "Mountain ranges",
+    "green_fill": "Forested regions",
+    "black_square": "Major cities",
+    "black_circle": "Towns or minor settlements",
+    "red_line": "Trade or caravan routes"
+  },
+  "layers": [
+    {
+      "layer_id": "terrain_base",
+      "type": "terrain",
+      "visibility": true
+    },
+    {
+      "layer_id": "political_overlay",
+      "type": "political",
+      "visibility": true
+    },
+    {
+      "layer_id": "trade_routes",
+      "type": "trade",
+      "visibility": false
+    }
+  ],
+  "grid": {
+    "enabled": true,
+    "type": "hex",
+    "cell_size": 50,
+    "units": "km",
+    "orientation": "flat_top",
+    "reference": { "columns": 40, "rows": 30 },
+    "index_origin": { "x": 0, "y": 0 }
+  },
+  "metadata": {
+    "author": "Cartographer GPT",
+    "creation_date": "2025-11-12",
+    "notes": "Canonical Faerûn world map metadata for Cartographer v3.8-grid. Includes regional grid overlay for travel and distance calculations.",
+    "related_files": {
+      "image": "/worldforge-data/Cartographer/maps/Faerun_v1.png",
+      "grid_template": "/worldforge-data/Cartographer/maps/grid_template_v1.json"
+    },
+    "example_queries": [
+      "Distance between Waterdeep and Baldur's Gate",
+      "Which hex contains Neverwinter?",
+      "Show all settlements in Sword Coast region"
+    ]
+  },
+  "checksum": "cartographer-faerun-v1-meta-v3.8-grid-a1"
+}

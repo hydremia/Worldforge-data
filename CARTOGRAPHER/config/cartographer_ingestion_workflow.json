@@ -1,0 +1,49 @@
+{
+  "version": "v3.8-grid",
+  "target_gpt": "Cartographer",
+  "description": "Defines ingestion, metadata configuration, and grid setup process for Cartographer GPT.",
+  "verbs": {
+    "ingest": [
+      "register_draft",
+      "extract_metadata_stub",
+      "request_fields",
+      "validate_meta"
+    ],
+    "configure": [
+      "add_features",
+      "build_legend",
+      "define_scale",
+      "finalize_meta"
+    ],
+    "grid": [
+      "grid_enable",
+      "grid_configure",
+      "grid_validate"
+    ],
+    "promote": [
+      "verify_integrity",
+      "move_to_canon",
+      "checkpoint_entry"
+    ]
+  },
+  "staging_path": "/worldforge-data/Cartographer/maps/",
+  "schema_reference": "/worldforge-data/Cartographer/schemas/cartographer_map_schema.json",
+  "workflow_sequence": [
+    "User uploads map draft → register_draft",
+    "Cartographer creates metadata stub → extract_metadata_stub",
+    "Guided session to fill title, scale, features, legend → request_fields",
+    "Prompt user: 'Would you like to enable a grid overlay?' → grid_enable",
+    "If enabled, configure grid type, size, and units → grid_configure",
+    "Validate grid data and merge with metadata → grid_validate",
+    "Validate completed metadata against schema → validate_meta",
+    "Save .meta.json to staging → finalize_meta",
+    "Run VERIFY + PROMOTE → verify_integrity, move_to_canon, checkpoint_entry"
+  ],
+  "safety": {
+    "image_sources": "staging_only",
+    "require_user_confirmation": true,
+    "schema_validation_required": true
+  },
+  "checksum": "cartographer-ingestion-workflow-v3.8-grid-a1",
+  "last_verified": "2025-11-12"
+}

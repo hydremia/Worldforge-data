@@ -1,0 +1,22 @@
+{
+  "checkpoint_id": 26,
+  "gpt_target": "Cartographer",
+  "version": "v3.8",
+  "action": "Activation",
+  "ops_runtime": "v3.7",
+  "created": "2025-11-12T22:47:00Z",
+  "artifacts": [
+    "/worldforge-data/Cartographer/config/Cartographer_Manifest_v3.8.json",
+    "/worldforge-data/Cartographer/config/Cartographer_Profile.json",
+    "/worldforge-data/Cartographer/config/Cartographer_Runtime_Core_v3.8.txt",
+    "/worldforge-data/Cartographer/config/Cartographer_Capabilities.json",
+    "/worldforge-data/Cartographer/config/Cartographer_Ingestion_Workflow.json"
+  ],
+  "schema_refs": [
+    "/worldforge-data/Cartographer/schemas/cartographer_map_schema.json",
+    "/worldforge-data/Cartographer/schemas/cartographer_layer_schema.json"
+  ],
+  "status": "complete",
+  "verified_by": "OPS Runtime",
+  "checksum": "cartographer-checkpoint-26-v3.8-a1"
+}

@@ -1,0 +1,34 @@
+{
+  "manifest_id": "cartographer_knowledge_loader_v3.8",
+  "description": "Comprehensive loader manifest for Cartographer GPT v3.8-grid knowledge base, including core runtime, schemas, prompts, maps, and provenance files.",
+  "cartographer_version": "v3.8-grid",
+  "control_log": 26,
+  "files": [
+    {"file": "Cartographer_Manifest_v3.8.json", "path": "/worldforge-data/Cartographer/config/", "type": "config", "role": "runtime parameters and bindings", "checksum": "cartographer-manifest-v3.8-a2", "include": true},
+    {"file": "Cartographer_Profile.json", "path": "/worldforge-data/Cartographer/config/", "type": "config", "role": "GPT identity and OPS dependencies", "checksum": "cartographer-profile-v3.8-a2", "include": true},
+    {"file": "Cartographer_Runtime_Core_v3.8.txt", "path": "/worldforge-data/Cartographer/config/", "type": "runtime", "role": "operational tone, verbs, conversation starters", "checksum": "cartographer-runtime-core-v3.8-grid-a1", "include": true},
+    {"file": "Cartographer_Capabilities.json", "path": "/worldforge-data/Cartographer/config/", "type": "runtime", "role": "capabilities and permissions map", "checksum": "cartographer-capabilities-v3.8-grid-a1", "include": true},
+    {"file": "Cartographer_Ingestion_Workflow.json", "path": "/worldforge-data/Cartographer/config/", "type": "workflow", "role": "ingestion, metadata configuration, and grid setup steps", "checksum": "cartographer-ingestion-workflow-v3.8-grid-a1", "include": true},
+
+    {"file": "cartographer_map_schema.json", "path": "/worldforge-data/Cartographer/schemas/", "type": "schema", "role": "map metadata validation schema", "checksum": "cartographer-map-schema-v3.8-grid-a1", "include": true},
+    {"file": "cartographer_layer_schema.json", "path": "/worldforge-data/Cartographer/schemas/", "type": "schema", "role": "layer overlay validation schema", "checksum": "cartographer-layer-schema-v3.8-a1", "include": true},
+
+    {"file": "system_prompt.txt", "path": "/worldforge-data/Cartographer/prompts/", "type": "prompt", "role": "GPT behavior and OPS syntax", "checksum": "cartographer-system-prompt-v3.8-a2", "include": true},
+    {"file": "example_interactions.json", "path": "/worldforge-data/Cartographer/prompts/", "type": "prompt", "role": "demonstrative OPS command examples", "checksum": "cartographer-example-interactions-v3.8-a2", "include": true},
+
+    {"file": "map_template_v1.meta.json", "path": "/worldforge-data/Cartographer/maps/", "type": "template", "role": "base map metadata structure with grid support", "checksum": "cartographer-map-template-v1-grid-a1", "include": true},
+    {"file": "grid_template_v1.json", "path": "/worldforge-data/Cartographer/maps/", "type": "template", "role": "default grid overlay definition", "checksum": "cartographer-grid-template-v1-a1", "include": true},
+    {"file": "Faerun_v1.meta.json", "path": "/worldforge-data/Cartographer/maps/", "type": "map", "role": "canonical Faerûn world map metadata", "checksum": "cartographer-faerun-v1-meta-v3.8-grid-a1", "include": true},
+
+    {"file": "Cartographer_QGate_Report_v3.8.json", "path": "/worldforge-data/OPS/Reports/", "type": "report", "role": "QGate audit report for Cartographer v3.8", "checksum": "cartographer-qgate-report-v3.8-a1", "include": true},
+    {"file": "control_26.json", "path": "/worldforge-data/OPS/Checkpoints/", "type": "checkpoint", "role": "Cartographer activation checkpoint record", "checksum": "cartographer-checkpoint-26-v3.8-a1", "include": true},
+    {"file": "Promotion_Summary_v3.8.md", "path": "/worldforge-data/OPS/logs/", "type": "log", "role": "Promotion record for v3.8 canonization", "checksum": "cartographer-promotion-v3.8-a1", "include": true},
+
+    {"file": "Cartographer_v3.8_Index.json", "path": "/worldforge-data/Cartographer/config/", "type": "manifest", "role": "master file checksum and path index", "checksum": "cartographer-v3.8-grid-index-a1", "include": true}
+  ],
+  "ops_runtime": "v3.7",
+  "canon_directory": "/worldforge-data/Cartographer/v3.8/",
+  "verified": true,
+  "last_verified": "2025-11-12",
+  "checksum": "cartographer-knowledge-loader-v3.8-a1"
+}
