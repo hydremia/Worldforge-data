@@ -1,0 +1,16 @@
+{
+  "title": "DM Loader Schema",
+  "version": "v3.0.1-pre",
+  "baseline": "OPS_BASE_LOADER_v3.0.0",
+  "modules": ["logic_core"],
+  "fields": {
+    "rollback_ref": "string",
+    "audit_hash": "string",
+    "logic_core": "object"
+  },
+  "logic_core": {
+    "schema": "v3.0.0",
+    "checksum": "f73c8b4e",
+    "description": "Defines procedural event and behavior execution trees."
+  }
+}

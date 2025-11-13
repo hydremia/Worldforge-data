@@ -1,0 +1,11 @@
+{
+  "version": "v3.0.1-pre",
+  "extends": "OPS_BASE_LOADER_v3.0.0",
+  "fields": {
+    "zone_ref": "string",
+    "tile_map": "array",
+    "coord_system": "enum[cartesian, polar, hex]",
+    "layer_depth": "integer"
+  },
+  "checksum": "f89c4a2e12a17b"
+}

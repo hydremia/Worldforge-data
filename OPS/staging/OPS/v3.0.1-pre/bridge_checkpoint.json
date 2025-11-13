@@ -1,0 +1,6 @@
+{
+  "ecosystem_version": "v3.0.1-pre",
+  "nodes": ["Hub","OPS","DM","Creator","Atelier","Archivist","Cartographer"],
+  "timestamp": "2025-11-12T17:45Z",
+  "notes": "DM + Cartographer parity fixes"
+}

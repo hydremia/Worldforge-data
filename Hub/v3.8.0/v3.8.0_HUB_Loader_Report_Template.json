@@ -1,0 +1,80 @@
+{
+  "bridge_version": "v3.8.0",
+  "canon_version": "v3.8.0",
+  "hub": {
+    "name": "Worldforge HUB GPT",
+    "version": "v3.8.0",
+    "timestamp_utc": "<ISO-8601>",
+    "status": "INIT|PASS|WARN|FAIL"
+  },
+  "user": {
+    "username": "<username|null>",
+    "capsule_token": "<uuid|null>",
+    "resume_available": "<true|false>"
+  },
+  "ops_mode": false,
+  "gpts": {
+    "OPS": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "qgate_status": "/qgate/status"
+      }
+    },
+    "DM": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "capsule_resume": "/capsule/resume"
+      }
+    },
+    "Creator": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "staging_open": "/staging/open"
+      }
+    },
+    "Atelier": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "visuals_ingest": "/visuals/ingest"
+      }
+    },
+    "Archivist": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "review": "/archivist/review",
+        "promote": "/archivist/promote"
+      }
+    },
+    "Cartographer": {
+      "version": "<semver>",
+      "health": "PASS|WARN|FAIL|UNKNOWN",
+      "endpoints": {
+        "version": "/version",
+        "health": "/health",
+        "ingest": "/cartographer/ingest",
+        "promote": "/cartographer/promote"
+      }
+    }
+  },
+  "ops_audit": {
+    "tone_status": "PASS|WARN|FAIL",
+    "schema_status": "PASS|WARN|FAIL",
+    "notes": "<string>"
+  },
+  "safe_mode": false
+}
